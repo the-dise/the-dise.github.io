@@ -47,7 +47,7 @@ a {
 .link {
     position: relative;
     @include font($size: 13px, $weight: 600, $family: $font-family-base);
-    text-transform: uppercase;
+    text-transform: lowercase;
 
     &:after {
         @include position(absolute, $top: 8px, $right: -15px);

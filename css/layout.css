@@ -1,27 +1,4 @@
-/*----------------------------------------------------------------------
 
-	MASTER STYLESHEET
-
-	Project:        Metronic "Acidus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-	Version:        1.0
-	Author:         KeenThemes
-	Primary use:    Corporate, Business Themes.
-	Email:			support@keenthemes.com
-	Follow: 		http://www.twitter.com/keenthemes
-	Like: 			http://www.facebook.com/keenthemes
-	Website:		http://www.keenthemes.com
-	Premium:		Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-
------------------------------------------------------------------------*/
-/* eg: @include user-select(none); */
-/* eg: @include rotate(45deg); */
-/* eg: @include translate3d(0,0,0); */
-/* eg: @include border-radius(3px); */
-/* eg: @include visibility-backface(hidden); */
-/*------------------------------------------------------------------
-  	[The "base.scss" contains basic default element styles
-  		(colors, typography, margins & padding).]
-------------------------------------------------------------------*/
 html {
   overflow-x: hidden;
 }
@@ -32,14 +9,14 @@ html, html a, body {
 
 body {
   position: relative;
-  font-family: Hind, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 p {
   font-size: 15px;
   font-weight: 400;
-  font-family: Hind, sans-serif;
-  color: #a6a7aa;
+  font-family: Roboto, sans-serif;
+  color: #424242;
   line-height: 1.4;
   margin-bottom: 15px;
 }
@@ -49,12 +26,12 @@ li,
 li a {
   font-size: 16px;
   font-weight: 500;
-  font-family: Hind, sans-serif;
+  font-family: Roboto, sans-serif;
   color: #515769;
 }
 
 a {
-  font-family: Hind, sans-serif;
+  font-family: Roboto, sans-serif;
   color: #81848f;
   outline: 0;
 }
@@ -69,7 +46,7 @@ a:focus, a:hover, a:active {
   position: relative;
   font-size: 13px;
   font-weight: 600;
-  font-family: Hind, sans-serif;
+  font-family: Roboto, sans-serif;
   text-transform: uppercase;
 }
 
@@ -86,13 +63,13 @@ a:focus, a:hover, a:active {
 span {
   font-size: 14px;
   font-weight: 400;
-  font-family: Hind, sans-serif;
+  font-family: Roboto, sans-serif;
   color: #bfc1c7;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  font-family: Hind, sans-serif;
+  font-family: Roboto, sans-serif;
   color: #515769;
   line-height: 1.4;
   margin: 0 0 15px;
@@ -294,7 +271,6 @@ fieldset[disabled] .btn-theme {
   width: 40px;
   height: 40px;
   font-size: 16px;
-  fill: #fff;
   text-align: center;
   border-radius: 50%;
   vertical-align: middle;
@@ -305,29 +281,10 @@ fieldset[disabled] .btn-theme {
 }
 
 .social-icons:hover {
-  fill: #515769;
   background: #fff;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-/*------------------------------------------------------------------
-    [Social Icons]
-------------------------------------------------------------------*/
-.svg {
-  width: 40px;
-  height: 40px;
-}
-.svg:hover {
-  fill: red;
-}
-
-body {
-  display: grid;
-  height: 100vh;
-  margin: 0;
-  place-items: center center;
 }
 
 /*------------------------------------------------------------------
@@ -502,7 +459,6 @@ body {
   float: right;
   font-size: 13px;
   font-weight: 700;
-  color: #c5c6cb;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -701,7 +657,7 @@ body {
   display: block;
   font-size: 13px;
   font-weight: 600;
-  font-family: Hind, sans-serif;
+  font-family: Roboto, sans-serif;
   color: #fff;
   text-transform: uppercase;
   line-height: 55px;
@@ -1475,16 +1431,17 @@ body {
   }
 }
 
-.icon {
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-size: cover;
-}
-.icon-bike {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bike-black.svg);
-}
-.icon-bike:hover,
-.icon-bike:focus {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bike-red.svg);
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 }

@@ -3,16 +3,17 @@
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8"/>
-        <title>the_dise_webpage</title>
+        <title>Dmitry "the_dise" Gavrilov</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content="" name="description"/>
-        <meta content="" name="author"/>
+        <meta content="My Webpage" name="description"/>		
+        <meta content="Dmitry the_dise Gavrilov" name="author"/>
 
         <!-- GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="css/stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8"/>
 
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/animate.css" rel="stylesheet">
@@ -22,6 +23,42 @@
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
+        <style type="text/css" media="screen, print">
+            @font-face {
+                font-family: 'product_sans';
+                src: url('fonts/productsans-regular.woff2') format('woff2'),
+                     url('fonts/productsans-regular.woff') format('woff'),
+                     url('fonts/ProductSans-Regular.ttf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+
+            }
+
+            @font-face {
+                font-family: 'robotoregular';
+                src: url('fonts/roboto-regular.woff2') format('woff2'),
+                     url('fonts/roboto-regular.woff') format('woff'),
+                     url('fonts/roboto-regular.ttf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+                     
+            }
+
+            @font-face {
+                font-family: 'Material Icons';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Material Icons'),
+                local('MaterialIcons-Regular'),
+                    url('fonts/MaterialIcons-Regular.woff2') format('woff2'),
+                    url('fonts/MaterialIcons-Regular.woff') format('woff'),
+                    url('fonts/MaterialIcons-Regular.ttf') format('truetype');
+            }
+
+            body, h1, h2, h3, h4, h5, h6, a { font-family: "product_sans" }
+
+            p, span { font-family: "robotoregular" }
+        </style>
     </head>
     <!-- END HEAD -->
 
@@ -55,8 +92,10 @@
                         <div class="menu-container">
                             <ul class="nav navbar-nav navbar-nav-right">
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
+                                <!-- <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">experience</a></li> -->
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#Projects">Projects</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="ru.html">Russian</a></li>
                             </ul>
                         </div>
                     </div>
@@ -68,37 +107,55 @@
         <!--========== END HEADER ==========-->
 
         <!--========== SLIDER ==========-->
-        <div class="promo-block parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/01.jpg">
+        <div class="promo-block parallax-window" data-parallax="scroll" data-image-src="img/main.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="promo-block-divider">
                             <h1 class="promo-block-title">Dmitry <br/> Gavrilov</h1>
-                            <p class="promo-block-text">aka the_dise </p>
+                            <h3 style="color: #BDBDBD" class="promo-block-text">aka the_dise</h3>
                         </div>
                         <div>
                         <ul class="list-inline">
                             <li><a href="https://instagram.com/the_dise_" class="social-icons">
                             	<i>
-                            		<svg viewBox="0 0 48 48">
-                            			<path fill="#fff" d="M23.9,7.1c5.5,0,6.1,0,8.3,0.1c2,0.1,3.1,0.4,3.8,0.7c0.9,0.3,1.7,0.9,2.4,1.5c0.7,0.7,1.2,1.5,1.5,2.4 c0.3,0.7,0.6,1.8,0.7,3.8c0.1,2.2,0.1,2.8,0.1,8.3s0,6.1-0.1,8.3c-0.1,2-0.4,3.1-0.7,3.8c-0.7,1.8-2.1,3.2-3.9,3.9 c-0.7,0.3-1.8,0.6-3.8,0.7c-2.2,0.1-2.8,0.1-8.3,0.1s-6.1,0-8.3-0.1c-2-0.1-3.1-0.4-3.8-0.7c-0.9-0.3-1.7-0.9-2.4-1.5 c-0.7-0.7-1.2-1.5-1.5-2.4c-0.3-0.7-0.6-1.8-0.7-3.8c-0.1-2.2-0.1-2.8-0.1-8.3s0-6.1,0.1-8.3c0.1-2,0.4-3.1,0.7-3.8 c0.3-0.9,0.9-1.7,1.5-2.4c0.7-0.7,1.5-1.2,2.4-1.5c0.7-0.3,1.8-0.6,3.8-0.7C17.8,7.1,18.5,7.1,23.9,7.1 M23.9,3.4 c-5.6,0-6.3,0-8.5,0.1c-2.2,0.1-3.7,0.4-5,1C9.1,5,7.9,5.8,6.9,6.8c-1,1-1.9,2.3-2.4,3.6c-0.5,1.3-0.9,2.8-1,5 c-0.1,2.2-0.1,2.9-0.1,8.5s0,6.3,0.1,8.5c0.1,2.2,0.4,3.7,1,5C5,38.7,5.8,40,6.9,41c1,1,2.3,1.9,3.6,2.4c1.3,0.5,2.8,0.9,5,1 c2.2,0.1,2.9,0.1,8.5,0.1s6.3,0,8.5-0.1c2.2-0.1,3.7-0.4,5-1c2.8-1.1,4.9-3.2,6-6c0.5-1.3,0.9-2.8,1-5c0.1-2.2,0.1-2.9,0.1-8.5 s0-6.3-0.1-8.5c-0.1-2.2-0.4-3.7-1-5c-0.5-1.4-1.3-2.6-2.4-3.6c-1-1-2.3-1.9-3.6-2.4c-1.3-0.5-2.8-0.9-5-1 C30.2,3.4,29.5,3.4,23.9,3.4L23.9,3.4L23.9,3.4z"></path> 
-                            			<path fill="#fff" d="M23.9,13.4c-5.8,0-10.5,4.7-10.5,10.5s4.7,10.5,10.5,10.5s10.5-4.7,10.5-10.5l0,0C34.5,18.1,29.8,13.4,23.9,13.4z M23.9,30.8c-3.8,0-6.8-3.1-6.8-6.8c0-3.8,3.1-6.8,6.8-6.8c3.8,0,6.8,3.1,6.8,6.8C30.8,27.7,27.7,30.8,23.9,30.8z"></path> 
-                            			<circle fill="#fff" cx="34.9" cy="13" r="2.5"></circle>
+                            		<svg fill="#fff" viewBox="0 0 48 48">
+                            			<path  d="M23.9,7.1c5.5,0,6.1,0,8.3,0.1c2,0.1,3.1,0.4,3.8,0.7c0.9,0.3,1.7,0.9,2.4,1.5c0.7,0.7,1.2,1.5,1.5,2.4 c0.3,0.7,0.6,1.8,0.7,3.8c0.1,2.2,0.1,2.8,0.1,8.3s0,6.1-0.1,8.3c-0.1,2-0.4,3.1-0.7,3.8c-0.7,1.8-2.1,3.2-3.9,3.9 c-0.7,0.3-1.8,0.6-3.8,0.7c-2.2,0.1-2.8,0.1-8.3,0.1s-6.1,0-8.3-0.1c-2-0.1-3.1-0.4-3.8-0.7c-0.9-0.3-1.7-0.9-2.4-1.5 c-0.7-0.7-1.2-1.5-1.5-2.4c-0.3-0.7-0.6-1.8-0.7-3.8c-0.1-2.2-0.1-2.8-0.1-8.3s0-6.1,0.1-8.3c0.1-2,0.4-3.1,0.7-3.8 c0.3-0.9,0.9-1.7,1.5-2.4c0.7-0.7,1.5-1.2,2.4-1.5c0.7-0.3,1.8-0.6,3.8-0.7C17.8,7.1,18.5,7.1,23.9,7.1 M23.9,3.4 c-5.6,0-6.3,0-8.5,0.1c-2.2,0.1-3.7,0.4-5,1C9.1,5,7.9,5.8,6.9,6.8c-1,1-1.9,2.3-2.4,3.6c-0.5,1.3-0.9,2.8-1,5 c-0.1,2.2-0.1,2.9-0.1,8.5s0,6.3,0.1,8.5c0.1,2.2,0.4,3.7,1,5C5,38.7,5.8,40,6.9,41c1,1,2.3,1.9,3.6,2.4c1.3,0.5,2.8,0.9,5,1 c2.2,0.1,2.9,0.1,8.5,0.1s6.3,0,8.5-0.1c2.2-0.1,3.7-0.4,5-1c2.8-1.1,4.9-3.2,6-6c0.5-1.3,0.9-2.8,1-5c0.1-2.2,0.1-2.9,0.1-8.5 s0-6.3-0.1-8.5c-0.1-2.2-0.4-3.7-1-5c-0.5-1.4-1.3-2.6-2.4-3.6c-1-1-2.3-1.9-3.6-2.4c-1.3-0.5-2.8-0.9-5-1 C30.2,3.4,29.5,3.4,23.9,3.4L23.9,3.4L23.9,3.4z"></path> 
+                            			<path d="M23.9,13.4c-5.8,0-10.5,4.7-10.5,10.5s4.7,10.5,10.5,10.5s10.5-4.7,10.5-10.5l0,0C34.5,18.1,29.8,13.4,23.9,13.4z M23.9,30.8c-3.8,0-6.8-3.1-6.8-6.8c0-3.8,3.1-6.8,6.8-6.8c3.8,0,6.8,3.1,6.8,6.8C30.8,27.7,27.7,30.8,23.9,30.8z"></path> 
+                            			<circle cx="34.9" cy="13" r="2.5"></circle>
                             	</svg> </i></a></li>
+                            <li><a href="https://vk.com/the_dise" class="social-icons">
+                                <i>
+                                    <svg fill="#fff" viewBox="0 0 24 24">
+                                        <path d="M20.8,7.74C20.93,7.32 20.8,7 20.18,7H18.16C17.64,7 17.41,7.27 17.28,7.57C17.28,7.57 16.25,10.08 14.79,11.72C14.31,12.19 14.1,12.34 13.84,12.34C13.71,12.34 13.5,12.19 13.5,11.76V7.74C13.5,7.23 13.38,7 12.95,7H9.76C9.44,7 9.25,7.24 9.25,7.47C9.25,7.95 10,8.07 10.05,9.44V12.42C10.05,13.08 9.93,13.2 9.68,13.2C9,13.2 7.32,10.67 6.33,7.79C6.13,7.23 5.94,7 5.42,7H3.39C2.82,7 2.7,7.27 2.7,7.57C2.7,8.11 3.39,10.77 5.9,14.29C7.57,16.7 9.93,18 12.08,18C13.37,18 13.53,17.71 13.53,17.21V15.39C13.53,14.82 13.65,14.7 14.06,14.7C14.36,14.7 14.87,14.85 16.07,16C17.45,17.38 17.67,18 18.45,18H20.47C21.05,18 21.34,17.71 21.18,17.14C21,16.57 20.34,15.74 19.47,14.76C19,14.21 18.29,13.61 18.07,13.3C17.77,12.92 17.86,12.75 18.07,12.4C18.07,12.4 20.54,8.93 20.8,7.74Z" />
+                                    </svg>
+                                </i>
+                                </a></li>
+                            <li><a href="https://t.me/the_dise" class="social-icons">
+                                <i>
+                                    <svg fill="#fff" viewBox="0 0 24 24">
+                                        <path d="M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z" />
+                                    </svg>
+                                </i>
+                                </a></li>
                             <li><a href="https://twitter.com/the_dise" class="social-icons">
                             	<i>
                             		<svg fill="#fff" viewBox="0 0 24 24">
-    									<path  d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+    									<path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
 								</svg>
                             	</i></a></li>
-                            <li><a href="https://t.me/the_dise" class="social-icons">
-                            	<i>
-                            		<svg viewBox="0 0 24 24">
-    									<path fill="#fff" d="M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z" />
-									</svg>
-                            	</i></a></li>
-                            <li><a href="#" class="social-icons"><i class="icon icon-bike"></span></i></a></li>
-                        </ul></div>
+
+                            <li><a href="https://open.spotify.com/user/the_dise?si=cJe271_uSdOlUXO6hqO1bg" class="social-icons">
+                                <i>
+                                    <svg fill="#fff" viewBox="0 0 24 24">
+                                        <path d="M17.9,10.9C14.7,9 9.35,8.8 6.3,9.75C5.8,9.9 5.3,9.6 5.15,9.15C5,8.65 5.3,8.15 5.75,8C9.3,6.95 15.15,7.15 18.85,9.35C19.3,9.6 19.45,10.2 19.2,10.65C18.95,11 18.35,11.15 17.9,10.9M17.8,13.7C17.55,14.05 17.1,14.2 16.75,13.95C14.05,12.3 9.95,11.8 6.8,12.8C6.4,12.9 5.95,12.7 5.85,12.3C5.75,11.9 5.95,11.45 6.35,11.35C10,10.25 14.5,10.8 17.6,12.7C17.9,12.85 18.05,13.35 17.8,13.7M16.6,16.45C16.4,16.75 16.05,16.85 15.75,16.65C13.4,15.2 10.45,14.9 6.95,15.7C6.6,15.8 6.3,15.55 6.2,15.25C6.1,14.9 6.35,14.6 6.65,14.5C10.45,13.65 13.75,14 16.35,15.6C16.7,15.75 16.75,16.15 16.6,16.45M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                                    </svg>
+                                </i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    	</div>
 
                     </div>
                 </div>
@@ -129,8 +186,8 @@
         </div>
         <!-- End About -->
 
-        <!-- Experience -->
-        <div id="experience">
+        <!-- Experience 
+            <div id="experience">
             <div class="bg-color-sky-light" data-auto-height="true">
                 <div class="container content-lg">
                     <div class="row">
@@ -178,14 +235,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--// end row -->
                         </div>
                     </div>
-                    <!--// end row -->
                 </div>
             </div>
-        </div>
-        <!-- End Experience -->
+            </div> 
+        -->
 
         <!-- Projects -->
         <div id="Projects">
@@ -204,11 +259,11 @@
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/800x400/01.jpg" alt="Portfolio Image">
+                                        <img class="full-width img-responsive" src="img/dmgc.jpg" alt="Portfolio Image">
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
+                                            <a href="javascript:void(0);" class="work-popup-close"><i class="material-icons md-dark">close</i></a>
                                             <div class="margin-b-30">
                                                 <h3 class="margin-b-5">DMGC</h3>
                                                 <span>Dise's Modificaton Google Camera</span>
@@ -219,17 +274,17 @@
                                                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                                                         <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
+                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Android</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
                                                     <div class="margin-t-10 sm-margin-t-0">
                                                         <p class="margin-b-5"><strong>Developer:</strong> Dmitry Gavrilov</p>
-                                                        <h3 class="fweight-700" href="https://www.celsoazevedo.com/files/android/google-camera/dev-the_dise/">Download</h3>
                                                     </div>
+                                                    <br>
+                                                    <br>
+                                                    <h3><a class="fweight-700" href="https://www.celsoazevedo.com/files/android/google-camera/dev-the_dise/">Download</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -241,11 +296,11 @@
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x400/01.jpg" alt="Portfolio Image">
+                                        <img class="full-width img-responsive" src="img/gemify.jpg" alt="Portfolio Image">
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
+                                            <a href="javascript:void(0);" class="work-popup-close"><i class="material-icons md-dark">close</i></a>
                                             <div class="margin-b-30">
                                                 <h3 class="margin-b-5">Art Of Coding</h3>
                                                 <span>Clean &amp; Minimalistic Design</span>
@@ -256,18 +311,13 @@
                                                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                                                         <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
+                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
                                                     <div class="margin-t-10 sm-margin-t-0">
                                                         <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -280,11 +330,11 @@
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image">
+                                        <img class="full-width img-responsive" src="img/fatch.jpg" alt="Portfolio Image">
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
+                                            <a href="javascript:void(0);" class="work-popup-close"><i class="material-icons md-dark">close</i></a>
                                             <div class="margin-b-30">
                                                 <h3 class="margin-b-5">Art Of Coding</h3>
                                                 <span>Clean &amp; Minimalistic Design</span>
@@ -295,18 +345,13 @@
                                                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                                                         <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
+                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
                                                     <div class="margin-t-10 sm-margin-t-0">
-                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
+                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p> 
                                                     </div>
                                                 </div>
                                             </div>
@@ -319,11 +364,11 @@
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x300/02.jpg" alt="Portfolio Image">
+                                        <img class="full-width img-responsive" src="img/01.jpg" alt="Portfolio Image">
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
+                                            <a href="javascript:void(0);" class="work-popup-close"><i class="material-icons md-dark">close</i></a>
                                             <div class="margin-b-30">
                                                 <h3 class="margin-b-5">Art Of Coding</h3>
                                                 <span>Clean &amp; Minimalistic Design</span>
@@ -358,11 +403,11 @@
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x300/03.jpg" alt="Portfolio Image">
+                                        <img class="full-width img-responsive" src="img/03.jpg" alt="Portfolio Image">
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
+                                            <a href="javascript:void(0);" class="work-popup-close"><i class="material-icons md-dark">close</i></a>
                                             <div class="margin-b-30">
                                                 <h3 class="margin-b-5">Art Of Coding</h3>
                                                 <span>Clean &amp; Minimalistic Design</span>
@@ -416,7 +461,7 @@
                             <div class="row">
                                 <div class="col-md-3 col-xs-6">
                                     <h5>Web</h5>
-                                    <a href="#">the-dise.com</a>
+                                    <a href="https://the-dise.github.io">the-dise.github.io</a>
                                 </div>
                                 <div class="col-md-3 col-xs-6">
                                     <h5>Email</h5>
@@ -441,7 +486,7 @@
                         <img class="footer-logo" src="img/logo-dark.png" alt="Dise Logo">
                     </div>
                     <div class="col-xs-6 text-right sm-text-left">
-                        <p class="margin-b-0"><a class="fweight-700" > </a> 2019 <a class="fweight-700">Github Pages</a></p>
+                        <p class="margin-b-0">© 2019 GitHub, Inc.</a></p>
                     </div>
                 </div>
                 <!--// end row -->
