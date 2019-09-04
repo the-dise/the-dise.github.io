@@ -465,6 +465,15 @@ fieldset[disabled] .btn-theme {
   height: auto;
   display: block;
   background: #fff;
+  border-top-left-radius: 4px; 
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -ms-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -o-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   padding: 30px;
   margin: 0 auto;
   -webkit-transform: translate3d(0, -50%, 0);
@@ -710,8 +719,8 @@ fieldset[disabled] .btn-theme {
   position: absolute;
   top: 45px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: #f44336;
   opacity: 0;
@@ -838,79 +847,6 @@ fieldset[disabled] .btn-theme {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
-}
-
-/*--------------------------------------------------
-    [Back To Top Theme Button]
-----------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  display: inline-block;
-  z-index: 9;
-  width: 40px;
-  height: 40px;
-  font-size: 11px;
-  font-weight: 400;
-  color: #fff;
-  text-align: center;
-  line-height: 3;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  background: #515769;
-  border-radius: 3px;
-  visibility: hidden;
-  opacity: 0;
-  padding: 5px;
-  -webkit-transform: translate3d(0, 50px, 0);
-  -moz-transform: translate3d(0, 50px, 0);
-  transform: translate3d(0, 50px, 0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.back-to-top:hover {
-  color: #fff;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.back-to-top:focus, .back-to-top:hover {
-  text-decoration: none;
-}
-
-/* The Button Becomes Visible */
-.back-to-top.back-to-top-is-visible {
-  visibility: visible;
-  opacity: .6;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.back-to-top.back-to-top-is-visible:hover {
-  opacity: 1;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-/* If the user keeps scrolling down, the button is out of focus and becomes less visible */
-.back-to-top.back-to-top-fade-out {
-  opacity: .4;
-}
-
-.back-to-top.back-to-top-fade-out:hover {
-  opacity: 1;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
 /*------------------------------------------------------------------
@@ -1495,3 +1431,4 @@ fieldset[disabled] .btn-theme {
   font-family: googlesans, sans-serif;
   font-weight: 900;
 }
+
