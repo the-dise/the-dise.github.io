@@ -7,6 +7,29 @@ html, html a, body {
   -webkit-font-smoothing: antialiased;
 }
 
+@font-face {
+    font-family: 'googlesans';
+    src: local('Google Sans'),
+    local('productsans-regular'),
+        url('fonts/productsans-regular.woff2') format('woff2'),
+        url('fonts/productsans-regular.woff') format('woff'),
+        url('fonts/ProductSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+        url('fonts/MaterialIcons-Regular.woff2') format('woff2'),
+        url('fonts/MaterialIcons-Regular.woff') format('woff'),
+        url('fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
 body {
   position: relative;
   font-family: Roboto, sans-serif;
@@ -56,7 +79,7 @@ a:focus, a:hover, a:active {
   right: -15px;
   width: 9px;
   height: 2px;
-  background: #c62828;
+  background: #f44336;
   content: " ";
 }
 
@@ -106,19 +129,19 @@ h4 {
 
 ::selection {
   color: #fff;
-  background: #c62828;
+  background: #ef5350;
   text-shadow: none;
 }
 
 ::-webkit-selection {
   color: #fff;
-  background: #c62828;
+  background: #ef5350;
   text-shadow: none;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #c62828;
+  background: #ef5350;
   text-shadow: none;
 }
 
@@ -207,7 +230,7 @@ fieldset[disabled] .btn-theme {
 
 .btn-white-bg:hover, .btn-white-bg:focus, .btn-white-bg.focus {
   color: #fff;
-  background: #c62828;
+  background: #f44336;
   border-color: transparent;
 }
 
@@ -233,7 +256,7 @@ fieldset[disabled] .btn-theme {
 
 .btn-default-bg:hover, .btn-default-bg:focus, .btn-default-bg.focus {
   color: #fff;
-  background: #c62828;
+  background: #f44336;
   border-color: transparent;
 }
 
@@ -268,6 +291,7 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 .social-icons {
   display: inline-block;
+  fill: #fff;
   width: 40px;
   height: 40px;
   font-size: 16px;
@@ -282,6 +306,7 @@ fieldset[disabled] .btn-theme {
 
 .social-icons:hover {
   background: #fff;
+  fill: #515769;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -296,6 +321,8 @@ fieldset[disabled] .btn-theme {
 
 .promo-block .promo-block-title {
   font-size: 70px;
+  font-family: googlesans, sans-serif;
+  font-weight: 900;
   color: #fff;
   line-height: 1;
 }
@@ -308,7 +335,11 @@ fieldset[disabled] .btn-theme {
 
 .promo-block .promo-block-text {
   font-size: 25px;
-  color: #9e9e9e;
+  font-family: googlesans, sans-serif;
+  font-weight: 200;
+  color: #fff;
+  opacity: 0.5; /* Полупрозрачность элемента */
+
 }
 
 .promo-block .promo-block-divider {
@@ -503,7 +534,7 @@ fieldset[disabled] .btn-theme {
 /* Navbar */
 .header .navbar {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0px solid rgba(255, 255, 255, 0.2);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -561,7 +592,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .header .navbar-toggle:hover .toggle-icon {
-  background: #c62828;
+  background: #f44336;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -570,7 +601,7 @@ fieldset[disabled] .btn-theme {
 .header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
   width: 21px;
   height: 1px;
-  background: #c62828;
+  background: #f44336;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -656,10 +687,9 @@ fieldset[disabled] .btn-theme {
   position: relative;
   display: block;
   font-size: 13px;
-  font-weight: 600;
-  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-family: googlesans, sans-serif;
   color: #fff;
-  text-transform: uppercase;
   line-height: 55px;
   padding: 20px;
   transition-duration: 300ms;
@@ -669,6 +699,7 @@ fieldset[disabled] .btn-theme {
 
 .header .nav-item-child:hover, .header .nav-item-child:focus {
   background: inherit;
+  font-weight: 700; 
 }
 
 .header .nav-item-hover {
@@ -679,9 +710,10 @@ fieldset[disabled] .btn-theme {
   position: absolute;
   top: 45px;
   left: 0;
-  width: 9px;
-  height: 2px;
-  background: #c62828;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #f44336;
   opacity: 0;
   content: " ";
   transition-duration: 400ms;
@@ -779,7 +811,11 @@ fieldset[disabled] .btn-theme {
 @media (min-width: 992px) {
   .page-on-scroll .header .navbar {
     background: #fff;
-    border-bottom-color: #f0f0f0;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.30);
+    -ms-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.30);
+    -o-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.30);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.30);
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -925,7 +961,7 @@ fieldset[disabled] .btn-theme {
   	[Text Colors]
 ------------------------------------------------------------------*/
 .color-base {
-  color: #c62828 !important;
+  color: #f44336 !important;
 }
 
 .color-white {
@@ -956,7 +992,7 @@ fieldset[disabled] .btn-theme {
   	[Background Colors]
 ------------------------------------------------------------------*/
 .bg-color-base {
-  background: #c62828 !important;
+  background: #f44336 !important;
 }
 
 .bg-color-white {
@@ -1066,7 +1102,7 @@ fieldset[disabled] .btn-theme {
 
 .content-lg {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 /*------------------------------------------------------------------
@@ -1444,4 +1480,18 @@ fieldset[disabled] .btn-theme {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+}
+
+.googlesans {
+  font-family: googlesans, sans-serif;
+}
+
+.googlesansbold {
+  font-family: googlesans, sans-serif;
+  font-weight: 700;
+}
+
+.googlesansblack {
+  font-family: googlesans, sans-serif;
+  font-weight: 900;
 }
