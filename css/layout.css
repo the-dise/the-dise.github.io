@@ -561,7 +561,7 @@ fieldset[disabled] .btn-theme {
   height: 25px;
   border: none;
   padding: 0;
-  margin: 35px 0;
+  margin: 25px 0;
 }
 
 .header .navbar-toggle .toggle-icon {
@@ -742,51 +742,18 @@ fieldset[disabled] .btn-theme {
     (Change it to any breakpoint you want to be collapsed) */
   .header {
     background: #fff;
+    height: 75px
   }
-  .header .navbar-toggle {
-    display: block;
-  }
-  .header .navbar-collapse.collapse {
-    display: none !important;
-  }
-  .header .navbar-collapse.collapse.in {
-    display: block !important;
-  }
-  .header .nav-collapse {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .header .navbar-nav {
-    margin: 0;
-    float: none;
-  }
-  .header .navbar-nav .nav-item {
-    float: none;
-  }
-  /* Menu Container */
-  .header .menu-container:before, .header .menu-container:after {
-    content: " ";
-    display: table;
-  }
-  .header .menu-container:after {
-    clear: both;
-  }
+
   /* Logo */
   .header .logo .logo-img-main {
     display: none;
   }
   .header .logo .logo-img-active {
     display: inline-block;
-  }
-  /* Navbar Nav */
-  .header .nav-item-child {
-    color: #515769;
-    line-height: 1.4;
-    padding: 12px 12px 12px 15px;
-  }
-  .header .nav-item-hover:after {
-    position: absolute;
-    top: 19px;
+    width: 65px;
+    height: 50px;
+    float: left;
   }
 }
 
