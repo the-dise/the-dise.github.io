@@ -441,7 +441,7 @@ fieldset[disabled] .btn-theme {
   visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  overflow-x: hidden;
+  overflow-x: auto;
   background: rgba(81, 87, 105, 0.4);
   transition-duration: 300ms;
   transition-property: all;
@@ -553,6 +553,7 @@ fieldset[disabled] .btn-theme {
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  
 }
 
 /* Navbar Toggle */
@@ -1008,7 +1009,7 @@ fieldset[disabled] .btn-theme {
 
 .content-sm {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .content-md {
