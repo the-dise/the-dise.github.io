@@ -20,7 +20,7 @@
   --white: #fff;
   --gray: #1d1e2f;
   --gray-dark: #11111d;
-  --primary: #28a745;
+  --primary: #dc3545;
   --secondary: #16a4de;
   --success: #17b06b;
   --info: #2983fe;
@@ -61,7 +61,7 @@ body {
   line-height: 1.5;
   color: #e4e2ff;
   text-align: left;
-  background-color: #0c0d16; }
+  background-color: #000; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -2380,8 +2380,8 @@ fieldset:disabled a.btn {
 
 .btn-danger {
   color: #fff;
-  background-color: #ff3c5c;
-  border-color: #ff3c5c; }
+  background-color: #ff163c;
+  border-color: #ff0931; }
   .btn-danger:hover {
     color: #fff;
     background-color: #ff163c;
@@ -8540,10 +8540,10 @@ button.bg-dark:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #714cdf !important; }
+  color: #ff3c5c !important; }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #4922bd !important; }
+  color: #dc3545 !important; }
 
 .text-secondary {
   color: #16a4de !important; }
