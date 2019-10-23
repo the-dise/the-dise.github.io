@@ -1,85 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>DMGC</title>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>DMGC</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://the-dise.github.io/css/bootstrap.css">
-    
-  </head>
-  <body>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-	<nav class="navbar navbar-expand-lg navbar-dark" style="padding-top: 16px; padding-bottom: 0px">
-	    <a class="navbar-brand text-white text-mono" href="#">
-			<svg style="padding-bottom: 9px" x="0px" y="0px" width="67px" height="27px" viewBox="0 0 285.5 67.1">
-				<path fill="#fff" d="M159.8,0.2v20.2c-1-1.4-2.7-2.8-5.2-4c-2.5-1.3-5.6-2-9.4-2c-4.2,0-8.1,1.1-11.9,3.3v0l-7,17.3l-4.3,10.8c0.8,5.8,3.3,10.7,7.2,14.5c4.4,4.3,9.9,6.4,16.7,6.4s11.5-2.4,14.4-7.1v5.3h14.4V0.2H159.8z M148.4,53.4c-7,0-12.7-5.7-12.7-12.7c0-7,5.7-12.7,12.7-12.7c7,0,12.7,5.7,12.7,12.7C161.1,47.8,155.4,53.4,148.4,53.4z M179.8,5v10.6h13.7V5H179.8z M179.8,20v45.1h5.3l8.3,0V20H179.8z M226.7,37.9c-1.8-1-4.9-2.1-9.3-3.4c0,0-0.1,0-0.1,0c-0.3-0.1-0.6-0.2-0.9-0.3c-1.1-0.4-2.1-0.7-2.9-1c-0.8-0.3-1.6-0.6-2.4-1c-0.1,0-0.2-0.1-0.3-0.2c-0.1,0-0.2-0.1-0.3-0.2c-0.5-0.3-0.9-0.6-1.2-1c-0.4-0.5-0.6-1-0.6-1.5c0-0.8,0.4-1.6,1-2.3c0.7-0.7,1.8-1.1,3.2-1.1c1,0,1.8,0.2,2.5,0.5c0.7,0.3,1.2,0.7,1.4,1.2c0.3,0.5,0.4,0.8,0.5,1.1c0.1,0.3,0.1,0.6,0.1,0.8h14.6c-0.3-2.4-0.9-4.5-1.9-6.4c-1-1.9-2.2-3.4-3.5-4.5c-1.3-1.1-2.9-2-4.6-2.7c-1.7-0.7-3.3-1.2-4.7-1.4c-1.4-0.3-2.8-0.4-4.1-0.4h-0.2c-2.8,0-5.4,0.5-7.9,1.4c0,0,0,0,0,0c-1.1,0.4-5.8,2.5-8.3,7.8c-0.3,0.6-3,6.7,0.1,12.8c0,0,2.7,5.4,8.8,7.7c1.6,0.6,3.6,1.3,3.6,1.3c1.3,0.5,2.4,0.8,3.1,1.1c0.7,0.3,1.5,0.5,2.3,0.9c0.8,0.3,1.5,0.6,1.9,0.9c0.4,0.2,0.8,0.5,1.2,0.9l0,0c0.4,0.3,0.6,0.7,0.7,1c0.1,0.4,0.2,0.8,0.2,1.3c0,1.2-0.5,2.1-1.6,2.8c-1,0.7-2.3,1.1-3.7,1.1c-0.4,0-0.7,0-1.1-0.1c-0.4-0.1-0.9-0.2-1.6-0.5c-0.7-0.3-1.3-0.7-1.8-1.4c-0.5-0.7-0.8-1.6-0.9-2.6h-14.8c0.3,3.1,1.2,5.8,2.6,8.1s3.2,4,5.2,5.1c2,1.1,4.1,2,6.1,2.5c2,0.5,4.1,0.8,6.2,0.8c3.7,0,7-0.7,10-2c3-1.3,5.4-3.3,7.3-6c1.9-2.6,2.8-5.7,2.8-9.2C233.7,44.7,231.3,40.7,226.7,37.9z M285,45.7c0.3-1.7,0.5-3.4,0.5-5.2c0-1.7-0.2-3.3-0.5-4.9C282.8,23.3,272,14,259,14c-14.6,0-26.5,11.9-26.5,26.5c0,14.6,11.9,26.5,26.5,26.5c10.9,0,20.3-6.6,24.4-16.1h-15.8c-2.1,1.8-5.2,3-8.6,3c-6,0-10.9-3.6-11.5-8.2H285z M259,27.4c6,0,10.9,3.6,11.5,8.2h-23.1C248.1,31,253,27.4,259,27.4z"/>
-				<path fill="#dc3545" d="M0,27.5V16.1h7V0h14.4v16.1h7.2v11.5h-7.2v37.5l-8.5,0H7V27.5H0z M61,15.5c-1.3-0.4-2.7-0.6-4.1-0.7c-0.3,0-0.6,0-0.9,0c-0.3,0-0.6,0-0.9,0c-3.3,0.2-6.4,1.2-9,3c-0.9,0.6-1.7,1.2-2.5,2V0h-15v65h15V37.6c0-0.3,0-0.6,0-0.8c0-0.2,0-0.3,0-0.5c0-0.6,0.1-1.1,0.2-1.7c0.6-2.9,2.8-5.1,5.6-5.9c0.6-0.2,1.3-0.3,2-0.3c0.6,0,1.2,0.1,1.8,0.2c0,0,0,0,0,0c3.3,0.8,5.8,3.7,6,7.1c0,0.1,0,0.2,0,0.3v0.2c0,0.5,0,1.2,0,1.9V65H74V32.8C74,24.6,68.5,17.7,61,15.5z M100.5,14.1C85.9,14.1,74,26,74,40.6s11.9,26.5,26.5,26.5c5.5,0,10.5-1.7,14.8-4.5L120,51h-10.9c-2.1,1.8-5.2,3-8.6,3c-6,0-10.9-3.6-11.5-8.2h33.1l4.3-10.8v0C123.9,23.1,113.3,14.1,100.5,14.1z M89,35.7c0.6-4.6,5.5-8.2,11.5-8.2s10.9,3.6,11.5,8.2H89z"/>
-			</svg></a>
-	    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-			<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-	    		<path fill="#fff" d="M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z" />
-			</svg>
-	    </button>
+  <link rel="stylesheet" href="https://the-dise.github.io/css/bootstrap.css">
 
-	    <div class="navbar-collapse collapse" id="navbarsExample09" style="">
-	      <ul class="navbar-nav mr-auto">
-	        <li class="nav-item active">
-	          <a class="nav-link pl-md-0 p-3 text-decoration-none text-light text-mono" href="https://the-dise.github.io/">Home</span></a>
-	        </li>
-	       	<li class="nav-item">
-	          <a class="nav-link  pl-md-0 p-3 text-decoration-none text-light text-mono" href="https://t.me/Gemify">Gemify</a>
-	        </li>
-          <li class="nav-item">
-            <a class="nav-link  pl-md-0 p-3 text-decoration-none text-primary text-mono" href="https://the-dise.github.io/dmgc/"><b>DMGC</b></a>
-          </li>
-	      </ul>
-	    </div>
-	</nav>
+</head>
+<body>
 
 
-<div class="jumbotron bg-transparent mb-1 radius-3">
-  <div class="container">
+  <div class="jumbotron bg-transparent mb-1 radius-3">
+    <div class="container">
       <div class="row">
-        <div class="col-xl-6">
+        <div class="col-xl-7">
           <h1 class="display-2 text-mono">DMG<span class="vim-caret">C</span></h1>
-          <div class="lead mb-3 text-mono text-primary">Dise's Modification Google Camera</div>       
+          <div class="lead mb-3 text-mono text-info">Dise's Modification Google Camera</div>       
           <p class=" text-grey text-spacey text-mono">
-            <b>About:</b>
-            <br>
-              DMGC is the Google Camera port which differs from others in the minimum number of settings and great stability.
+            is the port Google Camera with minimum settings and great stability.
           </p>
           <div class="mt-5 text-mono">
-            <a href="https://the-dise.github.io/dmgc/repo/" class="btn btn-sm btn-shadow btn-danger my-1 my-sm-0 text-mono">
-              <span class="fas">
-                <svg class="icon" viewBox="0 0 24 24">
-                  <path d="M13,5V11H14.17L12,13.17L9.83,11H11V5H13M15,3H9V9H5L12,16L19,9H15V3M19,18H5V20H19V18Z" />
-                </svg>
-              </span>
-              Repository
-            </a>
-            <!-- <a href="https://the-dise.github.io/dmgc/list-devices.html" class="btn btn-sm btn-shadow btn-dark my-1 my-sm-0 text-mono">
-              <span class="fas">
-                <svg class="icon" viewBox="0 0 24 24">
-                  <path d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z" />
-                </svg>
-              </span>
-              Supported devices
-            </a> -->
+            <!-- <a href="https://the-dise.github.io/dmgc/repo/" class="btn btn-sm btn-shadow btn-danger my-1 my-sm-0 text-mono"> <span class="fas"><svg class="icon" viewBox="0 0 24 24"><path d="M13,5V11H14.17L12,13.17L9.83,11H11V5H13M15,3H9V9H5L12,16L19,9H15V3M19,18H5V20H19V18Z" /></svg></span>Repository</a><a href="https://the-dise.github.io/dmgc/list-devices.html" class="btn btn-sm btn-shadow btn-dark my-1 my-sm-0 text-mono"><span class="fas"><svg class="icon" viewBox="0 0 24 24"><path d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z" /></svg></span>Supported devices</a> -->
+
+            <div class="ht-tm-codeblock">
+              <table class="table table-hover table-striped ht-tm-element">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Changelog</th>
+                  </tr>
+                </thead>
+                <tbody >
+
+                  <tr>
+                    <th>12</th>
+                    <th>
+                      <a href="https://t.me/thedisech/654" class="text-info">
+                        DMGC 7.0.009 ver.0.4
+                      </a>
+                    </th>
+                    <td class="text-muted">22 Oct. 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-04.html" class="btn btn-sm btn-info my-1 my-sm-0">
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>11</th>
+                    <th>
+                      <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.3-dogfood.apk" class="text-info">
+                        DMGC 7.0.009 ver.0.3
+                      </a>
+                    </th>
+                    <td class="text-muted">26 Sept. 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-03.html" class="btn btn-sm btn-info my-1 my-sm-0">
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>10</th>
+                    <th>
+                      <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.2-dogfood.apk" class="text-info">
+                        DMGC 7.0.009 ver.0.2
+                      </a>
+                    </th>
+                    <td class="text-muted">24 Sept. 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-02.html" class="btn btn-sm btn-info my-1 my-sm-0">
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>09</th>
+                    <th>
+                      <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.1-dogfood.apk" class="text-info">
+                        DMGC 7.0.009 ver.0.1
+                      </a>
+                    </th>
+                    <td class="text-muted">16 Sept. 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-01.html" class="btn btn-sm btn-info my-1 my-sm-0">
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>08</th>
+                    <th>
+                      <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.1-dogfood.apk" class="text-info">
+                        DMGC 6.2.030 ver.1.6
+                      </a>
+                    </th>
+                    <td class="text-muted">1 July 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-01.html" class="btn btn-sm btn-info disabled my-1 my-sm-0">
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>07</th>
+                    <th>
+                      <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.1-dogfood.apk" class="text-info">
+                        DMGC 6.2.030 ver.1.5.1
+                      </a>
+                    </th>
+                    <td class="text-muted">25 June 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-01.html" class="btn btn-sm btn-info disabled my-1 my-sm-0">
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>06</th>
+                    <th>
+                      <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.1-dogfood.apk" class="text-info">
+                        DMGC 6.2.030 ver.1.5
+                      </a>
+                    </th>
+                    <td class="text-muted">25 June 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-01.html" class="btn btn-sm btn-info disabled my-1 my-sm-0">
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>05</th>
+                    <th>
+                      <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.1-dogfood.apk" class="text-info">
+                        DMGC 6.2.030 ver.1.4
+                      </a>
+                    </th>
+                    <td class="text-muted">24 June 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-01.html" class="btn btn-sm btn-info disabled my-1 my-sm-0">
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>04</th>
+                    <th>
+                      <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.1-dogfood.apk" class="text-info">
+                        DMGC 6.2.030 ver.1.3
+                      </a>
+                    </th>
+                    <td class="text-muted">22 June 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-01.html" class="btn btn-sm btn-info disabled my-1 my-sm-0">
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>03</th>
+                    <th>
+                      <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.1-dogfood.apk" class="text-info">
+                        DMGC 6.2.030 ver.1.2
+                      </a>
+                    </th>
+                    <td class="text-muted">2 June 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-01.html" class="btn btn-sm btn-info disabled my-1 my-sm-0">
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>02</th>
+                    <th>
+                      <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.1-dogfood.apk" class="text-info">
+                        DMGC 6.2.030 ver.1.1
+                      </a>
+                    </th>
+                    <td class="text-muted">28 May 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-01.html" class="btn btn-sm btn-info disabled my-1 my-sm-0">
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>01</th>
+                    <th>
+                      <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.1-dogfood.apk" class="text-info">
+                        DMGC 6.2.030 ver.1.0
+                      </a>
+                    </th>
+                    <td class="text-muted">27 May 2019</td>
+                    <td>          
+                      <a href="https://the-dise.github.io/dmgc/repo/changelog-dmgc-70009-01.html" class="btn btn-sm btn-info disabled my-1 my-sm-0" disabled>
+                        <span class="fas fa-edit mr-1"></span>
+                        Changelog
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="text-center text-muted text-mono" style="font-size: 10px">APK will be download from <a class="text-info" href="https://www.celsoazevedo.com/">celsoazevedo.com</a></div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
-</div>
+  <footer class="page-footer font-small blue" style="font-size: 12px">
+    <div class="footer-copyright text-center py-3">
+      <a href="https://the-dise.github.io" class="text-info text-mono"> / the_dise</a>
+    </div>
+  </footer>    
+
+<!--<div class="tm-footer">
+      <a href="#" title="Fuck you! :)">
+        <svg style="enable-background:new 0 0 89 21;">
+          <path style="fill: #FFFFFF" d="M49.6,0.1v6.3C49.3,6,48.8,5.6,48,5.2c-0.8-0.4-1.7-0.6-2.9-0.6c-1.3,0-2.5,0.3-3.7,1v0L39.3,11l-1.4,3.3
+          c0.3,1.8,1,3.3,2.2,4.5c1.4,1.3,3.1,2,5.2,2c2.1,0,3.6-0.7,4.5-2.2v1.7h4.5V0.1H49.6z M46.1,16.7c-2.2,0-3.9-1.8-3.9-3.9
+          c0-2.2,1.8-3.9,3.9-3.9c2.2,0,3.9,1.8,3.9,3.9C50,14.9,48.3,16.7,46.1,16.7z M55.8,1.6v3.3h4.2V1.6H55.8z M55.8,6.3v14h1.7l2.6,0
+          v-14H55.8z M70.4,11.9c-0.6-0.3-1.5-0.7-2.9-1.1c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c-0.4-0.1-0.7-0.2-0.9-0.3
+          c-0.2-0.1-0.5-0.2-0.7-0.3c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0c-0.2-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.2-0.3-0.2-0.5
+          c0-0.3,0.1-0.5,0.3-0.7c0.2-0.2,0.5-0.3,1-0.3c0.3,0,0.6,0,0.8,0.1c0.2,0.1,0.4,0.2,0.4,0.4c0.1,0.1,0.1,0.3,0.2,0.4
+          c0,0.1,0,0.2,0,0.3h4.5c-0.1-0.7-0.3-1.4-0.6-2c-0.3-0.6-0.7-1-1.1-1.4C70,5.5,69.5,5.2,69,5c-0.5-0.2-1-0.4-1.5-0.4
+          c-0.4-0.1-0.9-0.1-1.3-0.1h-0.1c-0.9,0-1.7,0.1-2.5,0.4c0,0,0,0,0,0C63.4,5,62,5.7,61.2,7.3c-0.1,0.2-0.9,2.1,0,4
+          c0,0,0.8,1.7,2.7,2.4c0.5,0.2,1.1,0.4,1.1,0.4c0.4,0.1,0.7,0.3,1,0.3c0.2,0.1,0.5,0.2,0.7,0.3c0.3,0.1,0.5,0.2,0.6,0.3
+          c0.1,0.1,0.2,0.2,0.4,0.3l0,0c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4c0,0.4-0.2,0.7-0.5,0.9c-0.3,0.2-0.7,0.3-1.1,0.3
+          c-0.1,0-0.2,0-0.3,0c-0.1,0-0.3-0.1-0.5-0.1c-0.2-0.1-0.4-0.2-0.6-0.4c-0.2-0.2-0.3-0.5-0.3-0.8h-4.6c0.1,1,0.4,1.8,0.8,2.5
+          c0.4,0.7,1,1.2,1.6,1.6c0.6,0.4,1.3,0.6,1.9,0.8c0.6,0.2,1.3,0.2,1.9,0.2c1.1,0,2.2-0.2,3.1-0.6c0.9-0.4,1.7-1,2.3-1.9
+          c0.6-0.8,0.9-1.8,0.9-2.9C72.6,13.9,71.8,12.7,70.4,11.9z M88.5,14.3c0.1-0.5,0.2-1.1,0.2-1.6c0-0.5,0-1-0.1-1.5
+          c-0.7-3.8-4.1-6.7-8.1-6.7c-4.5,0-8.2,3.7-8.2,8.2c0,4.5,3.7,8.2,8.2,8.2c3.4,0,6.3-2.1,7.6-5h-4.9c-0.7,0.6-1.6,0.9-2.7,0.9
+          c-1.9,0-3.4-1.1-3.6-2.5H88.5z M80.4,8.6c1.9,0,3.4,1.1,3.6,2.5h-7.2C77,9.7,78.6,8.6,80.4,8.6z M0,8.6V5.1h2.2v-5h4.5v5h2.2v3.6
+          H6.7v11.7l-2.7,0H2.2V8.6H0z M18.9,4.9c-0.4-0.1-0.8-0.2-1.3-0.2c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3,0c-1,0.1-2,0.4-2.8,0.9
+          C14,5.8,13.8,6,13.5,6.2V0.1H8.9v20.2h4.7v-8.5c0-0.1,0-0.2,0-0.3c0,0,0-0.1,0-0.1c0-0.2,0-0.4,0.1-0.5c0.2-0.9,0.9-1.6,1.7-1.8
+          C15.5,9,15.8,8.9,16,8.9c0.2,0,0.4,0,0.6,0.1c0,0,0,0,0,0c1,0.2,1.8,1.1,1.9,2.2c0,0,0,0.1,0,0.1v0.1c0,0.2,0,0.4,0,0.6v8.3H23v-10
+          C23,7.7,21.3,5.6,18.9,4.9z M31.2,4.5c-4.5,0-8.2,3.7-8.2,8.2s3.7,8.2,8.2,8.2c1.7,0,3.3-0.5,4.6-1.4l1.5-3.6h-3.4
+          c-0.7,0.6-1.6,0.9-2.7,0.9c-1.9,0-3.4-1.1-3.6-2.5h10.3l1.4-3.3v0C38.5,7.3,35.2,4.5,31.2,4.5z M27.6,11.2c0.2-1.4,1.7-2.5,3.6-2.5
+          c1.9,0,3.4,1.1,3.6,2.5H27.6z"/>
+        </svg>
+      </a>
+    </div> -->
     <script type="text/javascript">
       function showDiv() {
         document.getElementById('welcomeDiv').style.display = "block";
       }</script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+    </html>
