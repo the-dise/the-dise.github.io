@@ -41,6 +41,8 @@
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+          
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono&display=swap');
 
 html {
   font-family: sans-serif;
@@ -62,6 +64,8 @@ body {
   color: #e4e2ff;
   text-align: left;
   background-color: #000; }
+
+  https://github.com/mozilla/Fira/blob/master/ttf/FiraMono-Regular.ttf
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -9002,7 +9006,7 @@ body {
   color: #6f6974; }
 
 .text-mono {
-  font-family: 'Fira Mono', "Hack", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  font-family: 'Fira Mono', monospace; }
 
 .btn-success, .btn-success:hover, .btn-success:focus, .btn-success:active {
   color: #c1f8c2; }
