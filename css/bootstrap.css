@@ -9305,31 +9305,3 @@ body {
   padding-right: 1.5rem !important;  
 }
 
-.demotable {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: center;
-}
-.demotable thead {
-  font-size: small;
-  text-align: right;
-}
-.demotable tbody td, .demotable tbody th {
-  border: 1px groove #e1d188;
-}
-.demotable tbody tr:nth-of-type(1) th {
-  background: #fff5d7;
-}
-.demotable a[href^="#all"], .demotable a[href="#close"] {
-  text-decoration: none;
-  border-bottom: 1px dashed;
-}
-
-[id^="all"] {
-position: ; 
-}
-[id^="all"]:target + table a[href^="#all"],
-[id^="all"]:not(:target) + table tbody tr:nth-of-type(n+0), /* 4 — это порядковый номер tr, после которого строки будут изначально удалены (включительно) */
-[id^="all"]:not(:target) + table a[href="#close"] {
-display: none;
-}
