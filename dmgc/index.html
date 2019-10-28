@@ -38,18 +38,31 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-7">
-          <h1 class="display-2 text-mono">DMG<span class="vim-caret">C</span></h1>
+          <h1 class="display-2 text-mono">DMG<span class="vim-caret">C</span></h1>(beta)
           <div class="lead mb-3 text-mono text-info">Dise's Modification Google Camera</div>       
           <p class=" text-grey text-spacey text-mono">
             Is the port Google Camera with minimum settings and great stability.
           </p>
           <!-- <a href="https://the-dise.github.io/dmgc/repo/" class="btn btn-sm btn-shadow btn-danger my-1 my-sm-0 text-mono"> <span class="fas"><svg class="icon" viewBox="0 0 24 24"><path d="M13,5V11H14.17L12,13.17L9.83,11H11V5H13M15,3H9V9H5L12,16L19,9H15V3M19,18H5V20H19V18Z" /></svg></span>Repository</a><a href="https://the-dise.github.io/dmgc/list-devices.html" class="btn btn-sm btn-shadow btn-dark my-1 my-sm-0 text-mono"><span class="fas"><svg class="icon" viewBox="0 0 24 24"><path d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z" /></svg></span>Supported devices</a> -->
-
+          <div class="btn-group btn-group-toggle list-group" data-toggle="buttons">
+            <label class="btn list-group-item active">
+              <input type="radio" name="options" id="radio-option-1" autocomplete="off" checked=""> Radio 1
+            </label>
+            <label class="btn list-group-item">
+              <input type="radio" name="options" id="radio-option-2" autocomplete="off"> Radio 2
+            </label>
+            <label class="btn list-group-item">
+              <input type="radio" name="options" id="radio-option-3" autocomplete="off"> Radio 2
+            </label>
+            <label class="btn list-group-item">
+              <input type="radio" name="options" id="radio-option-4" autocomplete="off"> Radio 2
+            </label>
+          </div>
           <div class="cont text-mono">
-            <label class="btn btn-sm btn-info my-1 my-sm-0" for="m1" id="btn1">7.0.009</label>
-            <label class="btn btn-sm btn-info my-1 my-sm-0" for="m2" id="btn2">6.2.030</label>
+            <label class="btn btn-sm btn-info my-1 my-sm-0" for="m2" id="btn1">7.0.009</label>
+            <label class="btn btn-sm btn-info my-1 my-sm-0" for="m3" id="btn2">6.2.030</label>
 
-            <label class="btn btn-sm btn-danger my-1 my-sm-0" for="m0" id="btn0">Recommended</label>
+            <label class="btn btn-sm btn-danger my-1 my-sm-0" for="m1" id="btn0">Recommended</label>
           </div>
 
           <div class="mt-5 text-mono">
@@ -57,7 +70,7 @@
             <div class="map">
 
               <!-- Version 7.0.009 -->
-              <input type="radio" name="map" id="m1" checked="checked" />
+              <input type="radio" name="map" id="m2" checked="checked" />
               <div class="goo-map" id="map1">
                 <div class="ht-tm-codeblock">
                   <table class="table table-hover table-striped ht-tm-element">
@@ -233,7 +246,7 @@
               </div>
 
               <!-- Version 6.2.030 -->
-              <input type="radio" name="map" id="m2" />
+              <input type="radio" name="map" id="m3" />
               <div class="goo-map" id="map2">            
                 <div class="ht-tm-codeblock">
                   <table class="table table-hover table-striped ht-tm-element">
@@ -539,53 +552,53 @@
                 </div>
 
 
-              <!-- Version Recommended -->
-              <input type="radio" name="map" id="m0" />
-              <div class="goo-map" id="map0">
-                <div class="ht-tm-codeblock">
-                  <table class="table table-hover table-striped ht-tm-element">
-                    <thead class="thead-dark">
-                      <tr>
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Changelog</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.6-PE.apk" class="text-info">
-                            DMGC 6.2.030 ver.1.6
-                          </a>
-                        </th>
-                        <td class="text-muted">1 July 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log6203016r">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log6203016r" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v1.6</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Forced Display P3 Color Space.</li>
-                                  <li>Due to numerous requests I returned AWB from version 1.3.</li>
-                                </ul> 
+                <!-- Version Recommended -->
+                <input type="radio" name="map" id="m1" />
+                <div class="goo-map" id="map0">
+                  <div class="ht-tm-codeblock">
+                    <table class="table table-hover table-striped ht-tm-element">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th>Name</th>
+                          <th>Date</th>
+                          <th>Changelog</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.6-PE.apk" class="text-info">
+                              DMGC 6.2.030 ver.1.6
+                            </a>
+                          </th>
+                          <td class="text-muted">1 July 2019</td>
+                          <td>          
+                            <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log6203016r">
+                              <span class="fas fa-edit mr-1"></span>
+                              Changelog
+                            </a>
+                          </td>
+                          <div class="modal fade" id="log6203016r" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v1.6</h4>
+                                  <a class="close" data-dismiss="modal" aria-label="Close">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                      <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                                    </svg>
+                                  </a>
+                                </div>
+                                <div class="modal-body">
+                                  <ul class="text-mono">
+                                    <li>Forced Display P3 Color Space.</li>
+                                    <li>Due to numerous requests I returned AWB from version 1.3.</li>
+                                  </ul> 
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                      </tr>
+                        </tr>
                       </tbody>
                     </table>
                     <div class="text-center text-muted text-mono" style="font-size: 10px">Files will be download from <a class="text-info" href="https://www.celsoazevedo.com/">celsoazevedo.com</a></div>
@@ -595,12 +608,7 @@
             </div>
           </div>
         </div>
-      </div>
-      <footer class="page-footer font-small blue" style="font-size: 12px">
-        <div class="footer-copyright text-center py-3">
-          <img src="https://the-dise.github.io/images/thediselogo.svg" alt="Dmitry «the_dise» Gavrilov | 1998-2019" height="18">
-        </div>
-      </footer>    
+      </div>    
       <script type="text/javascript"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
