@@ -7,6 +7,7 @@
   <title>DMGC</title>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
   <link rel="stylesheet" href="https://the-dise.github.io/css/bootstrap.css">
   <style>
@@ -14,603 +15,416 @@
     input[name="map"]:not(:checked)+div {
       display: none;
     }
-
-    .button {
-      border: gray 2px outset;
-      background-color: aliceblue;
-      user-select: none;
-      -moz-user-select: none;
-      -khtml-user-select: none;
-      -webkit-user-select: none;
-      -o-user-select: none;
-      padding: 2px;
-    }
-
-    .button:active {
-      border: gray 2px inset;
-    }
   </style>
 </head>
 <body>
-
-
-  <div class="jumbotron bg-transparent mb-1 radius-3">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-7">
-          <h1 class="display-2 text-mono">DMG<span class="vim-caret">C</span></h1>(beta)
-          <div class="lead mb-3 text-mono text-info">Dise's Modification Google Camera</div>       
-          <p class=" text-grey text-spacey text-mono">
-            Is the port Google Camera with minimum settings and great stability.
-          </p>
-          <!-- <a href="https://the-dise.github.io/dmgc/repo/" class="btn btn-sm btn-shadow btn-danger my-1 my-sm-0 text-mono"> <span class="fas"><svg class="icon" viewBox="0 0 24 24"><path d="M13,5V11H14.17L12,13.17L9.83,11H11V5H13M15,3H9V9H5L12,16L19,9H15V3M19,18H5V20H19V18Z" /></svg></span>Repository</a><a href="https://the-dise.github.io/dmgc/list-devices.html" class="btn btn-sm btn-shadow btn-dark my-1 my-sm-0 text-mono"><span class="fas"><svg class="icon" viewBox="0 0 24 24"><path d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z" /></svg></span>Supported devices</a> -->
-          <div class="btn-group btn-group-toggle list-group" data-toggle="buttons">
-            <label class="btn list-group-item active">
-              <input type="radio" name="options" id="radio-option-1" autocomplete="off" checked=""> Radio 1
-            </label>
-            <label class="btn list-group-item">
-              <input type="radio" name="options" id="radio-option-2" autocomplete="off"> Radio 2
-            </label>
-            <label class="btn list-group-item">
-              <input type="radio" name="options" id="radio-option-3" autocomplete="off"> Radio 2
-            </label>
-            <label class="btn list-group-item">
-              <input type="radio" name="options" id="radio-option-4" autocomplete="off"> Radio 2
-            </label>
-          </div>
-          <div class="cont text-mono">
-            <label class="btn btn-sm btn-info my-1 my-sm-0" for="m2" id="btn1">7.0.009</label>
-            <label class="btn btn-sm btn-info my-1 my-sm-0" for="m3" id="btn2">6.2.030</label>
+     <a></a>
+     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" style="align-items: right">
+       <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+         <path fill="#fff" d="M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z" />
+       </svg>
+     </button>
 
-            <label class="btn btn-sm btn-danger my-1 my-sm-0" for="m1" id="btn0">Recommended</label>
-          </div>
+     <div class="navbar-collapse collapse container" id="navbar" style="">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+           <a class="nav-link pl-md-0 p-3 text-decoration-none text-light text-mono" href="https://the-dise.github.io">About</span></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link  pl-md-0 p-3 text-decoration-none text-info text-mono" href="#"><b>DMGC</b></a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link  pl-md-0 p-3 text-decoration-none text-light text-mono" href="https://the-dise.github.io/fatch/">Fatch</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-          <div class="mt-5 text-mono">
+  <div class="jumbotron bg-transparent container mb-1 radius-3 text-mono">
+    <h1 class="display-2 text-mono">DMG<span class="vim-caret">С</span></h1>
+    <div class="lead mb-3 text-mono text-info">Dise's Modification Google Camera</div>       
+    <p class=" text-grey text-spacey text-mono">
+      Is the port Google Camera with minimum settings and great stability.
+    </p>
+    <div class="row">
+      <div class="col-md-3">
+        <div role="group" data-toggle="btn" class="list-group btn-group-vertical text-mono" style="padding-bottom: 20px">
+          <label for="m1" id="btn1" class="btn btn-outline-success active" style="margin-bottom: 15px; border-radius: 6px">Recommended</label>
+          <label for="m2" id="btn2" class="btn btn-outline-info" style="margin-bottom: 0px; border-top-right-radius: 6px;border-top-left-radius: 6px">versions 2.x</label>
+          <label for="m3" id="btn4" class="btn btn-outline-info" style="margin-bottom: 0px;">versions 1.x</label>
+        </div>
+      </div>
+      <script>
+        $('.btn-group-vertical label').on('click', function(){
+          $(this).siblings().removeClass('active')
+          $(this).addClass('active');
+        })
+      </script>
 
-            <div class="map">
-
-              <!-- Version 7.0.009 -->
-              <input type="radio" name="map" id="m2" checked="checked" />
-              <div class="goo-map" id="map1">
-                <div class="ht-tm-codeblock">
-                  <table class="table table-hover table-striped ht-tm-element">
-                    <thead class="thead-dark">
-                      <tr>
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Changelog</th>
-                      </tr>
-                    </thead>
-                    <tbody >
-
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.4.apk" class="text-info">
-                            DMGC 7.0.009 ver.0.4
-                          </a>
-                        </th>
-                        <td class="text-muted">22 Oct. 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log7000904">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log7000904" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v0.4</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Added Google Photos switch;</li>
-                                  <li>Added Rewind Mode (Mc Fly); <a class="text-muted">Thanks Parrot043</a></li>
-                                  <li>Disable zoom on the portrait mode;</li>
-                                  <li>New fix Slow Motion (only 1/4x);</li>
-                                  <li>Force Display P3;</li>
-                                  <li>Redesign icons.</li>
-                                </ul> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </tr>
-
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.4.apk" class="text-info">
-                            DMGC 7.0.009 ver.0.3
-                          </a>
-                        </th>
-                        <td class="text-muted">26 Sept. 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log7000903">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log7000903" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v0.3</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Fix Slow Motion;</li>
-                                  <li>Fix Portrait on the main camera;</li>
-                                  <li>Fix crash in Timelapse;</li>
-                                  <li>Added the ability to disable zoom on the main camera;</li>
-                                  <li>Added Focus Tracking switch;</li>
-                                  <li>Added a choice of 30/60 FPS;</li>
-                                  <li>Removed Dogfood menu;</li>
-                                  <li>JPEG Quality set 95%;</li>
-                                  <li>Something else but I forgot</li>
-                                </ul> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </tr>
-
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.4.apk" class="text-info">
-                            DMGC 7.0.009 ver.0.2
-                          </a>
-                        </th>
-                        <td class="text-muted">24 Sept. 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log7000902">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log7000902" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v0.2</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Fixed saving photos on Android 10;</li>
-                                </ul> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </tr>
-
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.0.009_ver.0.4.apk" class="text-info">
-                            DMGC 7.0.009 ver.0.1
-                          </a>
-                        </th>
-                        <td class="text-muted">16 Sept. 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log7000901">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log7000901" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v0.1</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Fix Hexagon. <a class="text-muted">Thanks Nullby;</a></li>
-                                  <li>Removed soap from the front camera;</li>
-                                  <li>Developer settings are activated (can twist something yourself);</li>
-                                  <br>
-                                  <b class="text-info">Bugs:</b>
-                                  <li>Slow Mo does not work;</li>
-                                  <li>The portrait on the main camera does not work;</li>
-                                  <li>Autotimer does not work (formerly Photobooth).</li>
-                                </ul> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </tr>
-
-                    </tbody>
-                  </table>
-                  <div class="text-center text-muted text-mono" style="font-size: 10px">Files will be download from <a class="text-info" href="https://www.celsoazevedo.com/">celsoazevedo.com</a></div>
-                </div>
-              </div>
-
-              <!-- Version 6.2.030 -->
-              <input type="radio" name="map" id="m3" />
-              <div class="goo-map" id="map2">            
-                <div class="ht-tm-codeblock">
-                  <table class="table table-hover table-striped ht-tm-element">
-                    <thead class="thead-dark">
-                      <tr>
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Changelog</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.6-PE.apk" class="text-info">
-                            DMGC 6.2.030 ver.1.6
-                          </a>
-                        </th>
-                        <td class="text-muted">1 July 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log6203016">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log6203016" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v1.6</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Forced Display P3 Color Space.</li>
-                                  <li>Due to numerous requests I returned AWB from version 1.3.</li>
-                                </ul> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </tr>
-
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.5.1-PE.apk" class="text-info">
-                            DMGC 6.2.030 ver.1.5.1
-                          </a>
-                        </th>
-                        <td class="text-muted">25 June 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log62030151">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log62030151" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v1.5.1</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Fixed front camera on Redmi Note 5</li>
-                                </ul> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </tr>
-
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.5-PE.apk" class="text-info">
-                            DMGC 6.2.030 ver.1.5
-                          </a>
-                        </th>
-                        <td class="text-muted">25 June 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log6203015">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log6203015" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v1.5</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Added the ability to switch to "Display P3 Color Space". <a class="text-muted">Thanks Cstark27;</a></li>
-                                  <li>Divided AI AWB for Night Sight and Enhanced</li>
-                                </ul> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </tr>
-
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.4-PE.apk" class="text-info">
-                            DMGC 6.2.030 ver.1.4
-                          </a>
-                        </th>
-                        <td class="text-muted">24 June 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log6203014">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log6203014" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v1.4</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Fixed "Dots Erase";</li>
-                                  <li>Added switch "4K Timelapse"; <a class="text-muted">Thanks cstark27</a></li>
-                                  <li>Fixed zoom in portrait mode. 1.2x instead of 2x. (The presence of a zoom is recommended);</li>
-                                  <li>Redone AWB. Now should not be green;</li>
-                                  <li>Delete unused resources.</li>
-                                </ul> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </tr>
-
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.3-PE.apk" class="text-info">
-                            DMGC 6.2.030 ver.1.3
-                          </a>
-                        </th>
-                        <td class="text-muted">22 June 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log6203013">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log6203013" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v1.3</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Finally, I came out of the drinking bout and fixed for all the bugs;</li>
-                                  <li>Added Automatic White Balance from Pixel 3;</li>
-                                  <li>Slightly raised the saturation of the image;</li>
-                                </ul> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </tr>
-
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.2-PE.apk" class="text-info">
-                            DMGC 6.2.030 ver.1.2
-                          </a>
-                        </th>
-                        <td class="text-muted">2 June 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log6203012">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log6203012" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v1.2</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Added "Lens Blur" mode;</li>
-                                  <li>Added resolution Time Lapse video;</li>
-                                  <li>Fixed choose Google Photos;</li>
-                                  <li>Quality of photos in "Lens Blur" 12Mpx;</li>
-                                </ul> 
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </tr>
-
-                      <tr>
-                        <th>
-                          <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.1-PE.apk" class="text-info">
-                            DMGC 6.2.030 ver.1.1
-                          </a>
-                        </th>
-                        <td class="text-muted">28 May 2019</td>
-                        <td>          
-                          <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log6203011">
-                            <span class="fas fa-edit mr-1"></span>
-                            Changelog
-                          </a>
-                        </td>
-                        <div class="modal fade" id="log6203011" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v1.1</h4>
-                                <a class="close" data-dismiss="modal" aria-label="Close">
-                                  <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="modal-body">
-                                <ul class="text-mono">
-                                  <li>Fixed broken install.</li>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </tr>
-
-                        <tr>
-                          <th>
-                            <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1-PE.apk" class="text-info">
-                              DMGC 6.2.030 ver.1.0
-                            </a>
-                          </th>
-                          <td class="text-muted">27 May 2019</td>
-                          <td>          
-                            <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log6203010">
-                              <span class="fas fa-edit mr-1"></span>
-                              Changelog
-                            </a>
-                          </td>
-                          <div class="modal fade" id="log6203010" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v1.0</h4>
-                                  <a class="close" data-dismiss="modal" aria-label="Close">
-                                    <svg width="24" height="24" viewBox="0 0 24 24">
-                                      <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                    </svg>
-                                  </a>
-                                </div>
-                                <div class="modal-body">
-                                  <ul class="text-mono">
-                                    <li>Optimization and tuning AWB. Reduction oversaturation;</li>
-                                    <li>Modified library. Reducing dark areas, reducing points and increasing detail.</li>
-                                    <li>Fix the Sabre and permanent activate. <a class="text-muted">Thanks to San1ty</a></li>
-                                    <li>Ability to select enh HDR+ in portrait mode. <a class="text-muted">Thanks BSG</a></li>
-                                    <li>Optimization for A2. Once again, Vendor must be from Android 9, otherwise the camera will not start.</li>
-                                    <li>Many minor fixes.</li>
-                                    <li>Be sure to check the telegraph link. There I show some changes with examples.</li>
-                                  </ul> 
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="text-center text-muted text-mono" style="font-size: 10px">Files will be download from <a class="text-info" href="https://www.celsoazevedo.com/">celsoazevedo.com</a></div>
-                  </div>
-                </div>
-
-
-                <!-- Version Recommended -->
-                <input type="radio" name="map" id="m1" />
-                <div class="goo-map" id="map0">
-                  <div class="ht-tm-codeblock">
-                    <table class="table table-hover table-striped ht-tm-element">
-                      <thead class="thead-dark">
-                        <tr>
-                          <th>Name</th>
-                          <th>Date</th>
-                          <th>Changelog</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th>
-                            <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.6-PE.apk" class="text-info">
-                              DMGC 6.2.030 ver.1.6
-                            </a>
-                          </th>
-                          <td class="text-muted">1 July 2019</td>
-                          <td>          
-                            <a class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log6203016r">
-                              <span class="fas fa-edit mr-1"></span>
-                              Changelog
-                            </a>
-                          </td>
-                          <div class="modal fade" id="log6203016r" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h4 class="modal-title text-info" id="exampleModalLabel">Changelog v1.6</h4>
-                                  <a class="close" data-dismiss="modal" aria-label="Close">
-                                    <svg width="24" height="24" viewBox="0 0 24 24">
-                                      <path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                                    </svg>
-                                  </a>
-                                </div>
-                                <div class="modal-body">
-                                  <ul class="text-mono">
-                                    <li>Forced Display P3 Color Space.</li>
-                                    <li>Due to numerous requests I returned AWB from version 1.3.</li>
-                                  </ul> 
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="text-center text-muted text-mono" style="font-size: 10px">Files will be download from <a class="text-info" href="https://www.celsoazevedo.com/">celsoazevedo.com</a></div>
-                  </div>
-                </div>
-              </div>
+      <!-- 7.2.011 -->
+      <div class="modal fade" id="log20" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-info" id="ModalLabel">Version 2.0</h4>
+              <a class="close" data-dismiss="modal" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></a>
+            </div>
+            <div class="modal-body">
+              Changelog:
+              <ul class="text-mono">
+                <li>Timelapse 4K;</li>
+                <li>Forced Display P3 Color Space;</li>
+                <li>Fix frontal camera on Redmi Note 5.</li>
+              </ul>
+              Bugs:
+              <ul>
+                <li>Slow Mo;</li>
+                <li>Portrait Mode;</li>
+                <li>Many other bugs.</li>
+              </ul>
+              <br>
+              <span class="badge badge-info">Google Camera 7.2.011</span>
+              <span class="badge badge-success">Android 10+</span>  <span class="badge badge-warning">Beta</span>
             </div>
           </div>
         </div>
-      </div>    
+      </div>
+
+      <!-- E N D -->
+
+      <!-- 6.2.030 -->
+      <div class="modal fade" id="log16" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-info" id="ModalLabel">Version 1.6</h4><a class="close" data-dismiss="modal" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></a>
+            </div>
+            <div class="modal-body">
+              Changelog:
+              <ul class="text-mono">
+                <li>Forced Display P3 Color Space.</li>
+                <li>Due to numerous requests I returned AWB from version 1.3.</li>
+              </ul>
+              <br>
+              <span class="badge badge-info">Google Camera 6.2.030</span>
+              <span class="badge badge-success">Android 9+</span>  <span class="badge badge-warning">Stable / Recommended</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="log151" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-info" id="ModalLabel">Version 1.5.1</h4><a class="close" data-dismiss="modal" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></a>
+            </div>
+            <div class="modal-body">
+              Changelog:
+              <ul class="text-mono">
+                <li>Fixed front camera on Redmi Note 5</li>
+              </ul>
+              <br>
+              <span class="badge badge-info">Google Camera 6.2.030</span>
+              <span class="badge badge-success">Android 9+</span>  <span class="badge badge-warning">Stable</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="log15" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-info" id="ModalLabel">Version 1.5</h4><a class="close" data-dismiss="modal" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></a>
+            </div>
+            <div class="modal-body">
+              Changelog:
+              <ul class="text-mono">
+                <li>Added the ability to switch to "Display P3 Color Space". <a class="text-muted">Thanks Cstark27;</a></li>
+                <li>Divided AI AWB for Night Sight and Enhanced</li>
+              </ul>
+              <br>
+              <span class="badge badge-info">Google Camera 6.2.030</span>
+              <span class="badge badge-success">Android 9+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="log14" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-info" id="ModalLabel">Version 1.4</h4><a class="close" data-dismiss="modal" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></a>
+            </div>
+            <div class="modal-body">
+              Changelog:
+              <ul class="text-mono">
+                <li>Fixed "Dots Erase";</li>
+                <li>Added switch "4K Timelapse"; <a class="text-muted">Thanks cstark27</a></li>
+                <li>Fixed zoom in portrait mode. 1.2x instead of 2x. (The presence of a zoom is recommended);</li>
+                <li>Redone AWB. Now should not be green;</li>
+                <li>Delete unused resources.</li>
+              </ul>
+              <br>
+              <span class="badge badge-info">Google Camera 6.2.030</span>
+              <span class="badge badge-success">Android 9+</span>  <span class="badge badge-warning">Stable</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="log13" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-info" id="ModalLabel">Version 1.3</h4><a class="close" data-dismiss="modal" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></a>
+            </div>
+            <div class="modal-body">
+              Changelog:
+              <ul class="text-mono">
+                <li>Added Automatic White Balance from Pixel 3;</li>
+                <li>Slightly raised the saturation of the image.</li>
+              </ul>
+              <br>
+              <span class="badge badge-info">Google Camera 6.2.030</span>
+              <span class="badge badge-success">Android 9+</span>  <span class="badge badge-warning">Stable</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="log12" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-info" id="ModalLabel">Version 1.2</h4><a class="close" data-dismiss="modal" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></a>
+            </div>
+            <div class="modal-body">
+              Changelog:
+              <ul class="text-mono">
+                <li>Added "Lens Blur" mode;</li>
+                <li>Added resolution Time Lapse video;</li>
+                <li>Fixed choose Google Photos;</li>
+                <li>Quality of photos in "Lens Blur" 12Mpx.</li>
+              </ul>
+              <br>
+              <span class="badge badge-info">Google Camera 6.2.030</span>
+              <span class="badge badge-success">Android 9+</span>  <span class="badge badge-warning">Stable</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="log11" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-info" id="ModalLabel">Version 1.1</h4><a class="close" data-dismiss="modal" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></a>
+            </div>
+            <div class="modal-body">
+              Changelog:
+              <ul class="text-mono">
+                <li>Fixed broken install.</li>
+              </ul>
+              <br>
+              <span class="badge badge-info">Google Camera 6.2.030</span>
+              <span class="badge badge-success">Android 9+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="log10" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-info" id="ModalLabel">Version 1.0</h4><a class="close" data-dismiss="modal" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></a>
+            </div>
+            <div class="modal-body">
+              Changelog:
+              <ul class="text-mono">
+                <li>Fixed broken install.</li>
+              </ul>
+              <br>
+              <span class="badge badge-info">Google Camera 6.2.030</span>
+              <span class="badge badge-success">Android 9+</span>  <span class="badge badge-warning">Release</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- E N D -->
+
+
+      <!-- Version Recommended -->
+
+      <input type="radio" name="map" id="m1" checked="checked" />
+      <div class="col-md-9">
+        <div class="goo-map" id="map0">
+          <div class="ht-tm-codeblock">
+            <table class="table table-hover table-striped">
+              <thead class="thead-dark"><tr><th>File</th><th>Date</th><th>Info</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.6-PE.apk" class="text-info">
+                      DMGC 1.6
+                    </a>
+                  </td>
+                  <th class="text-muted">31 Dec. 2019</th>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log16"><svg align="center" style="width:20px;height:20px" viewBox="0 0 26 26"><path fill="#fff" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" /></svg>Info</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-center text-muted text-mono" style="font-size: 10px">Files will be download from <a class="text-info" href="https://www.celsoazevedo.com/">celsoazevedo.com</a></div>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Version 7.2.011 -->
+
+      <input type="radio" name="map" id="m2" />
+      <div class="col-md-9">
+        <div class="goo-map" id="map0">
+          <div class="ht-tm-codeblock">
+            <table class="table table-hover table-striped">
+              <thead class="thead-dark"><tr><th>File</th><th>Date</th><th>Info</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="https://t.me/thedmgc/1591" class="text-info">
+                      DMGC 2.0 <span class="badge badge-warning">Beta</span>
+                    </a>
+                  </td>
+                  <th class="text-muted">27 Oct. 2019</th>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log20"><svg align="center" style="width:20px;height:20px" viewBox="0 0 26 26"><path fill="#fff" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/></svg>Info</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-center text-muted text-mono" style="font-size: 10px">Files will be download from <a class="text-info" href="https://www.celsoazevedo.com/">celsoazevedo.com</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version 6.2.030 -->
+
+      <input type="radio" name="map" id="m3" />
+      <div class="col-md-9">
+        <div class="goo-map" id="map0">
+          <div class="ht-tm-codeblock">
+            <table class="table table-hover table-striped">
+              <thead class="thead-dark"><tr><th>File</th><th>Date</th><th>Info</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.6-PE.apk" class="text-info">
+                      DMGC 1.6
+                    </a>
+                  </td>
+                  <th class="text-muted">1 July 2019</th>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log16"><svg align="center" style="width:20px;height:20px" viewBox="0 0 26 26"><path fill="#fff" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/></svg>Info</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.5.1-PE.apk" class="text-info">
+                      DMGC 1.5.1
+                    </a>
+                  </td>
+                  <th class="text-muted">25 June 2019</th>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log151"><svg align="center" style="width:20px;height:20px" viewBox="0 0 26 26"><path fill="#fff" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/></svg>Info</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.5-PE.apk" class="text-info">
+                      DMGC 1.5
+                    </a>
+                  </td>
+                  <th class="text-muted">25 June 2019</th>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log15"><svg align="center" style="width:20px;height:20px" viewBox="0 0 26 26"><path fill="#fff" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/></svg>Info</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.4-PE.apk" class="text-info">
+                      DMGC 1.4
+                    </a>
+                  </td>
+                  <th class="text-muted">24 June 2019</th>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log14"><svg align="center" style="width:20px;height:20px" viewBox="0 0 26 26"><path fill="#fff" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/></svg>Info</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.3-PE.apk" class="text-info">
+                      DMGC 1.3
+                    </a>
+                  </td>
+                  <th class="text-muted">22 June 2019</th>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log13"><svg align="center" style="width:20px;height:20px" viewBox="0 0 26 26"><path fill="#fff" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/></svg>Info</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.2-PE.apk" class="text-info">
+                      DMGC 1.2
+                    </a>
+                  </td>
+                  <th class="text-muted">2 June 2019</th>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log12"><svg align="center" style="width:20px;height:20px" viewBox="0 0 26 26"><path fill="#fff" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/></svg>Info</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1.1-PE.apk" class="text-info">
+                      DMGC 1.1
+                    </a>
+                  </td>
+                  <th class="text-muted">28 May 2019</th>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log11"><svg align="center" style="width:20px;height:20px" viewBox="0 0 26 26"><path fill="#fff" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/></svg>Info</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="https://f.celsoazevedo.com/file/cfiles/gcm1/DMGC_6.2.030_ver.1-PE.apk" class="text-info">
+                      DMGC 1.0
+                    </a>
+                  </td>
+                  <th class="text-muted">27 May 2019</th>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-info my-1 my-sm-0" data-toggle="modal" data-target="#log10"><svg align="center" style="width:20px;height:20px" viewBox="0 0 26 26"><path fill="#fff" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"/></svg>Info</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-center text-muted text-mono" style="font-size: 10px">Files will be download from <a class="text-info" href="https://www.celsoazevedo.com/">celsoazevedo.com</a></div>
+          </div>
+        </div>
+      </div>
+
       <script type="text/javascript"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
