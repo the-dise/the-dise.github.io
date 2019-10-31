@@ -2345,12 +2345,12 @@ fieldset:disabled a.btn {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(58, 188, 129, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(58, 188, 129, 0.5); }
   .btn-gemify.disabled, .btn-gemify:disabled {
-    color: #fff;
+    color: #000;
     background-color: #80c49f;
     border-color: #17b06b; }
   .btn-gemify:not(:disabled):not(.disabled):active, .btn-gemify:not(:disabled):not(.disabled).active,
   .show > .btn-gemify.dropdown-toggle {
-    color: #fff;
+    color: #000;
     background-color: #80c49f;
     border-color: #107849; }
     .btn-gemify:not(:disabled):not(.disabled):active:focus, .btn-gemify:not(:disabled):not(.disabled).active:focus,
