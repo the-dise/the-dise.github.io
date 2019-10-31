@@ -8611,10 +8611,10 @@ a.text-danger:hover, a.text-danger:focus {
   color: #ef0027 !important; }
 
 .text-light {
-  color: #ffffff !important; }
+  color: #f5f5f5 !important; }
 
 a.text-light:hover, a.text-light:focus {
-  color: #505050 !important; }
+  color: #bdbdbd !important; }
 
 .text-dark {
   color: #32334a !important; }
