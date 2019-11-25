@@ -8,7 +8,6 @@ window.addEventListener('load', () => {
   }
 });
 
-
 function initTheme() {
   const darkThemeSelected =
     localStorage.getItem('darkSwitch') !== null &&

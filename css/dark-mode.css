@@ -75,6 +75,14 @@
   color: #fff;
 }
 
+[data-theme="dark"] .social-icon {
+  fill: #fff;
+}
+
+[data-theme="dark"] .social-icon:hover {
+  fill: #f44336;
+}
+
 [data-theme="dark"] .brand-text {
   fill: #F5F5F5;
 }
