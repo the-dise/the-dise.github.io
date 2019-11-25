@@ -85,11 +85,11 @@ body {
   fill: #333;
 }
 
-.brand-red {
-  fill: #dc3545;
+.brand-main {
+  fill: #f44336;
 }
 
-.brand-blue {
+.brand-dmgc {
   fill: #2196F3;
 }
 
@@ -368,6 +368,16 @@ a:hover {
 .badge-dmgc {
   color: #fff;
   background-color: #616161;
+}
+
+.badge-unstable {
+  color: #fff;
+  background-color: #FF5722;
+}
+
+.badge-testing {
+  color: #fff;
+  background-color: #3F51B5;
 }
 
 .badge-info {
