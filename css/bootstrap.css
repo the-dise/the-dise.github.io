@@ -138,10 +138,10 @@ body {
   padding: 0 1.5rem;
 }
 .cover .btn-md {
-  color: #333;
+  color: #212121;
   border-radius: 10px;
   border-width: 2px;
-  border-color: #333;
+  border-color: #212121;
   background-color: transparent;
   padding: 1rem 1.5rem;
   font-weight: 500;
@@ -150,10 +150,6 @@ body {
 
 .mastfoot {
   color: #444444;
-}
-
-.mastfoot:hover {
-  color: #dc3545;
 }
 
 .gsregular {
@@ -277,14 +273,12 @@ body {
 }
 
 .btn-gemify:hover {
-  color: #fff;
   background-color: #69F0AE;
   border-color: #69F0AE;
 }
 
 .btn-gemify:not(:disabled):not(.disabled):active, .btn-gemify:not(:disabled):not(.disabled).active,
 .show > .btn-gemify.dropdown-toggle {
-  color: #fff;
   background-color: #69F0AE;
   border-color: #69F0AE;
 }

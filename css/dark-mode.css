@@ -49,12 +49,6 @@
   border: .05rem solid #fff;
 }
 
-[data-theme="dark"] .cover .btn-md {
-  color: #fff;
-  border-color: #fff;
-
-}
-
 [data-theme="dark"] .nav-masthead .nav-link {
 
   color: #9E9E9E;
