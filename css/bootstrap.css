@@ -297,6 +297,39 @@ body {
   border-color: #69F0AE;
 }
 
+.btn-web {
+  color: #212121;
+  border-color: #212121;
+}
+
+.btn-web:hover {
+  background-color: #607D8B;
+  border-color: #607D8B;
+}
+
+.btn-web:not(:disabled):not(.disabled):active, .btn-web:not(:disabled):not(.disabled).active,
+.show > .btn-web.dropdown-toggle {
+  background-color: #607D8B;
+  border-color: #607D8B;
+}
+
+.btn-telegram {
+  color: #212121;
+  border-color: #212121;
+}
+
+.btn-telegram:hover {
+  background-color: #03A9F4;
+  border-color: #03A9F4;
+}
+
+.btn-telegram:not(:disabled):not(.disabled):active, .btn-telegram:not(:disabled):not(.disabled).active,
+.show > .btn-telegram.dropdown-toggle {
+  background-color: #03A9F4;
+  border-color: #03A9F4;
+}
+
+
 .table th,
 .table td {
   padding: 0.75rem;
