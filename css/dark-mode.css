@@ -85,7 +85,6 @@
   fill: #F5F5F5;
 }
 
-
 [data-theme="dark"] .modal-content {
   background-color: #333;
 }
@@ -169,4 +168,23 @@ a:hover {
   color: #fff;
   background-color: #2196F3;
   border-color: #2196F3;
+}
+
+
+[data-theme="dark"] .btn-gemify {
+  color: #fff;
+  border-color: #fff;
+}
+
+[data-theme="dark"] .btn-gemify:hover {
+  color: #212121;
+  background-color: #69F0AE;
+  border-color: #69F0AE;
+}
+
+[data-theme="dark"] .btn-gemify:not(:disabled):not(.disabled):active, .btn-gemify:not(:disabled):not(.disabled).active,
+.show > .btn-gemify.dropdown-toggle {
+  color: #212121;
+  background-color: #69F0AE;
+  border-color: #69F0AE;
 }
