@@ -24,6 +24,26 @@
   font-family: 'Fira Mono', monospace; 
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 a,
 a:hover {
   color: #dc3545;
@@ -197,22 +217,55 @@ body {
   visibility: hidden;
 }
 
-.btn-outline {
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-outline-dmgc {
   color: #212121;
   border-color: #212121;
 }
 
-.btn-outline:hover {
+.btn-outline-dmgc:hover {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #2196F3;
+  border-color: #2196F3;
 }
 
-.btn-outline:not(:disabled):not(.disabled):active, .btn-outline:not(:disabled):not(.disabled).active,
-.show > .btn-outline.dropdown-toggle {
+.btn-outline-dmgc:focus, .btn-outline-dmgc.focus {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(33,150,243,0.5);
+}
+
+.btn-outline-dmgc.disabled, .btn-outline-dmgc:disabled {
+  color: #2196F3;
+  background-color: transparent;
+}
+
+.btn-outline-dmgc:not(:disabled):not(.disabled):active, .btn-outline-dmgc:not(:disabled):not(.disabled).active,
+.show > .btn-outline-info.dropdown-toggle {
+  color: #fff;
+  background-color: #2196F3;
+  border-color: #2196F3;
+}
+
+.btn-outline-dmgc:not(:disabled):not(.disabled):active:focus, .btn-outline-dmgc:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-dmgc.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(33,150,243,0.5);
 }
 
 .btn-gemify {
@@ -266,7 +319,7 @@ a:hover {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 20px;
+  border-radius: 10rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -284,7 +337,9 @@ a:hover {
 
 .badge-table {
   width: 4rem;
+  border-radius: 50%;
 }
+
 .btn .badge {
   position: relative;
   top: -1px; }

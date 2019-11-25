@@ -145,3 +145,31 @@
 a:hover {
   color: #BDBDBD;
 }
+
+
+[data-theme="dark"] .btn-outline-dmgc {
+  color: #f7f7f7;
+  border-color: #f7f7f7;
+}
+
+[data-theme="dark"] .btn-outline-dmgc:hover {
+  color: #f7f7f7;
+  background-color: #2196F3;
+  border-color: #2196F3;
+}
+
+[data-theme="dark"] .btn-outline-dmgc:focus, .btn-outline-dmgc.focus {
+  color: #f7f7f7;
+}
+
+[data-theme="dark"] .btn-outline-dmgc.disabled, .btn-outline-dmgc:disabled {
+  color: #2196F3;
+  background-color: transparent;
+}
+
+[data-theme="dark"] .btn-outline-dmgc:not(:disabled):not(.disabled):active, .btn-outline-dmgc:not(:disabled):not(.disabled).active,
+.show > .btn-outline-info.dropdown-toggle {
+  color: #fff;
+  background-color: #2196F3;
+  border-color: #2196F3;
+}
