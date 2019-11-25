@@ -215,22 +215,22 @@ body {
   border-color: #007bff;
 }
 
-.btn-main {
+.btn-gemify {
   color: #212121;
   border-color: #212121;
 }
 
-.btn-main:hover {
+.btn-gemify:hover {
   color: #fff;
-  background-color: #212121;
-  border-color: #212121;
+  background-color: #69F0AE;
+  border-color: #69F0AE;
 }
 
-.btn-main:not(:disabled):not(.disabled):active, .btn-main:not(:disabled):not(.disabled).active,
-.show > .btn-main.dropdown-toggle {
+.btn-gemify:not(:disabled):not(.disabled):active, .btn-gemify:not(:disabled):not(.disabled).active,
+.show > .btn-gemify.dropdown-toggle {
   color: #fff;
-  background-color: #212121;
-  border-color: #212121;
+  background-color: #69F0AE;
+  border-color: #69F0AE;
 }
 
 .table th,
