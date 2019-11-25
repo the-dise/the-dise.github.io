@@ -431,14 +431,30 @@
                 <p>ver. 2.x — based on Google Camera 7.0.009</p>
                 <p>ver. 1.x — based on Google Camera 6.2.030</p>
                 <br>
-                <p>Status:</p>
+                <!-- потом доделаю и выставлю -->
+                <!--<p>Status:</p>
                 <p><span class="badge badge-table badge-dmgc">Release</span> — First open version</p>
                 <p><span class="badge badge-table badge-alpha">Alpha</span> — Developer testing version</p>
                 <p><span class="badge badge-table badge-testing">Testing</span> — Version is in closed beta test</p>
                 <p><span class="badge badge-table badge-beta">Beta</span> — Version is in open beta test</p>
                 <p><span class="badge badge-table badge-stable">Stable</span> — No contains significant bugs</p>
                 <p><span class="badge badge-table badge-unstable">Unstable</span> — Contains big bugs</p>
-                <p><span class="badge badge-table badge-dmgc">Final</span> — Very stable. Latest version of the app. There will be no updates</p>
+                <p><span class="badge badge-table badge-dmgc">Final</span> — Very stable. Latest version of the app. There will be no updates</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="devices" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title gsmedium" id="ModalLabel">Support Devices</h4>
+                <a class="close" data-dismiss="modal" aria-label="Close"><img src="https://the-dise.github.io/images/close.svg"></a>
+              </div>
+              <div class="modal-body gsregular">
+                <p>list wil be soon..</p>
+                <br>
               </div>
             </div>
           </div>
@@ -452,9 +468,14 @@
     <!-- M O D A L S  E N D -->
 
     <main role="main" class="inner cover">
-      <h1 class="display-4 cover-heading gsmedium">DMGC</h1>
+      <h1 class="display-4 cover-heading gsmedium" data-toggle="tooltip" data-placement="bottom" title="Dise's Modification Google Camera">DMGC</h1>
+      <script type="text/javascript">
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>
       <p class="lead gsregular">Port of Google Camera with minimum settings and great stability.</p>
-      <p class="gsregular"><a href="#">Support Devices</a> - <a href="#" data-toggle="modal" data-target="#versions">Information</a> - <a href="http://yasobe.ru/na/dmgc">Donation</a></p>
+      <p class="gsregular"><a href="#" data-toggle="modal" data-target="#devices">Support Devices</a> - <a href="#" data-toggle="modal" data-target="#versions">Information</a> - <a href="http://yasobe.ru/na/dmgc">Donation</a></p>
       <br>
       <div class="group gsregular" role="group" data-toggle="btn" style="padding-bottom: 50px">
         <label for="m0" id="btn1" class="btn btn-outline-dmgc active">Recommended</label>
