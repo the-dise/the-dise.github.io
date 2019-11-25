@@ -1,11 +1,21 @@
 @font-face {
  font-family: "Google Sans Regular";
- src: url("./fonts/GoogleSans-Regular.ttf") format("opentype")
+ src: url("https://github.com/sahibjotsaggu/Google-Sans-Fonts/blob/master/GoogleSans-Regular.ttf") format("opentype")
 }
 
 @font-face {
  font-family: "Google Sans Medium";
- src: url("./fonts/GoogleSans-Medium.ttf") format("opentype")
+ src: url("https://github.com/sahibjotsaggu/Google-Sans-Fonts/blob/master/GoogleSans-Medium.ttf") format("opentype")
+}
+
+@font-face {
+ font-family: "Google Sans Medium";
+ src: url("https://github.com/sahibjotsaggu/Google-Sans-Fonts/blob/master/GoogleSans-Bold.ttf") format("opentype")
+}
+
+@font-face {
+ font-family: "Google Sans Medium";
+ src: url("https://github.com/sahibjotsaggu/Google-Sans-Fonts/blob/master/GoogleSans-Italic.ttf") format("opentype")
 }
 
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono&display=swap');
