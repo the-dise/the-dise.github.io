@@ -85,9 +85,6 @@
   fill: #F5F5F5;
 }
 
-[data-theme="dark"] .brand-red {
-  fill: #dc3545;
-}
 
 [data-theme="dark"] .modal-content {
   background-color: #333;
