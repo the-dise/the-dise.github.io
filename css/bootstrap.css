@@ -73,6 +73,11 @@ body {
   fill: #2196F3;
 }
 
+.brand-gemify {
+  fill: #a9ffd0;
+}
+
+
 .masthead-brand {
   margin-bottom: 0;
 }
@@ -210,6 +215,23 @@ body {
   border-color: #007bff;
 }
 
+.btn-main {
+  color: #212121;
+  border-color: #212121;
+}
+
+.btn-main:hover {
+  color: #fff;
+  background-color: #212121;
+  border-color: #212121;
+}
+
+.btn-main:not(:disabled):not(.disabled):active, .btn-main:not(:disabled):not(.disabled).active,
+.show > .btn-main.dropdown-toggle {
+  color: #fff;
+  background-color: #212121;
+  border-color: #212121;
+}
 .table th,
 .table td {
   padding: 0.75rem;

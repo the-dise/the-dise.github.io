@@ -111,6 +111,25 @@
   border-color: #007bff;
 }
 
+[data-theme="dark"] .btn-main {
+  color: #fff;
+  border-color: #fff;
+}
+
+[data-theme="dark"] .btn-main:hover {
+  color: #212121;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+[data-theme="dark"] .btn-main:not(:disabled):not(.disabled):active, .btn-main:not(:disabled):not(.disabled).active,
+.show > .btn-main.dropdown-toggle {
+  color: #212121;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
 [data-theme="dark"] .table th,
 .table td {
   font-weight: 500;
