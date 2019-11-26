@@ -5,16 +5,116 @@
   <title>FatchOS</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://the-dise.github.io/css/bootstrap.css">
-  <link rel="stylesheet" href="https://the-dise.github.io/css/dark-mode.css">
-  <link rel="stylesheet" href="https://the-dise.github.io/css/icons.css">
-  <link rel="stylesheet" href="https://the-dise.github.io/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/bootstrap-grid.css">
 
-  <!-- Icon Font -->
+    <style type="text/css">
+    /* Light mode */
+    @media (prefers-color-scheme: light) {
+      body{background: #F5F5F5;color: #212121}
+      a{color: #444444}
+      a:hover{color: #FF5722}
+
+
+      .brand-text {
+        fill: #333;
+      }
+      .brand-main {
+        fill: #FF5722;
+      }
+      .nav-masthead .nav-link {
+        font-weight: 500;
+        color: #9E9E9E;
+        border-color: transparent;
+      }
+
+      .nav-masthead .active {
+        color: #212121;
+        border-bottom-color: #212121;
+      }
+
+      .nav-masthead .nav-link:hover,
+      .nav-masthead .nav-link:focus {
+        color: #FF5722;
+        border-bottom-color: #FF5722;
+      }
+
+      .social a {
+        background-color: rgba(0,0,0,.15);
+        text-align: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 100%;
+        line-height: 2.5rem;
+        fill: #212121;
+      }
+
+      .social a:hover {
+        fill: #dc3545;
+      }
+
+      .social a:active {
+        color: #fff;
+      }
+    }
+
+    /* Dark Theme */
+    @media (prefers-color-scheme: dark) {
+      body{background: #111; color: #F5F5F5}
+      a{color: #444444}
+      a:hover{color: #FF5722}
+
+
+      .brand-text {
+        fill: #f5f5f5;
+      }
+      .brand-main {
+        fill: #FF5722;
+      }
+      .nav-masthead .nav-link {
+        font-weight: 500;
+        color: #9E9E9E;
+        border-color: transparent;
+      }
+
+      .nav-masthead .active {
+        color: #f5f5f5;
+        border-bottom-color: #F5F5F5;
+      }
+
+      .nav-masthead .nav-link:hover,
+      .nav-masthead .nav-link:focus {
+        color: #FF5722;
+        border-bottom-color: #FF5722;
+      }
+
+      .social a {
+        background-color: rgba(255,255,255,.1);
+        text-align: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 100%;
+        line-height: 2.5rem;
+        fill: #F5F5F5;
+      }
+
+      .social a:hover {
+        fill: #dc3545;
+      }
+
+      .social a:active {
+        color: #fff;
+      }
+
+      .mastfoot {
+        color: #444444;
+      }
+    }
+  </style>
 
 </head>
-<body class="text-center">
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<body class="text-center noselect">
+  <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
       <div class="inner gsregular">
         <span class="masthead-brand">
@@ -28,16 +128,6 @@
           <a class="nav-link" href="https://the-dise.github.io/dmgc/">DMGC</a>
           <a class="nav-link" href="https://the-dise.github.io/gemify/">Gemify</a>
           <a class="nav-link active" href="#">FatchOS</a>
-
-          <a class="nav-link" href="#" >
-            <input type="checkbox" style="display: none;" id="darkSwitch" >
-            <label for="darkSwitch">
-              <svg class="brand-text" style="width:24px; height:24px" viewBox="0 0 30 30" >
-                <path d="M12,18V6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z" />
-              </svg>
-            </label>
-            <script src="https://the-dise.github.io/js/dark-mode-switch.js"></script>
-          </a>
         </nav>
       </div>
     </header>
@@ -46,7 +136,27 @@
       <h1 class="display-4 cover-heading gsbold">FatchOS</h1>
       <p class="lead gsregular">Сontents are being filled. Сome back later</p>
       <br>
-      <!-- <p>
+
+
+      <!-- 
+      <div id="carouselExample1" class="carousel slide z-depth-1-half" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg" alt="Third slide">
+            </div>
+            <div class="fatch-text justify-content-center">            
+              <h1 class="display-4 cover-heading gsbold">FatchOS</h1>
+              <p class="lead gsregular">Сontents are being filled. Сome back later</p>
+            </div>
+          </div>
+        </div>
+        <p>
         <a href="https://www.t.me/gemify" class="btn btn-md btn-gemify gsmedium">See more
         </a>
       </p> -->
@@ -54,7 +164,7 @@
 
     <footer class="mastfoot mt-auto small">
       <div class="inner gsregular">
-        <p>Copyright &copy; 2019 - the_dise - All Right Reserved</p>
+        <p>Copyright &copy; 2019 - <a href="https://the-dise.github.io">the_dise</a> - All Right Reserved</p>
       </div>
     </footer>
   </div>
