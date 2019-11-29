@@ -796,6 +796,40 @@ a:hover {
   box-shadow: 0 0 0 0.2rem rgba(33,150,243,0.5);
 }
 
+.btn-fatch {
+  color: #212121;
+  border-color: #212121;
+}
+
+.btn-fatch:hover {
+  color: #fff;
+  background-color: #FF7043;
+  border-color: #FF7043;
+  text-decoration: none;
+}
+
+.btn-fatch:focus, .btn-fatch.focus {
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(255,152,0, 0.5);
+}
+
+.btn-fatch.disabled, .btn-fatch:disabled {
+  color: #FF7043;
+  background-color: transparent;
+}
+
+.btn-fatch:not(:disabled):not(.disabled):active, .btn-fatch:not(:disabled):not(.disabled).active,
+.show > .btn-outline-info.dropdown-toggle {
+  color: #fff;
+  background-color: #FF7043;
+  border-color: #FF7043;
+}
+
+.btn-fatch:not(:disabled):not(.disabled):active:focus, .btn-fatch:not(:disabled):not(.disabled).active:focus,
+.show > .btn-fatch.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255,152,0, 0.5);
+}
+
 
 a.btn-info {
   color: #fff;
