@@ -976,6 +976,7 @@ a.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):
   transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  z-index: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -992,7 +993,7 @@ a.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):
 
 .carousel-item.bkg {
   display: block; 
-  z-index: -1;
+  z-index: 0;
 }
 .carousel-item-next:not(.carousel-item-left),
 .active.carousel-item-right {
