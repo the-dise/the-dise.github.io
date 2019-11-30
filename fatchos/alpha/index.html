@@ -5,15 +5,18 @@
   <title>FatchOS</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://the-dise.github.io/fatchos/alpha/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/bootstrap.css"> <!-- https://the-dise.github.io/fatchos/alpha -->
   <style type="text/css">
     /* Light mode */
     @media (prefers-color-scheme: light) {
-      body{background: #F5F5F5;color: #212121}
+      body{background: #F5F5F5; color: #212121}
       a{color: #444444}
       a:hover{color: #FF7043}
 
-
+      h1, p
+      {
+        color: #212121;
+      }
       .brand-text {
         fill: #333;
       }
@@ -69,6 +72,10 @@
       
       a:hover.table-link {
         color: #FF7043;
+      }
+
+      h1 {
+        color: #f5f5f5
       }
 
       .brand-text {
@@ -209,6 +216,7 @@
       position: absolute;
       right: 0;
       bottom: 0;
+      top: 500px;
       left: 0;
       z-index: 15;
       display: -ms-flexbox;
@@ -265,7 +273,7 @@
         </nav>
       </div>
     </header>
-    <div class="gsregular">
+    <div class="gsregular noselect">
       <div id="myCarousel" class="carousel" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -276,81 +284,60 @@
           <li data-target="#myCarousel" data-slide-to="5" class=""></li>
           <li data-target="#myCarousel" data-slide-to="6" class=""></li>
         </ol>
-        <div class="carousel-inner" data-interval="1000">
+        <div class="carousel-inner" data-interval="100">
+          <div class="carousel-caption text-center" >
+            <h1 class="gsbold display-4">FatchOS</h1>
+            <p class="gsmedium">Simply. Brightly. Nicely</p>
+          </div>
+
           <div class="carousel-item active">
-            <img src="band_1.png" height="100%">
-            <div class="carousel-caption text-center" >
-              <h1 class="gsbold display-4">FatchOS</h1>
-              <p>Simply. Brightly. Nicely</p>
-            </div>
+            <img src="main.webp" height="100%">
           </div>
 
-          <div class="carousel-item" data-interval="1500">
-            <img src="band_status.png" height="100%">
-            <div class="carousel-caption text-center">
-              <h1 class="gsbold display-4">FatchOS</h1>
-              <p>Simply. Brightly. Nicely</p>
-            </div>
+          <div class="carousel-item" data-interval="100">
+            <img src="st.webp" height="100%">
           </div>
 
-          <div class="carousel-item" data-interval="1500">
-            <img src="band_weather.png" height="100%">
-            <div class="carousel-caption text-center">
-              <h1 class="gsbold display-4">FatchOS</h1>
-              <p>Simply. Brightly. Nicely</p>
-            </div>
+          <div class="carousel-item" data-interval="100">
+            <img src="we.webp" height="100%">
           </div>
 
-          <div class="carousel-item" data-interval="1500">
-            <img src="band_workout.png" height="100%">
-            <div class="carousel-caption text-center">
-              <h1 class="gsbold display-4">FatchOS</h1>
-              <p>Simply. Brightly. Nicely</p>
-            </div>
+          <div class="carousel-item" data-interval="100">
+            <img src="wo.webp" height="100%">
           </div>
 
-          <div class="carousel-item" data-interval="1500">
-            <img src="band_heartrate.png" height="100%">
-            <div class="carousel-caption text-center">
-              <h1 class="gsbold display-4">FatchOS</h1>
-              <p>Simply. Brightly. Nicely</p>
-            </div>
+          <div class="carousel-item" data-interval="100">
+            <img src="hr.webp" height="100%">
           </div>
 
-          <div class="carousel-item" data-interval="1500">
-            <img src="band_more.png" height="100%">
-            <div class="carousel-caption text-center">
-              <h1 class="gsbold display-4">FatchOS</h1>
-              <p>Simply. Brightly. Nicely</p>
-            </div>
+          <div class="carousel-item" data-interval="100">
+            <img src="mo.webp" height="100%">
           </div>
 
-          <div class="carousel-item" data-interval="1500">
-            <img src="band_notify.png" height="100%">
-            <div class="carousel-caption text-center">
-              <h1 class="gsbold display-4">FatchOS</h1>
-              <p>Simply. Brightly. Nicely</p>
-            </div>
+          <div class="carousel-item" data-interval="100">
+            <img src="no.webp" height="100%">
           </div>
-
-
+          
+          <div class="carousel-item bkg">
+            <img src="band.webp" height="100%">
+          </div>
         </div>
       </div>
       <ul class="nav nav-pills mr-2 justify-content-center mb-4 noselect" id="pills-tab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link btn btn-fatch mx-1 mb-2" id="pills-recom-tab" data-toggle="pill" href="#pills-recom" role="tab" aria-controls="pills-recom" aria-selected="true">Resources</a>
+          <a class="nav-link btn btn-fatch mx-1 mb-2" id="pills-ress-tab" data-toggle="pill" href="#pills-ress" role="tab" aria-controls="pills-ress" aria-selected="true">Resources</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-fatch mx-1 mb-2" id="pills-recom-tab" data-toggle="pill" href="#pills-recom" role="tab" aria-controls="pills-recom" aria-selected="true">Watch Face</a>
+          <a class="nav-link btn btn-fatch mx-1 mb-2" id="pills-watchface-tab" data-toggle="pill" href="#pills-watchface" role="tab" aria-controls="pills-watchface" aria-selected="true">Watch Face</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-fatch mx-1 mb-2" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="false">Guide</a>
+          <a class="nav-link btn btn-fatch mx-1 mb-2" id="pills-guide-tab" data-toggle="pill" href="#pills-guide" role="tab" aria-controls="pills-guide" aria-selected="false">Guide</a>
         </li>
       </ul> 
 
       <div class="tab-content" id="pills-tabContent">
 
-        <div class="tab-pane fade show" id="pills-recom" role="tabpanel" aria-labelledby="pills-recom-tab">
+        <div class="tab-pane fade show" id="pills-ress" role="tabpanel" aria-labelledby="pills-ress-tab">
           <div class="goo-map" id="map0">
             <div class="ht-tm-codeblock">
               <table class="table table-algin-left text">
@@ -411,6 +398,54 @@
                   <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log16"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
                 </tr>
               </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade show" id="pills-watchface" role="tabpanel" aria-labelledby="pills-watchface-tab">
+          <div class="goo-map" id="map0">
+            <div class="ht-tm-codeblock">
+              <table class="table table-algin-left text">
+                <thead class="noselect gsmedium">
+                  <tr>
+                    <th>Version</th>
+                    <th style="width: 6rem">Language</th>
+                    <th style="width: 8rem">Date</th>
+                    <th style="width: 8.5rem">Info</th>
+                  </tr>
+                </thead>
+                <tr class="gsregular">
+                  <th><a class="table-link" href="#">Fatch</a></th>
+                  <th><span class="text-grey">English</span></th>
+                  <th class="text-grey">DD / MM</th>
+                  <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log35"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
+                </tr>
+
+                <tr class="gsregular">
+                  <th><a class="table-link" href="#">Fatch</a></th>
+                  <th><span class="text-grey">Russian</span></th>
+                  <th class="text-grey">DD / MM</th>
+                  <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log16"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
+                </tr>
+
+                <tr class="gsregular">
+                  <th><a class="table-link" href="#">Fatch</a></th>
+                  <th><span class="text-grey">Ukrainian</span></th>
+                  <th class="text-grey">DD / MM</th>
+                  <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log16"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade show" id="pills-guide" role="tabpanel" aria-labelledby="pills-guide-tab">
+          <div class="goo-map" id="map0">
+            <div class="ht-tm-codeblock">
+              <p>Как сделать то-то?</p>
+              <p>Какой юзать софт?</p>
+              <p>Бла бла бла</p>
             </div>
           </div>
         </div>
