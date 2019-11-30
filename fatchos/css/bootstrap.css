@@ -870,6 +870,46 @@ a.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):
   box-shadow: 0 0 0 0.2rem rgba(33,150,243,0.5);
 }
 
+a.btn-info-fatchos {
+  color: #fff;
+  background-color: #FF7043;
+  border-color: #FF7043;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+a.btn-info-fatchos:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #FF7043;
+  border-color: #FF7043;
+}
+
+a.btn-info-fatchos:focus, .btn-info-fatchos.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255,112,67 ,0.5);
+}
+
+a.btn-info-fatchos.disabled, .btn-info-fatchos:disabled {
+  color: #fff;
+  background-color: #BF360C;
+  border-color: #BF360C;
+}
+
+a.btn-info-fatchos:not(:disabled):not(.disabled):active, .btn-info-fatchos:not(:disabled):not(.disabled).active,
+.show > .btn-info-fatchos.dropdown-toggle {
+  color: #fff;
+  background-color: #BF360C;
+  border-color: #BF360C;
+}
+
+a.btn-info-fatchos:not(:disabled):not(.disabled):active:focus, .btn-info-fatchos:not(:disabled):not(.disabled).active:focus,
+.show > .btn-info-fatchos.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255,112,67 ,0.5);
+}
+
+
 .badge {
   display: inline-block;
   padding: 0.25em 1em;
@@ -1102,8 +1142,6 @@ a.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):
   color: #fff;
   text-align: center;
 }
-
-
 
 .carousel-static {
   position: absolute;
