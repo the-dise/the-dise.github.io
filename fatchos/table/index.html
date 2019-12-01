@@ -64,6 +64,10 @@
         background-color: #212121;
         opacity: .5;
       }
+
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, .05);
+      }
     }
 
     /* Dark Theme */
@@ -139,13 +143,11 @@
       .table th,
       .table td {
         color: #EEEEEE;
-        text-align: center;
       }
 
       .table thead th {
         border-bottom: 2px solid #424242;
         color: #F5F5F5;
-        text-align: center;
       }
 
       .btn-fatch {
@@ -187,10 +189,10 @@
 
       <main role="main">
         <h1 class="display-4 gsbold noselect">Table</h1>
-        <p class="lead gsregular noselect">firmware matching and resources</p>
+        <p class="lead gsregular noselect">Firmware matching and resources</p>
 
         <div class="ht-tm-codeblock">
-          <table class="table table-algin-left text table-striped">
+          <table class="table table-algin-left text table-striped" style="text-align: center;">
             <thead class="noselect gsmedium">
               <tr>
                 <th>Firmware</th>
