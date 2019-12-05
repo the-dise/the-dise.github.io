@@ -5,7 +5,8 @@
   <title>FatchOS</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://the-dise.github.io/fatchos/css/bootstrap.css"> <!--  -->
+  <link rel="stylesheet" href="https://the-dise.github.io/fatchos/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="https://the-dise.github.io/fatchos/css/bootstrap-grid.css"> <!--  -->
   <style type="text/css">
     /* Light mode */
     @media (prefers-color-scheme: light) {
@@ -181,7 +182,16 @@
           <a class="nav-link" href="https://the-dise.github.io/">Home</a>
           <a class="nav-link" href="https://the-dise.github.io/dmgc/">DMGC</a>
           <a class="nav-link" href="https://the-dise.github.io/gemify/">Gemify</a>
-          <a class="nav-link active" href="#">FatchOS</a>
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            FatchOS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">About</a>
+            <a class="dropdown-item active" href="#">Correspondence Table</a>
+            <a class="dropdown-item" href="#">Screenshots</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Manuals</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -189,7 +199,7 @@
 
       <main role="main">
         <h1 class="display-4 gsbold noselect">Table</h1>
-        <p class="lead gsregular noselect">Firmware matching and resources</p>
+        <p class="lead gsregular noselect">Correspondence firmware and resources</p>
 
         <div class="ht-tm-codeblock">
           <table class="table table-algin-left text table-striped" style="text-align: center;">
