@@ -1165,7 +1165,6 @@ a.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):
       padding: 0.25rem 1.5rem;
       clear: both;
       font-weight: 400;
-      color: #212529;
       text-align: inherit;
       white-space: nowrap;
       background-color: transparent;
@@ -1173,19 +1172,14 @@ a.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):
     }
 
     .dropdown-item:hover, .dropdown-item:focus {
-      color: #16181b;
       text-decoration: none;
-      background-color: #f8f9fa;
     }
 
     .dropdown-item.active, .dropdown-item:active {
-      color: #fff;
       text-decoration: none;
-      background-color: #FF7043;
     }
 
     .dropdown-item.disabled, .dropdown-item:disabled {
-      color: #6c757d;
       pointer-events: none;
       background-color: transparent;
     }
