@@ -60,6 +60,29 @@
 			.social a:active {
 				color: #fff;
 			}
+
+			.dropdown-menu {
+				color: #212121;
+				background-color: #EEEEEE;
+			}
+
+			.dropdown-item {
+				color: #212121;
+			}
+
+			.dropdown-item:hover, .dropdown-item:focus {
+				color: #212121;
+				background-color: rgba(244,67,54,0.5);
+			}
+
+			.dropdown-item.active, .dropdown-item:active {
+				color: #212121;
+				background-color: #2196F3;
+			}
+
+			.dropdown-item.disabled, .dropdown-item:disabled {
+				color: #9E9E9E;
+			}
 		}
 
 		/* Dark Theme */
@@ -113,6 +136,29 @@
 			.mastfoot {
 				color: #444444;
 			}
+
+			.dropdown-menu {
+				color: #F5F5F5;
+				background-color: #212121;
+			}
+
+			.dropdown-item {
+				color: #f5f5f5;
+			}
+
+			.dropdown-item:hover, .dropdown-item:focus {
+				color: #f5f5f5;
+				background-color: rgba(244,67,54,0.5);
+			}
+
+			.dropdown-item.active, .dropdown-item:active {
+				color: #fff;
+				background-color: #2196F3;
+			}
+
+			.dropdown-item.disabled, .dropdown-item:disabled {
+				color: #9E9E9E;
+			}
 		}
 	</style>
 
@@ -129,7 +175,12 @@
 				</h1>
 				<nav class="nav nav-masthead justify-content-center">
 					<a class="nav-link active" href="#">Home</a>
-					<a class="nav-link" href="https://the-dise.github.io/dmgc/">DMGC</a>
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: .5rem">DMGC</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="https://the-dise.github.io/dmgc/">Repository</a>
+						<a class="dropdown-item disabled" href="https://the-dise.github.io/dmgc/table.html">Devices (soon)</a>
+						<a class="dropdown-item" href="http://yasobe.ru/na/dmgc">Donation</a>
+					</div>					
 					<a class="nav-link" href="https://the-dise.github.io/gemify/">Gemify</a>
 					<a class="nav-link" href="https://the-dise.github.io/fatchos/">FatchOS</a>
 				</nav>

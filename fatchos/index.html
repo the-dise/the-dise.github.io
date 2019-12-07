@@ -7,7 +7,7 @@
   <link rel="icon" href="https://the-dise.github.io/favicon/fatchos.ico" type="image/x-icon">
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://the-dise.github.io/fatchos/css/bootstrap.css"> <!--  -->
+  <link rel="stylesheet" href="https://the-dise.github.io/css/bootstrap.css"> <!--  -->
   <style type="text/css">
     /* Light mode */
     @media (prefers-color-scheme: light) {
@@ -65,6 +65,29 @@
       .carousel-indicators li {
         background-color: #212121;
         opacity: .5;
+      }
+
+      .dropdown-menu {
+        color: #212121;
+        background-color: #EEEEEE;
+      }
+
+      .dropdown-item {
+        color: #212121;
+      }
+
+      .dropdown-item:hover, .dropdown-item:focus {
+        color: #212121;
+        background-color: rgba(255,112,67 ,0.5);
+      }
+
+      .dropdown-item.active, .dropdown-item:active {
+        color: #212121;
+        background-color: #2196F3;
+      }
+
+      .dropdown-item.disabled, .dropdown-item:disabled {
+        color: #9E9E9E;
       }
     }
 
@@ -157,6 +180,29 @@
         background-color: #f5f5f5;
         opacity: .5;
       }
+
+      .dropdown-menu {
+        color: #F5F5F5;
+        background-color: #212121;
+      }
+
+      .dropdown-item {
+        color: #f5f5f5;
+      }
+
+      .dropdown-item:hover, .dropdown-item:focus {
+        color: #f5f5f5;
+        background-color: rgba(255,112,67 ,0.5);
+      }
+
+      .dropdown-item.active, .dropdown-item:active {
+        color: #fff;
+        background-color: #2196F3;
+      }
+
+      .dropdown-item.disabled, .dropdown-item:disabled {
+        color: #9E9E9E;
+      }
     }
   </style>
 
@@ -173,7 +219,12 @@
         </h1>
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link" href="https://the-dise.github.io/">Home</a>
-          <a class="nav-link" href="https://the-dise.github.io/dmgc/">DMGC</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: .5rem">DMGC</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="https://the-dise.github.io/dmgc/">Repository</a>
+            <a class="dropdown-item disabled" href="https://the-dise.github.io/dmgc/table.html">Devices (soon)</a>
+            <a class="dropdown-item" href="http://yasobe.ru/na/dmgc">Donation</a>
+          </div> 
           <a class="nav-link" href="https://the-dise.github.io/gemify/">Gemify</a>
           <a class="nav-link active" href="#">FatchOS</a>
         </nav>
@@ -244,10 +295,10 @@
           <div class="goo-map" id="map0">
             <div class="ht-tm-codeblock">
               <ul style="text-align: left;">
-              <!-- <li><a class="table-link" href="https://the-dise.github.io/fatchos/install.html">Как установить ресурсы?</a></li> -->
-              <!-- <li><a class="table-link" href="">Как установить циферблат?</a></li> -->
-              <li><a class="table-link" href="https://the-dise.github.io/fatchos/table.html">Таблица соотвествия прошивок и ресурсов.</a></li>
-            </ul>
+                <!-- <li><a class="table-link" href="https://the-dise.github.io/fatchos/install.html">Как установить ресурсы?</a></li> -->
+                <!-- <li><a class="table-link" href="">Как установить циферблат?</a></li> -->
+                <li><a class="table-link" href="https://the-dise.github.io/fatchos/table.html">Таблица соотвествия прошивок и ресурсов.</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -269,60 +320,60 @@
                   <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
                   <th class="text-grey">5 Dec. 2019</th>
 <!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v78"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
- -->                </tr>
+-->                </tr>
 
-                <tr class="gsregular">
-                  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v78.res">FatchOS V78</a></th>
-                  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
-                  <th class="text-grey">23 Nov. 2019</th>
+<tr class="gsregular">
+  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v78.res">FatchOS V78</a></th>
+  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+  <th class="text-grey">23 Nov. 2019</th>
 <!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v78"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
- -->                </tr>
+-->                </tr>
 
-                <tr class="gsregular">
-                  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v76.res">FatchOS V76</a></th>
-                  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
-                  <th class="text-grey">13 Nov. 2019</th>
+<tr class="gsregular">
+  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v76.res">FatchOS V76</a></th>
+  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+  <th class="text-grey">13 Nov. 2019</th>
 <!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v76"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
- -->                </tr>
+-->                </tr>
 
-                <tr class="gsregular">
-                  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v70.res">FatchOS V70</a></th>
-                  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
-                  <th class="text-grey">19 Oct. 2019</th>
+<tr class="gsregular">
+  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v70.res">FatchOS V70</a></th>
+  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+  <th class="text-grey">19 Oct. 2019</th>
 <!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v70"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
- -->                </tr>
+-->                </tr>
 
-                <tr class="gsregular">
-                  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v68.res">FatchOS V68</a></th>
-                  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
-                  <th class="text-grey">8 Oct. 2019</th>
+<tr class="gsregular">
+  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v68.res">FatchOS V68</a></th>
+  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+  <th class="text-grey">8 Oct. 2019</th>
 <!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v68"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
- -->                </tr>
+-->                </tr>
 
-                <tr class="gsregular">
-                  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v66.res">FatchOS V66</a></th>
-                  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
-                  <th class="text-grey">29 Sept. 2019</th>
+<tr class="gsregular">
+  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v66.res">FatchOS V66</a></th>
+  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+  <th class="text-grey">29 Sept. 2019</th>
 <!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v66"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
- -->                </tr>
+-->                </tr>
 
-                <tr class="gsregular">
-                  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v65.res">FatchOS V65</a></th>
-                  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
-                  <th class="text-grey">29 Sept. 2019</th>
+<tr class="gsregular">
+  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v65.res">FatchOS V65</a></th>
+  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+  <th class="text-grey">29 Sept. 2019</th>
 <!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v65"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
- -->                </tr>
+-->                </tr>
 
-                <tr class="gsregular">
-                  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v62.res">FatchOS V62</a></th>
-                  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
-                  <th class="text-grey">29 Sept. 2019</th>
+<tr class="gsregular">
+  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v62.res">FatchOS V62</a></th>
+  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+  <th class="text-grey">29 Sept. 2019</th>
 <!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v62"><img src="https://the-dise.github.io/images/info.svg"> Info</a></th>
- -->                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
+-->                </tr>
+</table>
+</div>
+</div>
+</div>
 
         <!-- <div class="tab-pane fade show" id="pills-watchface" role="tabpanel" aria-labelledby="pills-watchface-tab">
           <div class="goo-map" id="map0">

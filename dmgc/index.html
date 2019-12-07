@@ -71,7 +71,28 @@
       .social a:active {
         color: #fff;
       }
+      .dropdown-menu {
+        color: #212121;
+        background-color: #EEEEEE;
+      }
 
+      .dropdown-item {
+        color: #212121;
+      }
+
+      .dropdown-item:hover, .dropdown-item:focus {
+        color: #212121;
+        background-color: rgba(33,150,243,0.5);
+      }
+
+      .dropdown-item.active, .dropdown-item:active {
+        color: #212121;
+        background-color: #2196F3;
+      }
+
+      .dropdown-item.disabled, .dropdown-item:disabled {
+        color: #9E9E9E;
+      }
 
     }
 
@@ -159,9 +180,32 @@
         border-bottom: 2px solid #424242;
         color: #F5F5F5
       }
-    }
-  </style>
 
+      .dropdown-menu {
+        color: #F5F5F5;
+        background-color: #212121;
+      }
+
+      .dropdown-item {
+        color: #f5f5f5;
+      }
+
+      .dropdown-item:hover, .dropdown-item:focus {
+        color: #f5f5f5;
+        background-color: rgba(33,150,243,0.5);
+      }
+
+      .dropdown-item.active, .dropdown-item:active {
+        color: #fff;
+        background-color: #2196F3;
+      }
+
+      .dropdown-item.disabled, .dropdown-item:disabled {
+        color: #9E9E9E;
+      }
+    }
+
+  </style>
 </head>
 <body class="text-center">
   <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -176,7 +220,12 @@
         </span>
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link" href="https://the-dise.github.io/">Home</a>
-          <a class="nav-link active" href="#">DMGC</a>
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: .5rem">DMGC</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item active" href="https://the-dise.github.io/dmgc/">Repository</a>
+            <a class="dropdown-item disabled" href="https://the-dise.github.io/dmgc/table.html">Devices (soon)</a>
+            <a class="dropdown-item" href="http://yasobe.ru/na/dmgc">Donation</a>
+          </div>
           <a class="nav-link" href="https://the-dise.github.io/gemify/">Gemify</a>
           <a class="nav-link" href="https://the-dise.github.io/fatchos/">FatchOS</a>
         </nav>
@@ -688,8 +737,7 @@
     <main role="main">
       <h1 class="display-4 gsbold noselect">DMGC</h1>
       <p class="lead gsregular noselect">Port of Google Camera with minimum settings and great stability.</p>
-      <p class="gsregular mb-4 noselect"><a href="#" data-toggle="modal" data-target="#devices">Devices</a> — <a href="#" data-toggle="modal" data-target="#versions">Information</a> — <a href="http://yasobe.ru/na/dmgc">Donation</a></p>
-
+      <br>
       <ul class="nav nav-pills mr-2 justify-content-center mb-4 noselect" id="pills-tab" role="tablist">
         <li class="nav-item">
           <a class="nav-link btn btn-dmgc mx-1 mb-2 active" id="pills-recom-tab" data-toggle="pill" href="#pills-recom" role="tab" aria-controls="pills-recom" aria-selected="true">Recommended</a>

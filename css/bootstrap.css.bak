@@ -870,46 +870,6 @@ a.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):
   box-shadow: 0 0 0 0.2rem rgba(33,150,243,0.5);
 }
 
-a.btn-info-fatchos {
-  color: #fff;
-  background-color: #FF7043;
-  border-color: #FF7043;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  border-radius: 0.2rem;
-}
-
-a.btn-info-fatchos:hover {
-  color: #fff;
-  text-decoration: none;
-  background-color: #FF7043;
-  border-color: #FF7043;
-}
-
-a.btn-info-fatchos:focus, .btn-info-fatchos.focus {
-  box-shadow: 0 0 0 0.2rem rgba(255,112,67 ,0.5);
-}
-
-a.btn-info-fatchos.disabled, .btn-info-fatchos:disabled {
-  color: #fff;
-  background-color: #BF360C;
-  border-color: #BF360C;
-}
-
-a.btn-info-fatchos:not(:disabled):not(.disabled):active, .btn-info-fatchos:not(:disabled):not(.disabled).active,
-.show > .btn-info-fatchos.dropdown-toggle {
-  color: #fff;
-  background-color: #BF360C;
-  border-color: #BF360C;
-}
-
-a.btn-info-fatchos:not(:disabled):not(.disabled):active:focus, .btn-info-fatchos:not(:disabled):not(.disabled).active:focus,
-.show > .btn-info-fatchos.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255,112,67 ,0.5);
-}
-
-
 .badge {
   display: inline-block;
   padding: 0.25em 1em;
@@ -1121,6 +1081,14 @@ a.btn-info-fatchos:not(:disabled):not(.disabled):active:focus, .btn-info-fatchos
   background: no-repeat 50% / 100% 100%;
 }
 
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .carousel-indicators li {
@@ -1135,128 +1103,13 @@ a.btn-info-fatchos:not(:disabled):not(.disabled):active:focus, .btn-info-fatchos
 .carousel-caption {
   position: absolute;
   right: 15%;
-  top: 72%;
   bottom: 20px;
   left: 15%;
   z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #fff;
   text-align: center;
-}
-
-.carousel-static {
-  position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
-  z-index: 10;
-  color: #fff;
-  text-align: center;
-}
-
-
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-.carousel-item > img {
-  position: center;
-  top: 0;
-  left: 0;
-}
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
-
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 500px;
-  left: 0;
-  z-index: 15;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
-}
-
-.carousel-indicators li {
-  box-sizing: content-box;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  width: 5px;
-  height: 5px;
-  border-radius: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #fff;
-  background-clip: padding-box;
-  opacity: .5;
-  transition: opacity 0.6s ease;
-}
-
-.carousel-indicators .active {
-  margin-top: -2px;
-  width: 9px;
-  height: 9px;
-  border-radius: 10px;
 }
 
 .dropdown-toggle {
