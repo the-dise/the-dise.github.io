@@ -113,6 +113,10 @@
         color: #2196F3;
       }
 
+      .mdi-gray {
+        color: #9E9E9E;
+      }
+
       .tooltip-inner {
         color: #f5f5f5;
         background-color: #212121;
@@ -243,6 +247,10 @@
         color: #2196F3;
       }
 
+      .mdi-gray {
+        color: #9E9E9E;
+      }
+
       .tooltip-inner {
         color: #212121;
         background-color: #F5F5F5;
@@ -276,10 +284,33 @@
       </div>
     </header>
 
+    <div class="modal fade" id="infobadge" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title gsmedium" id="ModalLabel">Info</h4>
+            <a class="close" data-dismiss="modal" aria-label="Close"><img src="https://the-dise.github.io/images/close.svg"></a>
+          </div>
+          <div class="modal-body gsregular">
+            <ul style="list-style: none;">
+              <li><span class="mdi mdi-18px mdi-check-circle mdi-green"></span> — works fine</li>
+              <li><span class="mdi mdi-18px mdi-close-circle mdi-red"></span> — don't works</li>
+              <li><span class="mdi mdi-18px mdi-alert-circle mdi-orange"></span> — have a trouble</li>
+              <li><span class="mdi mdi-18px mdi-circle-slice-4 mdi-rotate-180 mdi-blue"></span> — half working</li>
+              <li><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span> — no information</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <main role="main">
       <h1 class="display-4 gsbold">Devices</h1>
       <p class="lead gsregular">Table working capacity DMGC</p>
-      <p class="gsregular">You can help me with compiling a working capacity table. To do this, fill out <a href="https://forms.gle/tW2n7qXmrjZdhTVU6"><u>this form</u></a></p>
+      <p class="gsregular">You can help me with compiling a working capacity table. To do this, fill out <a href="https://forms.gle/tW2n7qXmrjZdhTVU6"><u>this form</u></a>
+        <br>
+        <a href="#" data-toggle="modal" data-target="#infobadge"><span class="mdi mdi-information-outline"></span> Information about badges</a>
+      </p>
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-recom" role="tabpanel" aria-labelledby="pills-recom-tab">
           <div class="ht-tm-codeblock element" style="overflow: scroll; ">
@@ -354,10 +385,26 @@
                 <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
                 <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
                 <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
-                <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-blue"></span></th>
+                <th><span class="mdi mdi-18px mdi-circle-slice-4 mdi-rotate-180 mdi-blue"></span></th>
                 <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
                 <th><span class="mdi mdi-18px mdi-alert-circle mdi-orange"></span></th> 
               </tr>
+
+              <tr>
+                <th>Moto</th>
+              </tr>
+
+              <tr>
+                <th>G5 Plus / Potter</th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-circle-slice-4 mdi-rotate-180 mdi-blue"></span></th>
+                <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
+                <th><span class="mdi mdi-18px mdi-alert-circle mdi-orange"></span></th>                  
+              </tr>    
 
             </table>
           </div>
