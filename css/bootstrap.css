@@ -1386,3 +1386,11 @@ a.btn-info-fatchos:not(:disabled):not(.disabled):active:focus, .btn-info-fatchos
   text-align: center;
   border-radius: 0.25rem;
 }
+
+.th-w6 {
+  width: 6rem;
+}
+
+.th-w8 {
+  width: 8rem;
+}
