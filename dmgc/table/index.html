@@ -8,12 +8,8 @@
   <title>DMGC Сompatibility table</title>
   <link rel="shortcut icon" href="https://the-dise.github.io/favicon/dmgc.ico" type="image/x-icon">
   <link rel="icon" href="https://the-dise.github.io/favicon/dmgc.ico" type="image/x-icon">
-  <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://the-dise.github.io/css/bootstrap.css">
-  <link rel="stylesheet" href="/css/bootstrap-grid-.css">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
-
-  <!-- Script -->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
   <style type="text/css">
@@ -273,7 +269,7 @@
         </span>
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link" href="https://the-dise.github.io/">Home</a>
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: .5rem">DMGC</a>
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >DMGC</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="https://the-dise.github.io/dmgc/">Repository</a>
             <a class="dropdown-item active" href="#">Сompatibility table</a>
@@ -285,35 +281,35 @@
       </div>
     </header>
 
-    <div class="modal fade" id="infobadge" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title gsmedium" id="ModalLabel">Info</h4>
-            <a class="close" data-dismiss="modal" aria-label="Close"><img src="https://the-dise.github.io/images/close.svg"></a>
-          </div>
-          <div class="modal-body gsregular">
-            <ul style="list-style: none;">
-              <li><span class="mdi mdi-18px mdi-check-circle mdi-green"></span> — works fine</li>
-              <li><span class="mdi mdi-18px mdi-close-circle mdi-red"></span> — don't works</li>
-              <li><span class="mdi mdi-18px mdi-alert-circle mdi-orange"></span> — have a trouble</li>
-              <li><span class="mdi mdi-18px mdi-circle-slice-4 mdi-rotate-180 mdi-blue"></span> — half working</li>
-              <li><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span> — no information</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <!--<div class="modal fade" id="infobadge" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h4 class="modal-title gsmedium" id="ModalLabel">Info</h4>
+    <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
     </div>
+    <div class="modal-body gsregular">
+    <ul style="list-style: none;">
+    <li><span class="mdi mdi-18px mdi-check-circle mdi-green"></span> — works fine</li>
+    <li><span class="mdi mdi-18px mdi-close-circle mdi-red"></span> — don't works</li>
+    <li><span class="mdi mdi-18px mdi-alert-circle mdi-orange"></span> — have a trouble</li>
+    <li><span class="mdi mdi-18px mdi-circle-slice-4 mdi-rotate-180 mdi-blue"></span> — half working</li>
+    <li><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span> — no information</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div> 
+    <a href="#" data-toggle="modal" data-target="#infobadge"><span class="mdi mdi-information-outline"></span> Information about badges</a>-->
 
     <main role="main">
       <h1 class="display-4 gsbold">Сompatibility table</h1>
       <p class="gsregular">You can help me with compiling a compatibility table. To do this, fill out <a href="https://forms.gle/tW2n7qXmrjZdhTVU6"><u>this form</u></a>
         <br>
         <br>
-        <a href="#" data-toggle="modal" data-target="#infobadge"><span class="mdi mdi-information-outline"></span> Information about badges</a>
       </p>
       <div class="tab-content" id="pills-tabContent">
-        <div class="ht-tm-codeblock element" style="overflow: scroll; ">
+        <div class="ht-tm-codeblock">
           <table class="table gsregular">
             <thead>
               <tr>
@@ -326,43 +322,21 @@
                 <th><span class="mdi mdi-24px mdi-weather-night" data-toggle="astro" data-placement="top" title="Night Sight & Astro Mode"></span></th>
                 <th><span class="mdi mdi-24px mdi-restart" data-toggle="slowmo" data-placement="top" title="Slow Motion"></span></th>
                 <th><span class="mdi mdi-24px mdi-fast-forward-outline" data-toggle="cheetah" data-placement="top" title="Timelapse"></span></th>
-                <script type="text/javascript">
-                  $(function () {
-                    $('[data-toggle="device"]').tooltip()
-                  })
-                  $(function () {
-                    $('[data-toggle="rear"]').tooltip()
-                  })
-                  $(function () {
-                    $('[data-toggle="front"]').tooltip()
-                  })
-                  $(function () {
-                    $('[data-toggle="video"]').tooltip()
-                  })
-                  $(function () {
-                    $('[data-toggle="fvideo"]').tooltip()
-                  })
-                  $(function () {
-                    $('[data-toggle="portrait"]').tooltip()
-                  })
-                  $(function () {
-                    $('[data-toggle="astro"]').tooltip()
-                  })
-                  $(function () {
-                    $('[data-toggle="slowmo"]').tooltip()
-                  })
-                  $(function () {
-                    $('[data-toggle="cheetah"]').tooltip()
-                  })
-                  $(function () {
-                    $('[data-toggle="other"]').tooltip()
-                  })
-                </script>
-
-
-                <!-- mdi-power-sleep -->
               </tr>
             </thead>
+
+            <tr>
+              <th>Xiaomi Mi A3</th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+            </tr>
+
             <tr>
               <th>Xiaomi Mi A2</th>
               <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
@@ -396,7 +370,19 @@
               <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
               <th><span class="mdi mdi-18px mdi-circle-slice-4 mdi-rotate-180 mdi-blue"></span></th>
               <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-alert-circle mdi-orange"></span></th> 
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+            </tr>
+
+            <tr>
+              <th>Xiaomi Redmi Note 5</th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-circle-slice-4 mdi-rotate-180 mdi-blue"></span></th>
+              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
             </tr>
 
 
@@ -434,6 +420,30 @@
               <th><span class="mdi mdi-18px mdi-circle-slice-4 mdi-rotate-180 mdi-blue"></span></th>
               <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
               <th><span class="mdi mdi-18px mdi-alert-circle mdi-orange"></span></th>                  
+            </tr>  
+
+            <tr>
+              <th>Nokia 7 Pro</th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-circle-slice-4 mdi-rotate-180 mdi-blue"></span></th>
+              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+            </tr>  
+
+            <tr>
+              <th>Asus Zenfone Max Pro M2</th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
+              <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
+              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
             </tr>          
 
             <tr>
@@ -442,26 +452,38 @@
 
             <tr>
               <th>OnePlus 7 Pro</th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
             </tr>
 
             <tr>
-              <th>Poco F1 / beryllium</th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
-              <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
+              <th>Poco F1</th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+            </tr>
+
+            <tr>
+              <th>Xiaomi Mi 6</th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
+              <th><span class="mdi mdi-18px mdi-selection-ellipse mdi-gray"></span></th>
             </tr>
 
 
@@ -477,7 +499,38 @@
         <p>Copyright &copy; 2019 - <a class="mastfoot" href="https://the-dise.github.io">the_dise</a> - All Right Reserved</p>
       </div>
     </footer>
-
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="device"]').tooltip()
+      })
+      $(function () {
+        $('[data-toggle="rear"]').tooltip()
+      })
+      $(function () {
+        $('[data-toggle="front"]').tooltip()
+      })
+      $(function () {
+        $('[data-toggle="video"]').tooltip()
+      })
+      $(function () {
+        $('[data-toggle="fvideo"]').tooltip()
+      })
+      $(function () {
+        $('[data-toggle="portrait"]').tooltip()
+      })
+      $(function () {
+        $('[data-toggle="astro"]').tooltip()
+      })
+      $(function () {
+        $('[data-toggle="slowmo"]').tooltip()
+      })
+      $(function () {
+        $('[data-toggle="cheetah"]').tooltip()
+      })
+      $(function () {
+        $('[data-toggle="other"]').tooltip()
+      })
+    </script>
     <!-- Start Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
     <script>
