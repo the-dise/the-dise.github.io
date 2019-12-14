@@ -1381,6 +1381,10 @@ a.btn-info-fatchos:not(:disabled):not(.disabled):active:focus, .btn-info-fatchos
   width: 6rem;
 }
 
+.th-w7 {
+  width: 7rem;
+}
+
 .th-w8 {
   width: 8rem;
 }
