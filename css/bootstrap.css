@@ -1,6 +1,6 @@
 @font-face {
  font-family: "Google Sans Regular";
- src: url("https://the-dise.github.io/fonts/GoogleSans-Regular.ttf") format("opentype")
+ src: url("//the-dise.github.io/fonts/GoogleSans-Regular.ttf") format("opentype")
 }
 
 .gsregular {
@@ -9,7 +9,7 @@
 
 @font-face {
  font-family: "Google Sans Medium";
- src: url("https://the-dise.github.io/fonts/GoogleSans-Medium.ttf") format("opentype")
+ src: url("//the-dise.github.io/fonts/GoogleSans-Medium.ttf") format("opentype")
 }
 
 .gsmedium {
@@ -18,7 +18,7 @@
 
 @font-face {
  font-family: "Google Sans Bold";
- src: url("https://the-dise.github.io/fonts/GoogleSans-Bold.ttf") format("opentype")
+ src: url("//the-dise.github.io/fonts/GoogleSans-Bold.ttf") format("opentype")
 }
 
 .gsbold {
@@ -243,8 +243,12 @@ img {
   margin-bottom: 6rem !important;
 }
 
-.mt-auto {
+.mt-3 {
   margin-top: auto !important;
+}
+
+.mt-3 {
+  margin-top: 3rem !important;
 }
 
 .mx-auto {
@@ -308,32 +312,6 @@ img {
   font-weight: 300;
   line-height: 1.2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .brand {
   height: 16px;
@@ -406,6 +384,10 @@ img {
 
 .social a:active {
   color: #fff;
+}
+
+.social span {
+  font-size: 20px;
 }
 
 .social-icon-size {
