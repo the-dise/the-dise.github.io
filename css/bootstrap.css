@@ -243,7 +243,7 @@ img {
   margin-bottom: 6rem !important;
 }
 
-.mt-3 {
+.mt-auto {
   margin-top: auto !important;
 }
 
@@ -384,10 +384,6 @@ img {
 
 .social a:active {
   color: #fff;
-}
-
-.social span {
-  font-size: 20px;
 }
 
 .social-icon-size {
