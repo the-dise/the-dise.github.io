@@ -1,14 +1,25 @@
 
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>DMGC Changelog</title>
-  <link rel="shortcut icon" href="https://the-dise.github.io/favicon/dmgc.ico" type="image/x-icon">
-  <link rel="icon" href="https://the-dise.github.io/favicon/dmgc.ico" type="image/x-icon">
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://the-dise.github.io/css/bootstrap.css">
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="//the-dise.github.io/favicon/dmgc.ico" type="image/x-icon">
+  <link rel="icon" href="//the-dise.github.io/favicon/dmgc.ico" type="image/x-icon">
+
+  <!-- Grid & Icons -->
+  <link rel="stylesheet" href="//the-dise.github.io/css/bootstrap.css">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
+
+  <!-- Scripts -->
+  <script src="//code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Styles -->
   <style type="text/css">
     /* Light mode */
     @media (prefers-color-scheme: light) {
@@ -49,40 +60,63 @@
         border-bottom-color: #2196F3;
       }
 
-      .social a {
-        background-color: rgba(0,0,0,.15);
-        text-align: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 100%;
-        line-height: 2.5rem;
-        fill: #212121;
+      .dropdown-menu {
+        color: #212121;
+        background-color: #EEEEEE;
       }
 
-      .social a:hover {
-        fill: #dc3545;
+      .dropdown-item {
+        color: #212121;
       }
 
-      .social a:active {
-        color: #fff;
+      .dropdown-item:hover, .dropdown-item:focus {
+        color: #212121;
+        background-color: rgba(33,150,243,0.5);
       }
 
+      .dropdown-item.active, .dropdown-item:active {
+        color: #212121;
+        background-color: #2196F3;
+      }
 
+      .dropdown-item.disabled, .dropdown-item:disabled {
+        color: #9E9E9E;
+      }
+
+      .mdi-green {
+        color: #4CAF50;
+      }
+
+      .mdi-red {
+        color: #f44336;
+      }
+
+      .mdi-orange {
+        color: #FF9800;
+      }
+
+      .mdi-blue {
+        color: #2196F3;
+      }
+
+      .mdi-gray {
+        color: #9E9E9E;
+      }
+
+      .tooltip-inner {
+        color: #f5f5f5;
+        background-color: #212121;
+      }
     }
 
     /* Dark Theme */
     @media (prefers-color-scheme: dark) {
       body{background: #111; color: #F5F5F5}
-      a{color: #F5F5F5}
+      a{color: #444444}
       a:hover{color: #2196F3}
 
       a.table-link {
-        color: #EEEEEE;
-        text-decoration: none;
-      }
-      
-      a:hover.table-link {
-        color: #2196f3;
+        color: #F5F5F5;
       }
 
       .brand-text {
@@ -108,24 +142,6 @@
         border-bottom-color: #2196F3;
       }
 
-      .social a {
-        background-color: rgba(255,255,255,.1);
-        text-align: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 100%;
-        line-height: 2.5rem;
-        fill: #F5F5F5;
-      }
-
-      .social a:hover {
-        fill: #dc3545;
-      }
-
-      .social a:active {
-        color: #fff;
-      }
-
       .mastfoot {
         color: #444444;
       }
@@ -148,11 +164,60 @@
       .table th,
       .table td {
         color: #EEEEEE;
+        text-align: left;
       }
 
       .table thead th {
         border-bottom: 2px solid #424242;
-        color: #F5F5F5
+        color: #F5F5F5;
+      }
+
+      .dropdown-menu {
+        color: #F5F5F5;
+        background-color: #212121;
+      }
+
+      .dropdown-item {
+        color: #f5f5f5;
+      }
+
+      .dropdown-item:hover, .dropdown-item:focus {
+        color: #f5f5f5;
+        background-color: rgba(33,150,243,0.5);
+      }
+
+      .dropdown-item.active, .dropdown-item:active {
+        color: #fff;
+        background-color: #2196F3;
+      }
+
+      .dropdown-item.disabled, .dropdown-item:disabled {
+        color: #9E9E9E;
+      }
+
+      .mdi-green {
+        color: #4CAF50;
+      }
+
+      .mdi-red {
+        color: #f44336;
+      }
+
+      .mdi-orange {
+        color: #FF9800;
+      }
+
+      .mdi-blue {
+        color: #2196F3;
+      }
+
+      .mdi-gray {
+        color: #9E9E9E;
+      }
+
+      .tooltip-inner {
+        color: #212121;
+        background-color: #F5F5F5;
       }
     }
   </style>
@@ -169,10 +234,15 @@
           </span>
         </h1>
         <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link" href="https://the-dise.github.io/">Home</a>
-          <a class="nav-link active" href="https://the-dise.github.io/dmgc/">DMGC</a>
-          <a class="nav-link" href="https://the-dise.github.io/gemify/">Gemify</a>
-          <a class="nav-link" href="https://the-dise.github.io/fatchos/">FatchOS</a>
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link dropdown-toggle active" href="#" id="dmgc" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DMGC</a>
+          <div class="dropdown-menu" aria-labelledby="dmgc">
+            <a class="dropdown-item" href="/dmgc/">Repository</a>
+            <a class="dropdown-item" href="/dmgc/table/">Сompatibility table</a>
+            <a class="dropdown-item" href="//yasobe.ru/nag/dmgc">Donation</a>
+          </div>
+          <a class="nav-link" href="/gemify/">Gemify</a>
+          <a class="nav-link" href="/fatchos/">FatchOS</a>
         </nav>
       </div>
     </header>
@@ -199,21 +269,22 @@
         <br>
         <p>Download:</p>
         <p>
-          <a href="https://t.me/Gemify/728" class="btn btn-dmgc gsmedium">Telegram</a>
-          <a href="https://www.celsoazevedo.com/files/android/google-camera/dev-the_dise/" class="btn btn-dmgc gsmedium">CelsoAzevedo</a>
+          <a href="//t.me/Gemify/728" class="btn btn-dmgc gsmedium">Telegram</a>
+          <a href="//celsoazevedo.com/files/android/google-camera/dev-the_dise/" class="btn btn-dmgc gsmedium">CelsoAzevedo</a>
         </p>
       </div>
     </main>
 
     <footer class="mastfoot mt-auto small text-center">
       <div class="inner gsregular">
-        <p>Copyright &copy; 2019 - <a class="mastfoot" href="https://the-dise.github.io">the_dise</a> - All Right Reserved</p>
-      </div>
+        <p>Site language: <a href="#">English</a> / <a href="#">Russian</a><br>
+          Copyright <span class="mdi mdi-copyright"></span> 2018-2019 - <a href="#">the_dise</a> - All Right Reserved</p>
+        </div>
     </footer>
   </div>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
+  <script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -221,8 +292,5 @@
 
     gtag('config', 'UA-151959411-1');
   </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

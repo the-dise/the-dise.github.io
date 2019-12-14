@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>DMGC Changelog</title>
+  <title>Gemify</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="//the-dise.github.io/favicon/dmgc.ico" type="image/x-icon">
-  <link rel="icon" href="//the-dise.github.io/favicon/dmgc.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="//the-dise.github.io/favicon/gemify.ico" type="image/x-icon">
+  <link rel="icon" href="//the-dise.github.io/favicon/gemify.ico" type="image/x-icon">
 
   <!-- Grid & Icons -->
   <link rel="stylesheet" href="//the-dise.github.io/css/bootstrap.css">
@@ -19,29 +18,21 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+
   <!-- Styles -->
   <style type="text/css">
     /* Light mode */
     @media (prefers-color-scheme: light) {
       body{background: #F5F5F5;color: #212121}
       a{color: #444444}
-      a:hover{color: #2196F3}
+      a:hover{color: #dc3545}
 
-      a.table-link {
-        color: #424242;
-        text-decoration: none;
-      }
-
-      a:hover.table-link {
-        color: #2196f3;
-      }
 
       .brand-text {
         fill: #333;
       }
-
       .brand-main {
-        fill: #2196F3;
+        fill: #69F0AE;
       }
       .nav-masthead .nav-link {
         font-weight: 500;
@@ -56,8 +47,8 @@
 
       .nav-masthead .nav-link:hover,
       .nav-masthead .nav-link:focus {
-        color: #2196F3;
-        border-bottom-color: #2196F3;
+        color: #69F0AE;
+        border-bottom-color: #69F0AE;
       }
 
       .dropdown-menu {
@@ -71,59 +62,55 @@
 
       .dropdown-item:hover, .dropdown-item:focus {
         color: #212121;
-        background-color: rgba(33,150,243,0.5);
+        background-color: rgba(105,240,174 ,0.5);
       }
 
       .dropdown-item.active, .dropdown-item:active {
         color: #212121;
-        background-color: #2196F3;
+        background-color: #69F0AE;
       }
 
       .dropdown-item.disabled, .dropdown-item:disabled {
         color: #9E9E9E;
       }
 
-      .mdi-green {
-        color: #4CAF50;
+      .btn-gemify {
+        color: #212121;
+        border-radius: 10px;
+        border-width: 2px;
+        border-color: #212121;
+        background-color: transparent;
+        padding: 1rem 1.5rem;
+        font-weight: 500;
       }
 
-      .mdi-red {
-        color: #f44336;
+      .btn-gemify:hover {
+        color: #111;
+        background-color: #69F0AE;
+        border-color: #69F0AE;
+        text-decoration: none;
       }
 
-      .mdi-orange {
-        color: #FF9800;
+      .btn-gemify:not(:disabled):not(.disabled):active, .btn-gemify:not(:disabled):not(.disabled).active,
+      .show > .btn-gemify.dropdown-toggle {
+        background-color: #69F0AE;
+        border-color: #69F0AE;
       }
 
-      .mdi-blue {
-        color: #2196F3;
-      }
-
-      .mdi-gray {
-        color: #9E9E9E;
-      }
-
-      .tooltip-inner {
-        color: #f5f5f5;
-        background-color: #212121;
-      }
     }
 
     /* Dark Theme */
     @media (prefers-color-scheme: dark) {
       body{background: #111; color: #F5F5F5}
       a{color: #444444}
-      a:hover{color: #2196F3}
+      a:hover{color: #69F0AE}
 
-      a.table-link {
-        color: #F5F5F5;
-      }
 
       .brand-text {
         fill: #f5f5f5;
       }
       .brand-main {
-        fill: #2196F3;
+        fill: #69F0AE;
       }
       .nav-masthead .nav-link {
         font-weight: 500;
@@ -138,38 +125,8 @@
 
       .nav-masthead .nav-link:hover,
       .nav-masthead .nav-link:focus {
-        color: #2196F3;
-        border-bottom-color: #2196F3;
-      }
-
-      .mastfoot {
-        color: #444444;
-      }
-
-      .btn-dmgc {
-        color: #F5F5F5;
-        border-color: #f5f5f5;
-      }
-
-      .modal-content {
-        background-color: #333;
-      }
-      
-      .table {
-        width: 100%;
-        margin-bottom: 2rem;
-        color: #EEEEEE;
-      }
-
-      .table th,
-      .table td {
-        color: #EEEEEE;
-        text-align: left;
-      }
-
-      .table thead th {
-        border-bottom: 2px solid #424242;
-        color: #F5F5F5;
+        color: #69F0AE;
+        border-bottom-color: #69F0AE;
       }
 
       .dropdown-menu {
@@ -183,49 +140,51 @@
 
       .dropdown-item:hover, .dropdown-item:focus {
         color: #f5f5f5;
-        background-color: rgba(33,150,243,0.5);
+        background-color: rgba(105,240,174 ,0.5);
       }
 
       .dropdown-item.active, .dropdown-item:active {
         color: #fff;
-        background-color: #2196F3;
+        background-color: #69F0AE;
       }
 
       .dropdown-item.disabled, .dropdown-item:disabled {
         color: #9E9E9E;
       }
 
-      .mdi-green {
-        color: #4CAF50;
+      .mastfoot {
+        color: #444444;
       }
 
-      .mdi-red {
-        color: #f44336;
+      .btn-gemify {
+        color: #f5f5f5;
+        border-radius: 10px;
+        border-width: 2px;
+        border-color: #f5f5f5;
+        background-color: transparent;
+        padding: 1rem 1.5rem;
+        font-weight: 500;
       }
 
-      .mdi-orange {
-        color: #FF9800;
+      .btn-gemify:hover {
+        color: #111;
+        background-color: #69F0AE;
+        border-color: #69F0AE;
+        text-decoration: none;
       }
 
-      .mdi-blue {
-        color: #2196F3;
-      }
-
-      .mdi-gray {
-        color: #9E9E9E;
-      }
-
-      .tooltip-inner {
-        color: #212121;
-        background-color: #F5F5F5;
+      .btn-gemify:not(:disabled):not(.disabled):active, .btn-gemify:not(:disabled):not(.disabled).active,
+      .show > .btn-gemify.dropdown-toggle {
+        background-color: #69F0AE;
+        border-color: #69F0AE;
       }
     }
   </style>
 
 </head>
-<body>
+<body class="text-center noselect">
   <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-5 text-center">
+    <header class="masthead mb-auto">
       <div class="inner gsregular">
         <span class="masthead-brand">
           <svg class="brand" viewBox="0 0 89 21">
@@ -234,54 +193,34 @@
           </span>
         </h1>
         <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link" href="/">Home</a>
-          <a class="nav-link dropdown-toggle active" href="#" id="dmgc" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DMGC</a>
-          <div class="dropdown-menu" aria-labelledby="dmgc">
-            <a class="dropdown-item" href="/dmgc/">Repository</a>
-            <a class="dropdown-item" href="/dmgc/table/">Сompatibility table</a>
-            <a class="dropdown-item" href="//yasobe.ru/nag/dmgc">Donation</a>
-          </div>
-          <a class="nav-link" href="/gemify/">Gemify</a>
-          <a class="nav-link" href="/fatchos/">FatchOS</a>
+            <a class="nav-link" href="/ru/">Главная</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dmgc" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DMGC</a>
+            <div class="dropdown-menu" aria-labelledby="dmgc">
+              <a class="dropdown-item" href="/ru/dmgc/">Репозиторий</a>
+              <a class="dropdown-item" href="/ru/dmgc/table/">Таблица совместимости</a>
+              <a class="dropdown-item" href="//yasobe.ru/na/dmgc">Пожертвование</a>
+            </div>
+            <a class="nav-link active" href="#">Gemify</a>
+            <a class="nav-link" href="/ru/fatchos/">FatchOS</a>
         </nav>
       </div>
     </header>
 
-    <main role="main">
-      <h1 class="display-4 cover-heading gsbold">DMGC 3.2</h1>
-      <div class="gsregular">
-        <p class="lead brand-dmgc">Google Camera ver. 7.2.016</p>
-        <br>
-        <p>Changelog:</p>
-        <ul>
-          <li>Added 60FPS;</li>
-          <li>Remove Auto FPS;</li>
-          <li>Added Infinity Focus;</li>
-          <li>Russian Translate;</li>
-          <li>UI changes.</li>
-        </ul>
-        <p>Bugs:</p>
-        <ul>
-          <li>Slow Mo;</li>
-          <li>Timelapse with stabilization;</li>
-          <li>Google Photos;</li>
-          <li>Top Shots with green zona.</li>
-        </ul>
-        <br>
-        <p>Download:</p>
-        <p>
-          <a href="//t.me/Gemify/697" class="btn btn-dmgc gsmedium">Telegram</a>
-          <a href="//celsoazevedo.com/files/android/google-camera/dev-the_dise/" class="btn btn-dmgc gsmedium">CelsoAzevedo</a>
-        </p>
-      </div>
+    <main role="main" class="inner cover">
+      <h1 class="display-4 cover-heading gsbold">Gemify</h1>
+      <p class="lead gsregular">Канал об интересных вещах от IT</p>
+      <br>
+      <p>
+        <a href="//t.me/gemify" class="btn btn-gemify gsmedium">Узнать больше</a>
+      </p>
     </main>
 
-    <footer class="mastfoot mt-auto small text-center">
-      <div class="inner gsregular">
-        <p>Site language: <a>English</a> / <a>Russian</a><br>
-          Copyright <span class="mdi mdi-copyright"></span> 2018-2019 - <a href="#">the_dise</a> - All Right Reserved</p>
-        </div>
-    </footer>
+    <footer class="mastfoot mt-auto small">
+        <div class="inner gsregular">
+          <p>Язык сайта: <a href="/gemify/">Английский</a> / <a>Русский</a><br>
+            Авторское право <span class="mdi mdi-copyright"></span> 2018-2019 - <a href="/ru/">the_dise</a> - Все права защищены</p>
+          </div>
+      </footer>
   </div>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -295,4 +234,3 @@
   </script>
 </body>
 </html>
-

@@ -5,10 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>FatchOS</title>
   
-  <link rel="shortcut icon" href="https://the-dise.github.io/favicon/fatchos.ico" type="image/x-icon">
-  <link rel="icon" href="https://the-dise.github.io/favicon/fatchos.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://the-dise.github.io/css/bootstrap.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="//the-dise.github.io/favicon/fatchos.ico" type="image/x-icon">
+  <link rel="icon" href="//the-dise.github.io/favicon/fatchos.ico" type="image/x-icon">
+
+  <!-- Grid & Icons -->
+  <link rel="stylesheet" href="//the-dise.github.io/css/bootstrap.css">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
+
+  <!-- Scripts -->
+  <script src="//code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  <!-- Styles -->
   <style type="text/css">
     /* Light mode */
     @media (prefers-color-scheme: light) {
@@ -22,6 +33,7 @@
       {
         color: #212121;
       }
+
       .brand-text {
         fill: #333;
       }
@@ -43,24 +55,6 @@
       .nav-masthead .nav-link:focus {
         color: #FF7043;
         border-bottom-color: #FF7043;
-      }
-
-      .social a {
-        background-color: rgba(0,0,0,.15);
-        text-align: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 100%;
-        line-height: 2.5rem;
-        fill: #212121;
-      }
-
-      .social a:hover {
-        fill: #dc3545;
-      }
-
-      .social a:active {
-        color: #fff;
       }
 
       .carousel-indicators li {
@@ -111,6 +105,10 @@
         color: #f5f5f5
       }
 
+      .link {
+        color: #FF7043;
+      }
+
       .brand-text {
         fill: #f5f5f5;
       }
@@ -132,24 +130,6 @@
       .nav-masthead .nav-link:focus {
         color: #FF7043;
         border-bottom-color: #FF7043;
-      }
-
-      .social a {
-        background-color: rgba(255,255,255,.1);
-        text-align: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 100%;
-        line-height: 2.5rem;
-        fill: #F5F5F5;
-      }
-
-      .social a:hover {
-        fill: #dc3545;
-      }
-
-      .social a:active {
-        color: #fff;
       }
 
       .mastfoot {
@@ -204,9 +184,12 @@
       .dropdown-item.disabled, .dropdown-item:disabled {
         color: #9E9E9E;
       }
+
+      .modal-content {
+        background-color: #333;
+      }
     }
   </style>
-
 </head>
 <body class="text-center noselect">
   <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -219,14 +202,14 @@
           </span>
         </h1>
         <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link" href="https://the-dise.github.io/">Home</a>
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >DMGC</a>
+          <a class="nav-link" href="//the-dise.github.io/">Home</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DMGC</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="https://the-dise.github.io/dmgc/">Repository</a>
-            <a class="dropdown-item" href="https://the-dise.github.io/dmgc/table/">Сompatibility table</a>
+            <a class="dropdown-item" href="//the-dise.github.io/dmgc/">Repository</a>
+            <a class="dropdown-item" href="//the-dise.github.io/dmgc/table/">Сompatibility table</a>
             <a class="dropdown-item" href="http://yasobe.ru/na/dmgc">Donation</a>
           </div> 
-          <a class="nav-link" href="https://the-dise.github.io/gemify/">Gemify</a>
+          <a class="nav-link" href="//the-dise.github.io/gemify/">Gemify</a>
           <a class="nav-link active" href="#">FatchOS</a>
         </nav>
       </div>
@@ -250,31 +233,31 @@
           </div>
 
           <div class="carousel-item active">
-            <img src="https://the-dise.github.io/images/fatchos-main.webp" height="100%">
+            <img src="//the-dise.github.io/images/fatchos-main.webp" height="100%">
           </div>
 
           <div class="carousel-item" data-interval="100">
-            <img src="https://the-dise.github.io/images/fatchos-st.webp" height="100%">
+            <img src="//the-dise.github.io/images/fatchos-st.webp" height="100%">
           </div>
 
           <div class="carousel-item" data-interval="100">
-            <img src="https://the-dise.github.io/images/fatchos-we.webp" height="100%">
+            <img src="//the-dise.github.io/images/fatchos-we.webp" height="100%">
           </div>
 
           <div class="carousel-item" data-interval="100">
-            <img src="https://the-dise.github.io/images/fatchos-wo.webp" height="100%">
+            <img src="//the-dise.github.io/images/fatchos-wo.webp" height="100%">
           </div>
 
           <div class="carousel-item" data-interval="100">
-            <img src="https://the-dise.github.io/images/fatchos-hr.webp" height="100%">
+            <img src="//the-dise.github.io/images/fatchos-hr.webp" height="100%">
           </div>
 
           <div class="carousel-item" data-interval="100">
-            <img src="https://the-dise.github.io/images/fatchos-mo.webp" height="100%">
+            <img src="//the-dise.github.io/images/fatchos-mo.webp" height="100%">
           </div>
 
           <div class="carousel-item" data-interval="100">
-            <img src="https://the-dise.github.io/images/fatchos-no.webp" height="100%">
+            <img src="//the-dise.github.io/images/fatchos-no.webp" height="100%">
           </div>
         </div>
       </div>
@@ -282,10 +265,10 @@
       <ul class="nav nav-pills mr-2 justify-content-center mb-4 noselect" id="pills-tab" role="tablist">
         <li class="nav-item">
           <a class="nav-link btn btn-fatch mx-1 mb-2" id="pills-manual-tab" data-toggle="pill" href="#pills-manual" role="tab" aria-controls="pills-manual" aria-selected="false">Manuals</a>
-		<!-- </li>
+        </li>
         <li class="nav-item">
           <a class="nav-link btn btn-fatch mx-1 mb-2" id="pills-watchface-tab" data-toggle="pill" href="#pills-watchface" role="tab" aria-controls="pills-watchface" aria-selected="true">Watch Face</a>
-        </li> -->
+        </li>
         <li class="nav-item">
           <a class="nav-link btn btn-fatch mx-1 mb-2" id="pills-ress-tab" data-toggle="pill" href="#pills-ress" role="tab" aria-controls="pills-ress" aria-selected="true">Resources</a>
         </li>
@@ -295,10 +278,57 @@
         <div class="tab-pane fade show" id="pills-manual" role="tabpanel" aria-labelledby="pills-manual-tab">
           <div class="goo-map" id="map0">
             <div class="ht-tm-codeblock">
-              <ul style="text-align: left;">
-                <!-- <li><a class="table-link" href="https://the-dise.github.io/fatchos/install.html">Как установить ресурсы?</a></li> -->
-                <!-- <li><a class="table-link" href="">Как установить циферблат?</a></li> -->
-                <li><a class="table-link" href="https://the-dise.github.io/fatchos/table.html">Таблица соотвествия прошивок и ресурсов.</a></li>
+              <ul style="text-align: left; padding-bottom: 3rem;">
+
+                <div class="modal fade" id="wf" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title gsmedium" id="ModalLabel">How to install resources watchface?</h4>
+                        <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li>Download and install <a class="link" href="https://play.google.com/store/apps/details?id=dev.rokitskiy.miband_watchface">MiBand4 - WatchFace</a>;</li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade" id="res" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title gsmedium" id="ModalLabel">How to install resources?</h4>
+                        <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li>Download and install <a class="link" href="//t.me/Gemify/614">Notify & Fitness (8.13.1)</a>;</li>
+                          <br>
+                          <li>Download the resources of the desired version. We look at the correspondence of the firmware version and resources <a class="link" href="//the-dise.github.io/fatchos/table.html">according to the table</a>;</li>
+                          <br>
+                          <li>Launch Mi Fit, synchronize and minimize the application;</li>
+                          <br>
+                          <li>Open Notify & Fitness. Go to "Settings" - "Basic" - "Mi Band firmware version" - "Update" - select the file - select the previously downloaded resources and click "Update"</li>
+                          <br>
+                          <p>Important</p>
+                          <p>When the program writes 100%, this does not mean that the resources are installed. Wait for the bracelet to restart.</p>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <li><a href="#" class="table-link" data-toggle="modal" data-target="#res">How to install resources?</a></li>
+
+                <li><a href="#" class="table-link" data-toggle="modal" data-target="#wf">How to install resources watchface?</a></li>
+
+                <li><a href="#" class="table-link" data-toggle="modal" data-target="#ver">How to determine the version of the bracelet?</a></li>
+
+                <li><a href="/fatchos/table.html" class="table-link">Correspondence table of firmware and resources.</a></li>
               </ul>
             </div>
           </div>
@@ -313,126 +343,77 @@
                     <th>Version</th>
                     <th style="width: 6rem">Status</th>
                     <th style="width: 8rem">Date</th>
-                    <!-- <th style="width: 8.5rem">Info</th> -->
                   </tr>
                 </thead>
                 <tr class="gsregular">
-                  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v83.res">FatchOS V83</a></th>
+                  <th><a class="table-link" href="//the-dise.github.io/fatchos/repo/FatchOS-v83.res">FatchOS V83</a></th>
                   <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
-                  <th class="text-grey">5 Dec. 2019</th>
-<!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v78"><span class="mdi mdi-information-outline"></span> Info</a></th>
--->                </tr>
-
-<tr class="gsregular">
-  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v78.res">FatchOS V78</a></th>
-  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
-  <th class="text-grey">23 Nov. 2019</th>
-<!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v78"><span class="mdi mdi-information-outline"></span> Info</a></th>
--->                </tr>
-
-<tr class="gsregular">
-  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v76.res">FatchOS V76</a></th>
-  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
-  <th class="text-grey">13 Nov. 2019</th>
-<!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v76"><span class="mdi mdi-information-outline"></span> Info</a></th>
--->                </tr>
-
-<tr class="gsregular">
-  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v70.res">FatchOS V70</a></th>
-  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
-  <th class="text-grey">19 Oct. 2019</th>
-<!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v70"><span class="mdi mdi-information-outline"></span> Info</a></th>
--->                </tr>
-
-<tr class="gsregular">
-  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v68.res">FatchOS V68</a></th>
-  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
-  <th class="text-grey">8 Oct. 2019</th>
-<!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v68"><span class="mdi mdi-information-outline"></span> Info</a></th>
--->                </tr>
-
-<tr class="gsregular">
-  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v66.res">FatchOS V66</a></th>
-  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
-  <th class="text-grey">29 Sept. 2019</th>
-<!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v66"><span class="mdi mdi-information-outline"></span> Info</a></th>
--->                </tr>
-
-<tr class="gsregular">
-  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v65.res">FatchOS V65</a></th>
-  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
-  <th class="text-grey">29 Sept. 2019</th>
-<!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v65"><span class="mdi mdi-information-outline"></span> Info</a></th>
--->                </tr>
-
-<tr class="gsregular">
-  <th><a class="table-link" href="https://the-dise.github.io/fatchos/repo/FatchOS-v62.res">FatchOS V62</a></th>
-  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
-  <th class="text-grey">29 Sept. 2019</th>
-<!--                   <th><a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#v62"><span class="mdi mdi-information-outline"></span> Info</a></th>
--->                </tr>
-</table>
-</div>
-</div>
-</div>
-
-        <!-- <div class="tab-pane fade show" id="pills-watchface" role="tabpanel" aria-labelledby="pills-watchface-tab">
-          <div class="goo-map" id="map0">
-            <div class="ht-tm-codeblock">
-              <h5>Данная страница не готова, и находиться в стадии разработки!</h5>
-              <table class="table table-algin-left text">
-                <thead class="noselect gsmedium">
-                  <tr>
-                    <th>Name</th>
-                    <th style="width: 8rem">Preview</th>
-                    <th style="width: 8rem">Info</th>
-                  </tr>
-                </thead>
-
-                <tr class="gsregular">
-                  <th><a class="table-link" href="#">Fatch Basic</a></th>
-                  <th>
-                    <a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#previewbase">
-                      <span class="mdi mdi-information-outline"></span> Preview
-                    </a>
-                  </th>
-                  <th>
-                    <a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#infobase">
-                      <span class="mdi mdi-information-outline"></span> Info
-                    </a>
-                  </th>
+                  <th class="text-grey">05/12/19</th>
                 </tr>
 
                 <tr class="gsregular">
-                  <th><a class="table-link" href="#">Fatch Sport</a></th>
-                  <th>
-                    <a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#previewsport">
-                      <span class="mdi mdi-information-outline"></span> Preview
-                    </a>
-                  </th>
-                  <th>
-                    <a href="#" class="btn btn-info-fatchos" data-toggle="modal" data-target="#infobase">
-                      <span class="mdi mdi-information-outline"></span> Info
-                    </a>
-                  </th>
+                  <th><a class="table-link" href="//the-dise.github.io/fatchos/repo/FatchOS-v78.res">FatchOS V78</a></th>
+                  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+                  <th class="text-grey">23/11/19</th>
+                </tr>
+
+                <tr class="gsregular">
+                  <th><a class="table-link" href="//the-dise.github.io/fatchos/repo/FatchOS-v76.res">FatchOS V76</a></th>
+                  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+                  <th class="text-grey">13/11/19</th>
+                </tr>
+
+                <tr class="gsregular">
+                  <th><a class="table-link" href="//the-dise.github.io/fatchos/repo/FatchOS-v70.res">FatchOS V70</a></th>
+                  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+                  <th class="text-grey">13/11/19</th>
+                </tr>
+
+                <tr class="gsregular">
+                  <th><a class="table-link" href="//the-dise.github.io/fatchos/repo/FatchOS-v68.res">FatchOS V68</a></th>
+                  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+                  <th class="text-grey">08/10/19</th>
+                </tr>
+
+                <tr class="gsregular">
+                  <th><a class="table-link" href="//the-dise.github.io/fatchos/repo/FatchOS-v66.res">FatchOS V66</a></th>
+                  <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+                  <th class="text-grey">29/09/19</th>
+                </tr>
+
+                <tr class="gsregular">
+                  <th><a class="table-link" href="//the-dise.github.io/fatchos/repo/FatchOS-v65.res">FatchOS V65</a></th>
+                  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+                  <th class="text-grey">29/09/19</th>
+                </tr>
+
+                <tr class="gsregular">
+                  <th><a class="table-link" href="//the-dise.github.io/fatchos/repo/FatchOS-v62.res">FatchOS V62</a></th>
+                  <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+                  <th class="text-grey">29/09/19</th>
                 </tr>
               </table>
             </div>
           </div>
-        </div> -->
+        </div>
+
+        <div class="tab-pane fade show" id="pills-watchface" role="tabpanel" aria-labelledby="pills-watchface-tab">
+          <div class="goo-map" id="map0">
+          </div>
+        </div>
       </div>
     </div>
 
 
     <footer class="mastfoot mt-auto small">
       <div class="inner gsregular">
-        <p>Copyright &copy; 2019 - <a href="https://the-dise.github.io">the_dise</a> - All Right Reserved</p>
+        <p>Copyright &copy; 2018-2019 - <a href="//the-dise.github.io">the_dise</a> - All Right Reserved</p>
       </div>
     </footer>
   </div>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
+  <script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -440,8 +421,8 @@
 
     gtag('config', 'UA-151959411-1');
   </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

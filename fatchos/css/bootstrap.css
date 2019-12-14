@@ -1,6 +1,6 @@
 @font-face {
  font-family: "Google Sans Regular";
- src: url("https://the-dise.github.io/fonts/GoogleSans-Regular.ttf") format("opentype")
+ src: url("//the-dise.github.io/fonts/GoogleSans-Regular.ttf") format("opentype")
 }
 
 .gsregular {
@@ -9,7 +9,7 @@
 
 @font-face {
  font-family: "Google Sans Medium";
- src: url("https://the-dise.github.io/fonts/GoogleSans-Medium.ttf") format("opentype")
+ src: url("//the-dise.github.io/fonts/GoogleSans-Medium.ttf") format("opentype")
 }
 
 .gsmedium {
@@ -18,7 +18,7 @@
 
 @font-face {
  font-family: "Google Sans Bold";
- src: url("https://the-dise.github.io/fonts/GoogleSans-Bold.ttf") format("opentype")
+ src: url("//the-dise.github.io/fonts/GoogleSans-Bold.ttf") format("opentype")
 }
 
 .gsbold {

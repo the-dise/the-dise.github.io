@@ -1,8 +1,8 @@
 /*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Bootstrap v4.3.1 (//getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under MIT (//github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
   --blue: #007bff;
@@ -7818,7 +7818,7 @@ button.bg-dark:focus {
   margin: 1rem !important;
 }
 
-.mt-3,
+.mt-auto,
 .my-3 {
   margin-top: 1rem !important;
 }
