@@ -6,8 +6,8 @@
   <link rel="shortcut icon" href="/favicon/fatchos.ico" type="image/x-icon">
   <link rel="icon" href="/favicon/fatchos.ico" type="image/x-icon">
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="/fatchos/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="bootstrap-grid.css"> <!--  -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/fatchos/css/booststrap-grid.css"> <!--  -->
   <style type="text/css">
     /* Light mode */
     @media (prefers-color-scheme: light) {
@@ -65,6 +65,10 @@
       .carousel-indicators li {
         background-color: #212121;
         opacity: .5;
+      }
+
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, .05);
       }
 
       .dropdown-menu {
@@ -168,7 +172,7 @@
 
       .table thead th {
         border-bottom: 2px solid #424242;
-        color: #F5F5F5
+        color: #F5F5F5;
       }
 
       .btn-fatch {
@@ -180,6 +184,11 @@
         background-color: #f5f5f5;
         opacity: .5;
       }
+
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
 
       .dropdown-menu {
         color: #F5F5F5;
@@ -205,6 +214,7 @@
       }
     }
   </style>
+
 </head>
 <body class="text-center noselect">
   <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -218,34 +228,178 @@
         </h1>
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link" href="/">Home</a>
-          <a class="nav-link dropdown-toggle" href="#" id="dmgc" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >DMGC</a>
+          <a class="nav-link dropdown-toggle" href="#" id="dmgc" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DMGC</a>
           <div class="dropdown-menu" aria-labelledby="dmgc">
             <a class="dropdown-item" href="/dmgc/">Repository</a>
             <a class="dropdown-item" href="/dmgc/table/">Сompatibility table</a>
             <a class="dropdown-item" href="http://yasobe.ru/na/dmgc">Donation</a>
           </div> 
           <a class="nav-link" href="/gemify/">Gemify</a>
-          <a class="nav-link active" href="/fatchos/">FatchOS</a>
+          <a class="nav-link" href="/fatchos/">FatchOS</a>
         </nav>
       </div>
     </header>
     <div class="gsregular noselect">
 
       <main role="main">
-        <h1 class="display-4 gsbold noselect">Install</h1>
-        <p class="lead gsregular noselect">Инструкция по установке</p>
+        <h1 class="display-4 gsbold noselect">Table</h1>
+        <p class="lead gsregular noselect">Correspondence firmware and resources</p>
 
         <div class="ht-tm-codeblock">
-          <ul class="text-left">
-            <li>Скачиваем и устанавливаем <a href="//t.me/Gemify/614">Notify & Fitness (8.13.1)</a></li>
-            <li>Скачиваем необходимые ресурсы (соответствие прошивок смотрим выше или здесь).</li>
-            <li>Запускаем Mi Fit синхронизируем и сворачиваем приложение.</li>
-            <li>Открываем Notify & Fitness</li>
-            <li>переходим в "Настройки", вкладка "Основные", пункт "Mi Band версия прошивки", нажимаем "Обновление" </li>
-            <li>выбираем файл. В проводнике выбираем ранее скачанные ресурсы и нажимаем "Начать обновление"</li>
-          </ul>
+          <table class="table table-algin-left text table-striped" style="text-align: center;">
+            <thead class="noselect gsmedium">
+              <tr>
+                <th>Firmware</th>
+                <th>Resourses</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tr>
+              <th>1.0.7.60</th>
+              <th>v83</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.44</th>
+              <th>v78</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.44</th>
+              <th>v78</th> 
+              
+              <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.42</th>
+              <th>v72</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.36</th>
+              <th>v76</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.36</th>
+              <th>v76</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.26</th>
+              <th>v68</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.22</th>
+              <th>v72</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.20</th>
+              <th>v70</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.18</th>
+              <th>v70</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.16</th>
+              <th>v71</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.14</th>
+              <th>v68</th> 
+              
+              <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.10</th>
+              <th>v66</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.06</th>
+              <th>v68</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.04</th>
+              <th>v66</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.7.02</th>
+              <th>v66</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.6.26</th>
+              <th>v65</th> 
+              
+              <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+            </tr>
+            <tr>
+              <th>1.0.6.24</th>
+              <th>v65</th> 
+              
+              <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+            </tr>
+            <tr>
+              <th>1.0.6.16</th>
+              <th>v62</th> 
+              
+              <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+            </tr>
+            <tr>
+              <th>1.0.6.12</th>
+              <th>v62</th> 
+              
+              <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+            </tr>
+            <tr>
+              <th>1.0.6.06</th>
+              <th>v62</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.6.00</th>
+              <th>v61</th> 
+              
+              <th><span class="badge noselect badge-table badge-beta">Beta</span></th>
+            </tr>
+            <tr>
+              <th>1.0.5.66</th>
+              <th>v60</th> 
+              
+              <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+            </tr>
+            <tr>
+              <th>1.0.5.55</th>
+              <th>v56</th> 
+              
+              <th><span class="badge noselect badge-table badge-stable">Stable</span></th>
+            </tr>
 
-          ВНИМАНИЕ!!! ДАЖЕ ЕСЛИ НАПИСАНО 100% ЭТО НЕ ЗНАЧИТ ЧТО РЕСУРСЫ УСТАНОВЛЕНЫ. ОЖИДАЙТЕ ПЕРЕЗАПУСКА БРАСЛЕТА.
+          </table>
         </div>
       </main>
 
