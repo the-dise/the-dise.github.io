@@ -2,12 +2,23 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>FatchOS</title>
+  <title>Correspondence firmware and resources</title>
+
+  <!-- Favicon -->
   <link rel="shortcut icon" href="/favicon/fatchos.ico" type="image/x-icon">
   <link rel="icon" href="/favicon/fatchos.ico" type="image/x-icon">
-  <!-- Bootstrap core CSS -->
+
+  <!-- Grid & Icons -->
   <link rel="stylesheet" href="/css/bootstrap.css">
-  <link rel="stylesheet" href="/fatchos/css/booststrap-grid.css"> <!--  -->
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
+
+  <!-- Scripts -->
+  <script src="//code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.js"></script>
+  
+  <!-- Styles -->
   <style type="text/css">
     /* Light mode */
     @media (prefers-color-scheme: light) {
@@ -21,6 +32,7 @@
       {
         color: #212121;
       }
+
       .brand-text {
         fill: #333;
       }
@@ -44,31 +56,9 @@
         border-bottom-color: #FF7043;
       }
 
-      .social a {
-        background-color: rgba(0,0,0,.15);
-        text-align: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 100%;
-        line-height: 2.5rem;
-        fill: #212121;
-      }
-
-      .social a:hover {
-        fill: #dc3545;
-      }
-
-      .social a:active {
-        color: #fff;
-      }
-
       .carousel-indicators li {
         background-color: #212121;
         opacity: .5;
-      }
-
-      .table-striped tbody tr:nth-of-type(odd) {
-        background-color: rgba(0, 0, 0, .05);
       }
 
       .dropdown-menu {
@@ -114,6 +104,10 @@
         color: #f5f5f5
       }
 
+      .link {
+        color: #FF7043;
+      }
+
       .brand-text {
         fill: #f5f5f5;
       }
@@ -137,24 +131,6 @@
         border-bottom-color: #FF7043;
       }
 
-      .social a {
-        background-color: rgba(255,255,255,.1);
-        text-align: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 100%;
-        line-height: 2.5rem;
-        fill: #F5F5F5;
-      }
-
-      .social a:hover {
-        fill: #dc3545;
-      }
-
-      .social a:active {
-        color: #fff;
-      }
-
       .mastfoot {
         color: #444444;
       }
@@ -172,7 +148,7 @@
 
       .table thead th {
         border-bottom: 2px solid #424242;
-        color: #F5F5F5;
+        color: #F5F5F5
       }
 
       .btn-fatch {
@@ -184,11 +160,6 @@
         background-color: #f5f5f5;
         opacity: .5;
       }
-
-      .table-striped tbody tr:nth-of-type(odd) {
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-
 
       .dropdown-menu {
         color: #F5F5F5;
@@ -212,11 +183,77 @@
       .dropdown-item.disabled, .dropdown-item:disabled {
         color: #9E9E9E;
       }
+
+      .modal-content {
+        background-color: #333;
+      }
+    }
+  </style>
+  
+  <!-- Preloader style -->
+  <style type="text/css">
+    /* Light mode */
+    @media (prefers-color-scheme: light) {
+      #page-preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100500;
+        background: #F5F5F5;
+      }
+
+      #page-preloader .spin {
+        position: absolute;
+        color: #212121;
+        font-size: 36px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+    }
+
+    /* Dark Theme */
+    @media (prefers-color-scheme: dark) {
+      #page-preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100500;
+        background: #111;
+      }
+
+      #page-preloader .spin {
+        position: absolute;
+        color: #f5f5f5;
+        font-size: 36px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
     }
   </style>
 
 </head>
-<body class="text-center noselect">
+<body class="text-center">
+
+  <div id="page-preloader">
+    <span class="spin mdi mdi-loading mdi-spin"></span>
+    <script type="text/javascript">
+      $(window).on('load', function () {
+        var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spin');
+        $spinner.fadeOut();
+        $preloader.delay(350).fadeOut('slow');
+      });
+    </script>
+  </div>
+  
   <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-5">
       <div class="inner gsregular">
@@ -236,6 +273,7 @@
           </div> 
           <a class="nav-link" href="/gemify/">Gemify</a>
           <a class="nav-link" href="/fatchos/">FatchOS</a>
+          <a class="nav-link" href="/donuts/">Donuts</a>
         </nav>
       </div>
     </header>
@@ -420,8 +458,5 @@
 
       gtag('config', 'UA-151959411-1');
     </script>
-    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
   </html>

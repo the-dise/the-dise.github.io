@@ -191,8 +191,69 @@
       }
     }
   </style>
+  <!-- Preloader style -->
+  <style type="text/css">
+    /* Light mode */
+    @media (prefers-color-scheme: light) {
+      #page-preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100500;
+        background: #F5F5F5;
+      }
+
+      #page-preloader .spin {
+        position: absolute;
+        color: #212121;
+        font-size: 36px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+    }
+
+    /* Dark Theme */
+    @media (prefers-color-scheme: dark) {
+      #page-preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100500;
+        background: #111;
+      }
+
+      #page-preloader .spin {
+        position: absolute;
+        color: #f5f5f5;
+        font-size: 36px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+    }
+  </style>
+
 </head>
-<body class="text-center noselect">
+<body class="text-center">
+
+  <div id="page-preloader">
+    <span class="spin mdi mdi-loading mdi-spin"></span>
+    <script type="text/javascript">
+      $(window).on('load', function () {
+        var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spin');
+        $spinner.fadeOut();
+        $preloader.delay(350).fadeOut('slow');
+      });
+    </script>
+  </div>
   <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
       <div class="inner gsregular">
@@ -204,14 +265,15 @@
         </h1>
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link" href="/">Home</a>
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DMGC</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="nav-link dropdown-toggle" href="#" id="dmgc" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DMGC</a>
+          <div class="dropdown-menu" aria-labelledby="dmgc">
             <a class="dropdown-item" href="/dmgc/">Repository</a>
             <a class="dropdown-item" href="/dmgc/table/">Сompatibility table</a>
-            <a class="dropdown-item" href="http://yasobe.ru/na/dmgc">Donation</a>
-          </div> 
+            <a class="dropdown-item" href="//yasobe.ru/na/dmgc">Donation</a>
+          </div>    
           <a class="nav-link" href="/gemify/">Gemify</a>
           <a class="nav-link active" href="#">FatchOS</a>
+          <a class="nav-link" href="/donuts/">Donuts</a>
         </nav>
       </div>
     </header>
@@ -352,21 +414,21 @@
               <thead class="noselect gsmedium">
                 <tr>
                   <th>Version</th>
-                  <th class="th-w6">Status</th>
+                  <th class="th-w6">Language</th>
                   <th class="th-w8">Date</th>
                   <th class="th-w8">Preview</th>
                 </tr>
               </thead>
               <tr class="gsregular">
-                <th><a class="table-link" href="#" class="btn btn-info" data-toggle="modal" data-target="#info-b">Fatch Basic</a></th>
-                <th><span class="badge noselect badge-table badge-beta"> — — — </span></th>
-                <th class="text-grey"> — </th>
+                <th><a class="table-link" href="/fatchos/watchface/fatch-en-ddmm.bin" class="btn btn-info" data-toggle="modal" data-target="#info-b">Fatch Basic</a></th>
+                <th>English</th>
+                <th class="text-grey"> DD/MM </th>
                 <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#preview-b"><span class="mdi mdi-watch-variant"></span> Preview</a></th>
               </tr>
               <tr class="gsregular">
-                <th><a class="table-link" href="#" class="btn btn-info" data-toggle="modal" data-target="#info-s">Fatch Sport</a></th>
-                <th><span class="badge noselect badge-table badge-stable"> — — — </span></th>
-                <th class="text-grey"> — </th>
+                <th><a class="table-link" href="/fatchos/watchface/fatch-sport-en-ddmm.bin" class="btn btn-info" data-toggle="modal" data-target="#info-s">Fatch Sport</a></th>
+                <th>English</th>
+                <th class="text-grey"> DD/MM </th>
                 <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#preview-s"><span class="mdi mdi-watch-variant"></span> Preview</a></th>
 
               </tr>
@@ -422,8 +484,5 @@
 
       gtag('config', 'UA-151959411-1');
     </script>
-    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
   </html>
