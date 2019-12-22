@@ -822,6 +822,23 @@ a:hover {
   box-shadow: 0 0 0 0.2rem rgba(255,152,0, 0.5);
 }
 
+a.btn-fatch-download {
+  color: #fff;
+  background-color: #FF7043;
+  border-color: #FF7043;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+a.btn-fatch-download:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #E64A19;
+  border-color: #E64A19;
+}
+
 a.btn-info {
   color: #fff;
   background-color: #2196F3;
