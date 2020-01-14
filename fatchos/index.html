@@ -535,67 +535,89 @@
                   <th>Day / Month</th>
                   <th><a href="/fatchos/repo/Fatch-Basic-Ukr.bin" class="btn btn-fatch-download"><span class="mdi mdi-download-outline"></span> Download</a></th>
                 </tr>
+
                 <tr>
-                  <th colspan="3" class="gsmedium"  style="color: #FF7043;">Fatch Sport</th>
-                </tr>
-                <tr>
-                  <th>English</th>
-                  <th>Day / Month</th>
-                  <th><a href="/fatchos/repo/Fatch-Sport-Eng.bin" class="btn btn-fatch-download"><span class="mdi mdi-download-outline"></span> Download</a></th>
-                </tr>
-                <tr>
-                  <th>Русский</th>
-                  <th>Day / Month</th>
-                  <th><a href="/fatchos/repo/Fatch-Sport-Rus.bin" class="btn btn-fatch-download"><span class="mdi mdi-download-outline"></span> Download</a></th>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
+                  <th>Italiano 
+                    <a href="#" data-tooltip="Credit Guilio Laura">
+                     <span class="mdi mdi-translate"></span>
+                   </a>
+                 </th>
+                 <th>Day / Month</th>
+                 <th><a href="/fatchos/repo/Fatch-Basic-Ita.bin" class="btn btn-fatch-download"><span class="mdi mdi-download-outline"></span> Download</a></th>
+               </tr>
+
+               <tr>
+                <th colspan="3" class="gsmedium"  style="color: #FF7043;">Fatch Sport</th>
+              </tr>
+              
+              <tr>
+                <th>English</th>
+                <th>Day / Month</th>
+                <th><a href="/fatchos/repo/Fatch-Sport-Eng.bin" class="btn btn-fatch-download"><span class="mdi mdi-download-outline"></span> Download</a></th>
+              </tr>
+              <tr>
+                <th>Русский</th>
+                <th>Day / Month</th>
+                <th><a href="/fatchos/repo/Fatch-Sport-Rus.bin" class="btn btn-fatch-download"><span class="mdi mdi-download-outline"></span> Download</a></th>
+              </tr>
+
+              <tr>
+                <th>Italiano 
+                  <a href="#" data-tooltip="Credit Guilio Laura">
+                   <span class="mdi mdi-translate"></span>
+                 </a>
+               </th>
+               <th>Day / Month</th>
+               <th><a href="/fatchos/repo/Fatch-Sport-Ita.bin" class="btn btn-fatch-download"><span class="mdi mdi-download-outline"></span> Download</a></th>
+             </tr>
+           </table>
+         </div>
+       </div>
+     </div>
+   </div>
 
 
-      <footer class="mastfoot mt-auto small">
-        <div class="inner gsregular">
-          <p>Site language: <a>English</a> / <a href="/ru/fatchos">Русский</a>
-            <br>
-            Copyright <span class="mdi mdi-copyright"></span> 2018-2020 - <a href="#">the_dise</a> - All Right Reserved
-          </p>
-        </div>
-      </footer>
+   <footer class="mastfoot mt-auto small">
+    <div class="inner gsregular">
+      <p>Site language: <a>English</a> / <a href="/ru/fatchos">Русский</a>
+        <br>
+        Copyright <span class="mdi mdi-copyright"></span> 2018-2020 - <a href="#">the_dise</a> - All Right Reserved
+      </p>
     </div>
+  </footer>
+</div>
 
-    <!-- Bodymovin -->
-    <script type="text/javascript">
-      var logoSvgData = (function() {
-        var json = null;
-        $.ajax({
-          'async': false,
-          'global': false,
-          'url': "/images/data.json",
-          'dataType': "json",
-          'success': function(data) {
-            json = data;
-          }
-        });
-        return json;
-      })();
+<!-- Bodymovin -->
+<script type="text/javascript">
+  var logoSvgData = (function() {
+    var json = null;
+    $.ajax({
+      'async': false,
+      'global': false,
+      'url': "/images/data.json",
+      'dataType': "json",
+      'success': function(data) {
+        json = data;
+      }
+    });
+    return json;
+  })();
 
-      const animation = bodymovin.loadAnimation({
-        container: document.getElementById('fatch-anim'),
-        loop: true,
-        autoplay: true,
-        animationData: logoSvgData
-      })
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  const animation = bodymovin.loadAnimation({
+    container: document.getElementById('fatch-anim'),
+    loop: true,
+    autoplay: true,
+    animationData: logoSvgData
+  })
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag('config', 'UA-151959411-1');
-    </script>
-  </body>
-  </html>
+  gtag('config', 'UA-151959411-1');
+</script>
+</body>
+</html>
