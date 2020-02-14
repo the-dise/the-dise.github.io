@@ -83,6 +83,10 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
+  color: #424242;
+  border: none;
+  background-color: #424242; 
+  height: 2px; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1473,4 +1477,41 @@ a.btn-info-fatchos:not(:disabled):not(.disabled):active:focus, .btn-info-fatchos
 img.btc-style {
   border: 12px solid #fff;
   margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+}
+
+table, td {
+  border-collapse: collapse;
+}
+
+thead {
+  display: table; /* to take the same width as tr */
+  width: 100%; /* - 17px because of the scrollbar width */
+}
+
+tbody {
+  display: block; /* to enable vertical scrolling */
+  max-height: 400px; /* e.g. */
+  overflow-y: scroll; /* keeps the scrollbar even if it doesn't need it; display purpose */
+}
+
+th, td {
+  width: 100%; /* to enable "word-break: break-all" */
+  padding: 5px;
+  word-break: keep-all; /* 4. */
+}
+
+tr {
+  display: table; /* display purpose; th's border */
+  width: 100%;
+  box-sizing: border-box; /* because of the border (Chrome needs this line, but not FF) */
+}
+
+td {
+  text-align: center;
+  border-bottom: none;
+  border-left: none;
 }
