@@ -42,6 +42,8 @@
   background: #555; 
 }
 
+
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -60,6 +62,7 @@
 html,
 body {
   height: 100%;
+  -ms-overflow-style: none;
 }
 
 html {
@@ -1479,38 +1482,38 @@ img.btc-style {
   margin-bottom: 1rem;
 }
 
-table {
+.compare table {
   width: 100%;
 }
 
-table, td {
+.compare table, td {
   border-collapse: collapse;
 }
 
-thead {
+.compare thead {
   display: table; /* to take the same width as tr */
   width: 100%; /* - 17px because of the scrollbar width */
 }
 
-tbody {
+.compare tbody {
   display: block; /* to enable vertical scrolling */
   max-height: 400px; /* e.g. */
   overflow-y: scroll; /* keeps the scrollbar even if it doesn't need it; display purpose */
 }
 
-th, td {
+.compare th, td{
   width: 100%; /* to enable "word-break: break-all" */
-  padding: 5px;
   word-break: keep-all; /* 4. */
+  text-align: left;
 }
 
-tr {
+.compare tr {
   display: table; /* display purpose; th's border */
   width: 100%;
   box-sizing: border-box; /* because of the border (Chrome needs this line, but not FF) */
 }
 
-td {
+.compare td {
   text-align: center;
   border-bottom: none;
   border-left: none;
