@@ -1518,3 +1518,9 @@ img.btc-style {
   border-bottom: none;
   border-left: none;
 }
+
+.devicelist a:hover {
+  color: #2196F3;
+  text-decoration: none;
+  font-weight: bold;
+}

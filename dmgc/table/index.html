@@ -219,10 +219,6 @@
       .devicelist a {
         color: #fff;
       }
-
-      .devicelist a:hover {
-        color: #2196F3
-      }
     }
   </style>
 
@@ -249,29 +245,29 @@
       transform: translate(-50%, -50%)
     }
 
-  /* Dark Theme */
-  @media (prefers-color-scheme: dark) {
-    #page-preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 100500;
-      background: #111;
-    }
+    /* Dark Theme */
+    @media (prefers-color-scheme: dark) {
+      #page-preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100500;
+        background: #111;
+      }
 
-    #page-preloader .spin {
-      position: absolute;
-      color: #f5f5f5;
-      font-size: 36px;
-      top: 50%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%)
+      #page-preloader .spin {
+        position: absolute;
+        color: #f5f5f5;
+        font-size: 36px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
     }
-  }
-</style>
+  </style>
 
 </head>
 <body class="text-center">
@@ -316,13 +312,14 @@
       <h1 class="display-4 gsbold">Сompatibility</h1>
       <br>
       <div class="devicelist gsregular">
-        <a href="#asus">Asus</a><span class="mdi mdi-menu-down-outline"></span> |
-        <a href="#htc">HTC</a><span class="mdi mdi-menu-down-outline"></span> |
-        <a href="#moto">Moto</a><span class="mdi mdi-menu-down-outline"></span> | 
-        <a href="#nokia">Nokia</a><span class="mdi mdi-menu-down-outline"></span> | 
-        <a href="#oneplus">OnePlus</a><span class="mdi mdi-menu-down-outline"></span> | 
-        <a href="#xiaomi">Xiaomi</a><span class="mdi mdi-menu-down-outline"></span> | 
-        <a href="#dontwork">Don't work</a><span class="mdi mdi-menu-down-outline"></span> 
+        <a href="#asus">Asus</a> <span class="mdi mdi-slash-forward"></span>
+        <a href="#htc">HTC</a> <span class="mdi mdi-slash-forward"></span>
+        <a href="#moto">Moto</a> <span class="mdi mdi-slash-forward"></span>
+        <a href="#nokia">Nokia</a> <span class="mdi mdi-slash-forward"></span>
+        <a href="#oneplus">OnePlus</a> <span class="mdi mdi-slash-forward"></span>
+        <a href="#oppo">Oppo</a> <span class="mdi mdi-slash-forward"></span>
+        <a href="#xiaomi">Xiaomi</a> <span class="mdi mdi-slash-forward"></span>
+        <a href="#dontwork">Don't work</a>
       </div>
     </p>
 
@@ -556,6 +553,29 @@
               </tr>
             </div>
 
+            <!-- Oppo -->
+            <div>
+              <tr id="oppo">
+                <th class="gsmedium">Oppo</th>
+              </tr>
+
+
+              <tr>
+                <th class="devicename">A5 (2020 )</th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              </tr>
+
+              <tr>
+                <th></th>
+              </tr>
+            </div>
             <!-- Xiaomi -->
             <div>
               <tr class="gsmedium">
@@ -653,6 +673,18 @@
                 <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
                 <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
                 <th><span class="mdi mdi-18px mdi-close-circle mdi-red"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+              </tr>
+
+              <tr>
+                <th class="devicename">Mi 9</th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
+                <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
                 <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
                 <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
                 <th><span class="mdi mdi-18px mdi-check-circle mdi-green"></span></th>
