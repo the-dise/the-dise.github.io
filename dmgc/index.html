@@ -167,25 +167,25 @@
   <!-- Preloader style -->
   <style type="text/css">
 
-      #page-preloader {
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 100500;
-        background: #F5F5F5;
-      }
+    #page-preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100500;
+      background: #F5F5F5;
+    }
 
-      #page-preloader .spin {
-        position: absolute;
-        color: #212121;
-        font-size: 36px;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
-      }
+    #page-preloader .spin {
+      position: absolute;
+      color: #212121;
+      font-size: 36px;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%)
+    }
 
     /* Dark Theme */
     @media (prefers-color-scheme: dark) {
@@ -252,6 +252,32 @@
     </header>
     <!-- M O D A L S  S T A R T -->
     <div>
+
+      <div class="modal fade" id="log40" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title gsmedium" id="ModalLabel">Info</h4>
+              <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+            </div>
+            <div class="modal-body">
+              Changelog:
+              <ul>
+                <li>New lib; <a class="text-muted">Credit r0m10</a></li>
+              </ul>
+              Bugs:
+              <ul>
+                <li>Timelapse with stabilization;</li>
+              </ul>
+              <br>
+              <span class="badge badge-dmgc">DMGC 3.15</span>
+              <span class="badge badge-gcam">Google Camera 7.2.018</span>
+              <span class="badge badge-android">Android 9+</span>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="modal fade" id="log315" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -977,9 +1003,9 @@
         <li class="nav-item">
           <a class="nav-link btn btn-dmgc mx-1 mb-2 active" id="pills-recom-tab" data-toggle="pill" href="#pills-recom" role="tab" aria-controls="pills-recom" aria-selected="true">Recommended</a>
         </li>
-        <!-- <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link btn btn-dmgc mx-1 mb-2" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">ver. 4.x</a>
-        </li> -->
+        </li>
         <li class="nav-item">
           <a class="nav-link btn btn-dmgc mx-1 mb-2" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">ver. 3.x</a>
         </li>
@@ -1005,8 +1031,14 @@
                 </tr>
               </thead>
               <tr>
-                <th><a class="table-link" href="//f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.2.018_ver.3.15.apk">DMGC 3.15</a></th>
+                <th><a class="table-link" href="#">DMGC 4.0</a></th>
                 <th><span class="badge badge-table badge-stable">Stable</span></th>
+                <th class="text-grey">20/03/20</th>
+                <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log40"><span class="mdi mdi-information-outline"></span> Info</a></th>
+              </tr>
+              <tr>
+                <th><a class="table-link" href="//f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.2.018_ver.3.15.apk">DMGC 3.15</a></th>
+                <th><span class="badge badge-table badge-dmgc">Final</span></th>
                 <th class="text-grey">15/02/20</th>
                 <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log315"><span class="mdi mdi-information-outline"></span> Info</a></th>
               </tr>
@@ -1021,7 +1053,7 @@
         </div>
 
         <!-- Version 4.x -->
-        <!-- <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+        <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
           <div class="ht-tm-codeblock">
             <table class="table table-algin-left text">
               <thead class="noselect gsmedium">
@@ -1034,13 +1066,13 @@
               </thead>
               <tr>
                 <th><a class="table-link" href="#">DMGC 4.0</a></th>
-                <th><span class="badge badge-table badge-alpha">Alpha</span></th>
-                <th class="text-grey">(soon)</th>
+                <th><span class="badge badge-table badge-stable">Stable</span></th>
+                <th class="text-grey">20/03/20</th>
                 <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log40"><span class="mdi mdi-information-outline"></span> Info</a></th>
               </tr>
             </table>
           </div>
-        </div> -->
+        </div>
 
         <!-- Version 3.x -->
         <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
@@ -1056,7 +1088,7 @@
               </thead>
               <tr>
                 <th><a class="table-link" href="//f.celsoazevedo.com/file/cfiles/gcm1/DMGC_7.2.018_ver.3.15.apk">DMGC 3.15</a></th>
-                <th><span class="badge badge-table badge-stable">Stable</span></th>
+                <th><span class="badge badge-table badge-dmgc">Final</span></th>
                 <th class="text-grey">15/02/20</th>
                 <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log315"><span class="mdi mdi-information-outline"></span> Info</a></th>
               </tr>
