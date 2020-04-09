@@ -25,6 +25,15 @@
   font-family: "Google Sans Bold", serif; 
 }
 
+@font-face {
+ font-family: "Google Sans Bold";
+ src: url("/fonts/Fira-Mono.ttf") format("opentype")
+}
+
+.fmono {
+  font-family: "Fira Mono", serif; 
+}
+
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
