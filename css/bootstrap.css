@@ -51,12 +51,22 @@
       }
 
       .pattern {
-        width: 100%;
-        height: 100%;
         background-image: url(/images/bkg-dark.svg);
         background-size: 50%;
+
       }
     }
+@media (min-width: 1281px) { .pattern {background-size: 50%;}}
+
+@media (min-width: 1025px) and (max-width: 1280px) {.pattern {background-size: 50%;}}
+
+@media (min-width: 768px) and (max-width: 1024px) {.pattern {background-size: 100%;}  }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {.pattern {background-size: 100%;}}
+
+@media (min-width: 481px) and (max-width: 767px) { .pattern {background-size: 100%;}}
+
+@media (min-width: 320px) and (max-width: 480px) {.pattern {background-size: 100%;}}
 
     @font-face {
      font-family: "Google Sans Regular";
@@ -731,6 +741,7 @@ a:hover {
   .modal-sm {
     max-width: 300px;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -814,10 +825,6 @@ a:hover {
   z-index: 1;
 }
 
-
-@media {
-
-}
 .btn-dmgc {
   color: #212121;
   border-color: #212121;
@@ -1621,5 +1628,7 @@ img.btc-style {
   text-decoration: none;
   font-weight: bold;
 }
+
+
 
 
