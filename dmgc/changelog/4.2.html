@@ -227,55 +227,8 @@
     }
   </style>
 
-  <!-- Preloader style -->
-  <style type="text/css">
-
-    #page-preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 100500;
-      background: #F5F5F5;
-    }
-
-    #page-preloader .spin {
-      position: absolute;
-      color: #212121;
-      font-size: 36px;
-      top: 50%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%)
-    }
-
-    /* Dark Theme */
-    @media (prefers-color-scheme: dark) {
-      #page-preloader {
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 100500;
-        background: #111;
-      }
-
-      #page-preloader .spin {
-        position: absolute;
-        color: #f5f5f5;
-        font-size: 36px;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
-      }
-    }
-  </style>
-
 </head>
-<body>
+<body class="pattern">
   <div id="page-preloader">
     <span class="spin mdi mdi-loading mdi-spin"></span>
     <script type="text/javascript">
@@ -297,17 +250,19 @@
           </svg>
         </span>
       </h1>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link" href="/">Home</a>
-        <a class="nav-link dropdown-toggle active" href="#" id="dmgc" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DMGC</a>
-        <div class="dropdown-menu" aria-labelledby="dmgc">
-          <a class="dropdown-item" href="/dmgc/">Repository</a>
-          <a class="dropdown-item" href="/dmgc/table/">Сompatibility</a>
-          <a class="dropdown-item" href="//yasobe.ru/na/dmgc">Donation</a>
-        </div>
-        <a class="nav-link" href="/blog/">Blog</a>
-        <a class="nav-link" href="/fatchos/">FatchOS</a>
-      </nav>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link dropdown-toggle" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Projects</a>
+
+            <div class="dropdown-menu" aria-labelledby="projects">
+              <a class="dropdown-item" href="/dmgc/">DMGC</a>
+              <a class="dropdown-item" href="/fatchos/">FatchOS</a>
+              <a class="dropdown-item" href="/pink/">Project Pink</a>
+            </div>
+
+            <a class="nav-link" href="/blog/">Blog</a>
+            <a class="nav-link" href="/donuts/">Donuts</a>
+          </nav>
     </div>
   </header>
 
@@ -316,7 +271,7 @@
     <div class="gsregular">
       <p class="lead brand-dmgc">Google Camera ver. 7.3.020</p>
       <br>
-      <p>Changelog:</p>
+      <p class="gsmedium">Changelog:</p>
       <ul>
         <li>Added OTA updated. (Only for stable versions); <a class="text-grey">Credit f0x1d;</a></li>
         <li>Added auxiliary buttons. Need <a class="link" href="http://thedise.ru/dmgc/files/dmgcaux_v1.zip">Magisk module</a>. <a class="text-grey">Credit Arnova8G2;</a></li> 
@@ -332,24 +287,24 @@
         <li>Optimized code.</li>
       </ul>
     </ul>
-    <p>Bugs:</p>
+    <p class="gsmedium">Bugs:</p>
     <ul>
       <li>Timelapse with stabilization. (Mi A2)</li>
     </ul>
     <br>
-    <p>Download:</p>
+    <p class="gsmedium">Download:</p>
     <p>
-      <a href="//t.me/dmgcam/893/" class="btn btn-dmgc gsmedium">Telegram</a>
-      <a href="//celsoazevedo.com/files/android/google-camera/dev-the_dise/" class="btn btn-dmgc gsmedium">CelsoAzevedo</a>
+      <a href="//celsoazevedo.com/files/android/google-camera/dev-the_dise/" class="btn btn-dmgc gsmedium"><span class="mdi mdi-web btn-dmgc-icon"></span>CelsoAzevedo</a>
     </p>
   </div>
 </main>
 
 <footer class="mastfoot mt-auto small text-center">
   <div class="inner gsregular">
-      Copyright <span class="mdi mdi-copyright"></span> 2014-2020 - <a href="#">the_dise</a> - All Right Reserved</p>
-    </div>
-  </footer>
+    Copyright <span class="mdi mdi-copyright"></span> 2014-2020 - <a href="#">the_dise</a> - All Right Reserved</p>
+  </div>
+</footer>
+</div>
 </div>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

@@ -21,7 +21,6 @@
 
   <!-- Styles -->
   <style type="text/css">
-
       body{background: #F5F5F5;color: #212121}
       a{color: #444444}
       a:hover{color: #2196F3}
@@ -82,31 +81,6 @@
         color: #9E9E9E;
       }
 
-      .mdi-green {
-        color: #4CAF50;
-      }
-
-      .mdi-red {
-        color: #f44336;
-      }
-
-      .mdi-orange {
-        color: #FF9800;
-      }
-
-      .mdi-blue {
-        color: #2196F3;
-      }
-
-      .mdi-gray {
-        color: #9E9E9E;
-      }
-
-      .tooltip-inner {
-        color: #f5f5f5;
-        background-color: #212121;
-      }
-
     /* Dark Theme */
     @media (prefers-color-scheme: dark) {
       body{background: #111; color: #F5F5F5}
@@ -120,9 +94,7 @@
       .brand-text {
         fill: #f5f5f5;
       }
-      .brand-main {
-        fill: #2196F3;
-      }
+
       .nav-masthead .nav-link {
         font-weight: 500;
         color: #9E9E9E;
@@ -149,27 +121,6 @@
         border-color: #f5f5f5;
       }
 
-      .modal-content {
-        background-color: #333;
-      }
-      
-      .table {
-        width: 100%;
-        margin-bottom: 2rem;
-        color: #EEEEEE;
-      }
-
-      .table th,
-      .table td {
-        color: #EEEEEE;
-        text-align: left;
-      }
-
-      .table thead th {
-        border-bottom: 2px solid #424242;
-        color: #F5F5F5;
-      }
-
       .dropdown-menu {
         color: #F5F5F5;
         background-color: #212121;
@@ -192,83 +143,11 @@
       .dropdown-item.disabled, .dropdown-item:disabled {
         color: #9E9E9E;
       }
-
-      .mdi-green {
-        color: #4CAF50;
-      }
-
-      .mdi-red {
-        color: #f44336;
-      }
-
-      .mdi-orange {
-        color: #FF9800;
-      }
-
-      .mdi-blue {
-        color: #2196F3;
-      }
-
-      .mdi-gray {
-        color: #9E9E9E;
-      }
-
-      .tooltip-inner {
-        color: #212121;
-        background-color: #F5F5F5;
-      }
-    }
-  </style>
-
-  <!-- Preloader style -->
-  <style type="text/css">
-
-      #page-preloader {
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 100500;
-        background: #F5F5F5;
-      }
-
-      #page-preloader .spin {
-        position: absolute;
-        color: #212121;
-        font-size: 36px;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
-      }
-
-    /* Dark Theme */
-    @media (prefers-color-scheme: dark) {
-      #page-preloader {
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 100500;
-        background: #111;
-      }
-
-      #page-preloader .spin {
-        position: absolute;
-        color: #f5f5f5;
-        font-size: 36px;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
-      }
     }
   </style>
 
 </head>
-<body>
+<body class="pattern">
   <div id="page-preloader">
     <span class="spin mdi mdi-loading mdi-spin"></span>
     <script type="text/javascript">
@@ -290,17 +169,19 @@
           </svg>
         </span>
       </h1>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link" href="/">Home</a>
-        <a class="nav-link dropdown-toggle active" href="#" id="dmgc" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DMGC</a>
-        <div class="dropdown-menu" aria-labelledby="dmgc">
-          <a class="dropdown-item" href="/dmgc/">Repository</a>
-          <a class="dropdown-item" href="/dmgc/table/">Сompatibility</a>
-          <a class="dropdown-item" href="//yasobe.ru/na/dmgc">Donation</a>
-        </div>
-        <a class="nav-link" href="/blog/">Blog</a>
-        <a class="nav-link" href="/fatchos/">FatchOS</a>
-      </nav>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link dropdown-toggle" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Projects</a>
+
+            <div class="dropdown-menu" aria-labelledby="projects">
+              <a class="dropdown-item" href="/dmgc/">DMGC</a>
+              <a class="dropdown-item" href="/fatchos/">FatchOS</a>
+              <a class="dropdown-item" href="/pink/">Project Pink</a>
+            </div>
+
+            <a class="nav-link" href="/blog/">Blog</a>
+            <a class="nav-link" href="/donuts/">Donuts</a>
+          </nav>
     </div>
   </header>
 
@@ -309,9 +190,8 @@
     <div class="gsregular">
       <p class="lead brand-dmgc">Google Camera ver. 7.3.020</p>
       <br>
-      <p>Changelog:</p>
+      <p class="gsmedium">Changelog:</p>
       <ul>
-        <li>Base thanks Urnyx05;</li>
         <li>Android 9+; <a class="text-grey">Credit Arnova</a></li>
         <li>AI AWB fast button; <a class="text-grey">Credit B-S-G</a></li>
         <li>Astro fast button; <a class="text-grey">Credit B-S-G</a></li>
@@ -330,26 +210,25 @@
         <li>Camera Sound always active;</li>
         <li>UI redesign.</li>
       </ul>
-      <p>Bugs:</p>
+      <p class="gsmedium">Bugs:</p>
       <ul>
         <li>Timelapse with stabilization. (Mi A2)</li>
       </ul>
       <br>
-      <p>Download:</p>
-      <p>
-        <a href="//t.me/thedise/655/" class="btn btn-dmgc gsmedium">Telegram</a>
-        <a href="//celsoazevedo.com/files/android/google-camera/dev-the_dise/" class="btn btn-dmgc gsmedium">CelsoAzevedo</a>
-      </p>
-    </div>
-  </main>
+          <p class="gsmedium">Download:</p>
+          <p>
+            <a href="//celsoazevedo.com/files/android/google-camera/dev-the_dise/" class="btn btn-dmgc gsmedium"><span class="mdi mdi-web btn-dmgc-icon"></span>CelsoAzevedo</a>
+          </p>
+        </div>
+      </main>
 
-  <footer class="mastfoot mt-auto small text-center">
-    <div class="inner gsregular">
-      <p>Site language: <a>English</a> / <a>Русский</a><br>
-        Copyright <span class="mdi mdi-copyright"></span> 2014-2020 - <a href="#">the_dise</a> - All Right Reserved</p>
+      <footer class="mastfoot mt-auto small text-center">
+        <div class="inner gsregular">
+            Copyright <span class="mdi mdi-copyright"></span> 2014-2020 - <a href="#">the_dise</a> - All Right Reserved</p>
+          </div>
+        </footer>
       </div>
-    </footer>
-  </div>
+    </div>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
