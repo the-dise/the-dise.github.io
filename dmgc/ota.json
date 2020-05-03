@@ -1,5 +1,5 @@
 {
-    "version": "4.3",
-    "changelog": "DON'T UPDATE\n\nUpdate won't install\n— — —\nНЕ ОБНОВЛЯЙТЕ\n\nОбновление не будет установлено",
-    "link": "https://thedise.ru/dmgc/files/dmgc4test"
+    "version": "4.4",
+    "changelog": "\nAdded disable Hexagon DSP;\nAdded new beautiful splash screen;\nAdded OIS stabilization;\nReordered settings menu;\nFixed frames EHDR+;\nFixed 16:9 random photos;\nFixed No HDR+;\nFixed creation of photos from third-party applications;\nAdded 18 translation:\nArabic — Bassil key\nAlbanian — Indrit Qosja\nBelarusian — Vladislav Yankovskiy\nChinese (Simplified) — 拿破轮\nChinese (TW) — 拿破轮\nCzech — pcasus\nFrench — Skjnldsv \nGerman — mac\nHindi — r3Xtr0n\nHungarian — Ákos Paha\nIndonesian — NINJA_Walker\nItalian — Matteo Mazzarelli\nJapanese — daywalker\nPolish — Sebastianm3333\nPortuguese (BR) — J.D.M \nTurkish — Mevlut Cetin\nSpanish — Luis Mendoza & José L\nUkrainian — zrn1x & Trutra23\nVietnamese — Baoprokute1234",
+    "link": "https://thedise.ru/dmgc/files/dmgc44"
 }
