@@ -95,6 +95,16 @@
   font-family: "Google Sans Bold", serif; 
 }
 
+@font-face {
+ font-family: "Noto Emoji";
+ src: url("/fonts/NotoEmoji-Regular.ttf") format("opentype")
+}
+
+.noto {
+  font-family: "Noto Emoji", serif; 
+}
+
+
 ::-webkit-scrollbar {
   width: 0;
   height: 0;

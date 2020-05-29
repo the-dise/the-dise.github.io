@@ -97,6 +97,23 @@
       border-color: #c23285;
     }
 
+    a.btn-donut {
+      color: #212121;
+      background-color: rgba(0,0,0,0.1);
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      font-size: 18px;
+      border-radius: 50px;
+      font-family: Google Sans Regular;
+      text-decoration: none;
+    }
+
+    a.btn-donut:hover {
+      color: #EC407A;
+      text-decoration: none;
+    }
+
     /* Dark Theme */
     @media (prefers-color-scheme: dark) {
       body{background: #111; color: #F5F5F5}
@@ -163,6 +180,27 @@
         background-color: #c23285;
         border-color: #c23285;
       }
+
+      a.btn-donut {
+        color: #fff;
+        background-color: rgba(255,255,255,0.1);
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        font-size: 18px;
+        border-radius: 50px;
+        font-family: Google Sans Regular;
+        text-decoration: none;
+      }
+
+      a.btn-donut:hover {
+        color: #EC407A;
+        text-decoration: none;
+      }
+
+      .modal-content {
+        background-color: #333;
+      }
     }
   </style>
 </head>
@@ -204,7 +242,7 @@
               <a class="dropdown-item" href="/fatchos/">FatchOS</a>
               <a class="dropdown-item" href="/instander/">Instander</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item active" href="/instander/faq/">F.A.Q</a>
+              <a class="dropdown-item active" href="#">F.A.Q</a>
             </div>
             <a class="nav-link" href="/blog/">Blog</a>
             <a class="nav-link" href="/donuts/">Donuts</a>
@@ -215,10 +253,43 @@
 
     <main role="main" >
       <h1 class="display-4 gsbold" style="margin-top: 5rem">Instander F.A.Q</h1>
-      <p class="lead gsregular">Frequently Asked Questions</p>
+      <p class="lead gsregular">Часто задаваемые вопросы</p>
       <br>
-      <div class="gsregular faq">
+      <a class="btn btn-donut pl-3 mb-3 mx-1"  href="#">
+        <svg x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" xml:space="preserve">
+          <circle fill="#F0F0F0" cx="10" cy="10" r="10"/>
+          <path fill="#0052B4" d="M19.4,13.5c0.4-1.1,0.6-2.3,0.6-3.5s-0.2-2.4-0.6-3.5H0.6C0.2,7.6,0,8.8,0,10s0.2,2.4,0.6,3.5l9.4,0.9
+          L19.4,13.5z"/>
+          <path fill="#D80027" d="M10,20c4.3,0,8-2.7,9.4-6.5H0.6C2,17.3,5.7,20,10,20z"/>
+        </svg>
+        <span class="mx-2">Русский</span>
+      </a>
+      <a class="btn btn-donut pl-3 mb-3 mx-1" href="/instander/faq/en/">
+        <svg x="0px" y="0px" width="20px"height="20px" viewBox="0 0 20 20" xml:space="preserve">
+          <circle fill="#F0F0F0" cx="10" cy="10" r="10"/>
+          <g>
+            <path fill="#0052B4" d="M2.1,3.9c-0.8,1-1.4,2.2-1.7,3.5h5.2L2.1,3.9z"/>
+            <path fill="#0052B4" d="M19.7,7.4c-0.3-1.3-0.9-2.5-1.7-3.5l-3.5,3.5H19.7z"/>
+            <path fill="#0052B4" d="M0.3,12.6c0.3,1.3,0.9,2.5,1.7,3.5l3.5-3.5H0.3L0.3,12.6z"/>
+            <path fill="#0052B4" d="M16.1,2.1c-1-0.8-2.2-1.4-3.5-1.7v5.2L16.1,2.1z"/>
+            <path fill="#0052B4" d="M3.9,17.9c1,0.8,2.2,1.4,3.5,1.7v-5.2L3.9,17.9z"/>
+            <path fill="#0052B4" d="M7.4,0.3C6.1,0.7,4.9,1.3,3.9,2.1l3.5,3.5V0.3z"/>
+            <path fill="#0052B4" d="M12.6,19.7c1.3-0.3,2.5-0.9,3.5-1.7l-3.5-3.5L12.6,19.7L12.6,19.7z"/>
+            <path fill="#0052B4" d="M14.5,12.6l3.5,3.5c0.8-1,1.4-2.2,1.7-3.5H14.5z"/>
+          </g>
+          <g>
+            <path fill="#D80027" d="M19.9,8.7h-8.6h0V0.1C10.9,0,10.4,0,10,0C9.6,0,9.1,0,8.7,0.1v8.6v0H0.1C0,9.1,0,9.6,0,10c0,0.4,0,0.9,0.1,1.3
+            h8.6h0v8.6C9.1,20,9.6,20,10,20c0.4,0,0.9,0,1.3-0.1v-8.6v0h8.6C20,10.9,20,10.4,20,10C20,9.6,20,9.1,19.9,8.7z"/>
+            <path fill="#D80027" d="M12.6,12.6L12.6,12.6l4.5,4.5c0.2-0.2,0.4-0.4,0.6-0.6l-3.8-3.8L12.6,12.6L12.6,12.6L12.6,12.6z"/>
+            <path fill="#D80027" d="M7.4,12.6L7.4,12.6l-4.5,4.5c0.2,0.2,0.4,0.4,0.6,0.6l3.8-3.8L7.4,12.6L7.4,12.6z"/>
+            <path fill="#D80027" d="M7.4,7.4L7.4,7.4L2.9,2.9C2.7,3.1,2.5,3.3,2.3,3.6l3.8,3.8L7.4,7.4L7.4,7.4z"/>
+            <path fill="#D80027" d="M12.6,7.4L12.6,7.4l4.5-4.5c-0.2-0.2-0.4-0.4-0.6-0.6l-3.8,3.8V7.4z"/>
+          </g>
+        </svg>
 
+        <span class="mx-2">English</span>
+      </a>
+      <div class="gsregular faq">
         <div>
           <p>
             <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
@@ -239,106 +310,136 @@
             <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
             В модификации есть два вида настроек:
             <ol>
-              <li>Внутренние настройки для разработчика, добавление самим Instagram. Открывается по удержанию кнопки Домика. <a href="">Скриншот.</a>
-              <li>Кастомные настройки, добавленные разработчиком. Они находятся в меню профиля. <a href="">Скриншот.</a>
-            </ol>
-          </p>
-        </div>
-        <hr>        
-        <div>
-          <p>
-            <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
-            Куда писать репорты о багах модификации?
-          </p>
-          <p>
-            <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
-            Для репортов есть Telegram бот — <a href="">@instanderbot</a>
-          </p>
-        </div>
-        <hr>
-        <div>
-          <p>
-            <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
-            Могу ли я получить бан аккаунта?
-          </p>
-          <p>
-            <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
-            Насколько мне известно, за все время использования разных модификаций Instagram ни один пользователь не получил бан за использование модификаций.
-          </p>
-        </div>
-        <hr>
-        <div>
-          <p>
-            <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
-            Работает ли модификация с бизнес аккаунтом? 
-          </p>
-          <p>
-            <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
-            Да! Я сам являюсь обладателем бизнес аккаунта, все отлично работает. Единственная проблема которая может возникнуть это нерабочая аналитика, она включается и выключается через настройки модификации в подменю Конфиденциальность.
-          </p>
-        </div>
-        <hr>
-        <div id="feature">
-          <p>
-            <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
-            Не забросится ли дальнейшая разработка? 
-          </p>
-          <p>
-            <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
-            При условии материальной поддержки проекта, поддержка будет продолжаться.
-          </p>
-        </div>
-        <hr>
-        <div>
-          <p>
-            <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
-            Отличия от оригинала?
-          </p>
-          <p>
-            <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
-            Основные изменения от оригинала:
-            <ol>
-              <li>Отключение рекламы;</li>
-              <li>Скачивание фото/видео/сторис;</li>
-              <li>Улучшение качества сторис;</li>
-              <li>Скрытие просмотра сторис/нечиталка Direct/неписалка</li>
-              <li>Шрифты в сторис работают с кириллицей;</li>
-              <li>Зум аватарок;</li>
-              <li>Активированый режим разработчика.</li>
-            </ol>
-          </p>
-        </div>
-        <hr>
-        <div>
-          <p>
-            <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
-            Есть ли перемотка видео?
-          </p>
-          <p>
-            <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
-            Да. На данный она включается через меню разработчика — <a href="https://t.me/thedise/929">ссылка</a>. 
-          </p>
-        </div>
-        <hr>
+              <li>Внутренние настройки для разработчика, добавленные самим Instagram. Открывается по удержанию кнопки Домика. <a href="#" data-toggle="modal" data-target="#devscreen">Скриншот.</a>
+                <li>Кастомные настройки, добавленные разработчиком. Они находятся в меню профиля. <a href="#" data-toggle="modal" data-target="#instanderscreen">Скриншот.</a>
+                </ol>
+              </p>
+            </div>
+            <hr>        
+            <div>
+              <p>
+                <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
+                Куда писать репорты о багах модификации?
+              </p>
+              <p>
+                <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
+                Для репортов есть Telegram бот — <a href="">@instanderbot</a>
+              </p>
+            </div>
+            <hr>
+            <div>
+              <p>
+                <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
+                Могу ли я получить бан аккаунта?
+              </p>
+              <p>
+                <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
+                Насколько мне известно, за все время использования разных модификаций Instagram ни один пользователь не получил бан за использование модификаций.
+              </p>
+            </div>
+            <hr>
+            <div>
+              <p>
+                <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
+                Работает ли модификация с бизнес аккаунтом? 
+              </p>
+              <p>
+                <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
+                Да! Я сам являюсь обладателем бизнес аккаунта, все отлично работает. Единственная проблема которая может возникнуть это нерабочая аналитика, она включается и выключается через настройки модификации в подменю Конфиденциальность.
+              </p>
+            </div>
+            <hr>
+            <div id="feature">
+              <p>
+                <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
+                Не забросится ли дальнейшая разработка? 
+              </p>
+              <p>
+                <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
+                При условии материальной поддержки проекта, поддержка будет продолжаться.
+              </p>
+            </div>
+            <hr>
+            <div>
+              <p>
+                <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
+                Отличия от оригинала?
+              </p>
+              <p>
+                <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
+                Основные изменения от оригинала:
+                <ol>
+                  <li>Отключение рекламы;</li>
+                  <li>Скачивание фото/видео/сторис;</li>
+                  <li>Улучшение качества сторис;</li>
+                  <li>Скрытие просмотра сторис/нечиталка Direct/неписалка</li>
+                  <li>Шрифты в сторис работают с кириллицей;</li>
+                  <li>Зум аватарок;</li>
+                  <li>Активированый режим разработчика.</li>
+                </ol>
+              </p>
+            </div>
+            <hr>
+            <div>
+              <p>
+                <div class="red-text gsmedium"><span class="mdi mdi-account-question-outline"></span> Вопрос:</div>
+                Есть ли перемотка видео?
+              </p>
+              <p>
+                <div class="green-text gsmedium"><span class="mdi mdi-account-check-outline"></span> Ответ:</div>
+                Да. На данный момент она включается через меню разработчика — <a href="https://t.me/thedise/929">ссылка</a>. 
+              </p>
+            </div>
+            <hr>
 
+          </div>
+
+          <div class="modal fade" id="devscreen" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title gsmedium" id="ModalLabel">Screenshot</h4>
+                  <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+                </div>
+                <div class="modal-body">
+                  <img width="100%" src="/images/dev-screen.png"></ins>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="instanderscreen" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title gsmedium" id="ModalLabel">Screenshot</h4>
+                  <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+                </div>
+                <div class="modal-body">
+                  <img width="100%" src="/images/instander-screen.png"></ins>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="mastfoot mt-auto small">
+          <div class="inner gsregular">
+            Copyright <span class="mdi mdi-copyright"></span> 2014-2020 - <a href="/">the_dise</a> - All Right Reserved</p>
+          </div>
+        </footer>
       </div>
-    </main>
 
-    <footer class="mastfoot mt-auto small">
-      <div class="inner gsregular">
-        Copyright <span class="mdi mdi-copyright"></span> 2014-2020 - <a href="/">the_dise</a> - All Right Reserved</p>
-      </div>
-    </footer>
-  </div>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-151959411-1');
-  </script>
-</body>
-</html>
+        gtag('config', 'UA-151959411-1');
+      </script>
+    </body>
+    </html>
