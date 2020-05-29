@@ -56,17 +56,17 @@
 
       }
     }
-@media (min-width: 1281px) { .pattern {background-size: 50%;}}
+    @media (min-width: 1281px) { .pattern {background-size: 50%;}}
 
-@media (min-width: 1025px) and (max-width: 1280px) {.pattern {background-size: 50%;}}
+    @media (min-width: 1025px) and (max-width: 1280px) {.pattern {background-size: 50%;}}
 
-@media (min-width: 768px) and (max-width: 1024px) {.pattern {background-size: 100%;}  }
+    @media (min-width: 768px) and (max-width: 1024px) {.pattern {background-size: 100%;}  }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {.pattern {background-size: 100%;}}
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {.pattern {background-size: 100%;}}
 
-@media (min-width: 481px) and (max-width: 767px) { .pattern {background-size: 100%;}}
+    @media (min-width: 481px) and (max-width: 767px) { .pattern {background-size: 100%;}}
 
-@media (min-width: 320px) and (max-width: 480px) {.pattern {background-size: 100%;}}
+    @media (min-width: 320px) and (max-width: 480px) {.pattern {background-size: 100%;}}
 
     @font-face {
      font-family: "Google Sans Regular";
@@ -1496,6 +1496,14 @@ a.btn-info-fatchos:not(:disabled):not(.disabled):active:focus, .btn-info-fatchos
   width: 8rem;
 }
 
+.th-w9 {
+  width: 9rem;
+}
+
+.th-w10 {
+  width: 10rem;
+}
+
 #fatch-anim {
   width: auto;
   height: 30rem;
@@ -1627,4 +1635,26 @@ img.btc-style {
   color: #2196F3;
   text-decoration: none;
   font-weight: bold;
+}
+
+.faq {
+  text-align: left;
+
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+
+  .faq a {
+    color: #212121;
+    text-decoration: underline; 
+  }
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  .faq a {
+    color: #ffffff;
+    text-decoration: underline; 
+  }
 }
