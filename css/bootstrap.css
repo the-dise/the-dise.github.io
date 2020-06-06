@@ -909,6 +909,10 @@ a:hover {
   color: #FF7043 !important;
 }
 
+.dropdown-header.instander {
+  color: #EC407A !important;
+}
+
 .btn-fatch {
   color: #212121;
   border-color: #212121;
@@ -1006,7 +1010,7 @@ a.btn-info-fatchos {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem;
+  border-radius: 5rem;
 }
 
 a.btn-info-fatchos:hover {
@@ -1036,6 +1040,46 @@ a.btn-info-fatchos:not(:disabled):not(.disabled):active, .btn-info-fatchos:not(:
 a.btn-info-fatchos:not(:disabled):not(.disabled):active:focus, .btn-info-fatchos:not(:disabled):not(.disabled).active:focus,
 .show > .btn-info-fatchos.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(255,112,67 ,0.5);
+}
+
+
+a.btn-info-inst {
+  color: #fff;
+  background-color: #EC407A;
+  border-color: #EC407A;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 5rem;
+}
+
+a.btn-info-inst:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #EC407A;
+  border-color: #EC407A;
+}
+
+a.btn-info-inst:focus, .btn-info-inst.focus {
+  box-shadow: 0 0 0 0.2rem rgba(236,64,122 ,0.5);
+}
+
+a.btn-info-inst.disabled, .btn-info-inst:disabled {
+  color: #fff;
+  background-color: #d81b60;
+  border-color: #d81b60;
+}
+
+a.btn-info-inst:not(:disabled):not(.disabled):active, .btn-info-inst:not(:disabled):not(.disabled).active,
+.show > .btn-info-inst.dropdown-toggle {
+  color: #fff;
+  background-color: #c2185b;
+  border-color: #c2185b;
+}
+
+a.btn-info-inst:not(:disabled):not(.disabled):active:focus, .btn-info-inst:not(:disabled):not(.disabled).active:focus,
+.show > .btn-info-inst.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(236,64,122 ,0.5);
 }
 
 
