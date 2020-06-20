@@ -1089,11 +1089,6 @@ a.btn-info-inst:not(:disabled):not(.disabled):active:focus, .btn-info-inst:not(:
   box-shadow: 0 0 0 0.2rem rgba(236,64,122 ,0.5);
 }
 
-
-
-
-
-
 a.btn-merch {
   color: #fff;
   background-color: #ba68c8;
