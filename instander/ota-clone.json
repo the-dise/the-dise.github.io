@@ -1,5 +1,5 @@
 {
-	"version": "146.0.0.27.125 v3.1",
-	"changelog": "test ota clone",
+	"version": "146.0.0.27.125 v3.0",
+	"changelog": "— Based on Instagram 146.0.0.27.125;\n— Added Disable In-App Browser;\n— Added copy comments (right button);\n— Added Don't crop stories;\n— Max Quality Media moved to Feed Menu;\n— Bugs fixed and optimization.",
 	"link": "https://build.ivan1874.cf/instander/clone/instander-v3.0.apk"
 }
