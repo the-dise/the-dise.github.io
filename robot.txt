@@ -1,0 +1,7 @@
+# Группа 1
+User-agent: Googlebot
+Disallow: /instander/files/
+
+# Группа 2
+User-agent: *
+Allow: /
