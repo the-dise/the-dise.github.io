@@ -1,5 +1,5 @@
 {
-	"version": "151.0.0.23.120 v4.0",
-	"changelog": "— Based on Instagram 151.0.0.23.120;\n— Instagram Reels;\n— Added selectable bio test in profile;\n— New typewriter font (classic and text tool v2);\n— Reorganizing Instander Settings;\n— Bugs fixed and optimization.",
-	"link": "https://build.vanutp.dev/instander/instander-v4.0.apk"
+	"version": "146.0.0.27.125 v3.0",
+	"changelog": "— Based on Instagram 146.0.0.27.125;\n— Added Disable In-App Browser;\n— Added copy comments (right button);\n— Added Don't crop stories;\n— Max Quality Media moved to Feed Menu;\n— Bugs fixed and optimization.",
+	"link": "https://build.ivan1874.cf/instander/instander-v3.0.apk"
 }
