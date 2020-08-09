@@ -1,5 +1,5 @@
 {
-	"version": "146.0.0.27.125 v3.0",
-	"changelog": "— Based on Instagram 146.0.0.27.125;\n— Added Disable In-App Browser;\n— Added copy comments (right button);\n— Added Don't crop stories;\n— Max Quality Media moved to Feed Menu;\n— Bugs fixed and optimization.",
-	"link": "https://build.ivan1874.cf/instander/instander-v3.0.apk"
+	"version": "153.0.0.34.96 v5.0",
+	"changelog": "— Based on Instagram 153.0.0.34.96;\n— Instagram Reels;\n— Selectable bio text;\n— Disable swipe navigation;\n— New modern font;\n— New neon font;\n— New highlight font;\n— New typewriter font;\n— New strong font;\n— New meme font;\n— New elegant font;\n— New directional font;\n— Added translation: Ukrainian, Arabic, German, Portuguese (Brazilian), Turkish;\n— Reorganizing Instander Settings;\n— Bugs fixed and optimization.\n\nNote. Upgrade from version 3.0 is not possible. Update through the website: thedise.me/instander",
+	"link": "https://build.vanutp.dev/instander/instander-v5.0.apk"
 }
