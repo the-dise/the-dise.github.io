@@ -1,5 +1,5 @@
 {
-	"version": "153.0.0.34.96 v5.1",
+	"version": "153.0.0.34.96 v5.0",
 	"changelog": "— Fixed Facebook authorization;\n— Removed the old story enhancement method. New method — thedise.me/c/1;\n— Fixed translation;\n\nNote. Upgrade from version 3.0 is not possible. Update through the website: thedise.me/instander",
 	"link": "https://build.vanutp.dev/instander/clone/instander-v5.1-clone.apk"
 }
