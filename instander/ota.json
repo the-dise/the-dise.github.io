@@ -1,5 +1,5 @@
 {
 	"version": "153.0.0.34.96 v5.1",
 	"changelog": "— Fixed addressing the server to check the verification checkboxes;\n— Removed the old story enhancement method. New method — thedise.me/c/1;\n— Fixed facebook authorization;\n— Removed ads from Explore;\n— Added display of mutual subscription in user profile;\n— Video rewind is enabled by default;\n— Instagram logo centered;\n— Removed unused code;\n— Added new tranlation: Chinese Simplified, Chinese Traditional, Italian, French, Spanish, Polish;\n— Added clickable links;\n— Fixed text tool classic;\n— Fixed neon font;\n— Bugs fixed and optimization.\n\nNote. Upgrade from version 3.0 is not possible. Update through the website: thedise.me/instander",
-	"link": "https://build.vanutp.dev/instander/instander-v5.1.apk"
+	"link": "https://build.vanutp.dev/instander/instander-v5.1-fix.apk"
 }
