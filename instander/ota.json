@@ -1,5 +1,5 @@
 {
 	"version": "157.0.0.37.120 v6.0",
 	"changelog": "\n— Rebase to Instagram 157.0.0.37.120;\n— Added download avatars on long tap;\n— Remake swipe navigation;\n— Fixed download this pic;\n— New meme font (Chalkboard SE Bold);\n— Added Mark as read to notify;\n— Added welcome message;\n— Added download IGTV;\n— Verify info now on Web-page;\n— Fixed default states;\n— Fixed PayPal item;\n— Added and updated: Arabic, Belarusian, Chinese Simplified, Chinese Traditional, Croatian, French, German, Greek, Hebrew, Hindi, Indonesian, Italian, Kazakh, Persian, Polish, Portuguese, Brazilian, Romanian, Russian, Spanish, Turkish, Ukrainian, Uzbek",
-	"link": "https://build.vanutp.dev/instander/instander-v5.2.apk"
+	"link": "https://build.vanutp.dev/instander/instander-v6.0.apk"
 }
