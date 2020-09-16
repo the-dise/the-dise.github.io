@@ -6,11 +6,11 @@
   <title>FatchOS - Official Home Page</title>
   
   <!-- Favicon -->
-  <link rel="shortcut icon" href="/files/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/files/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/src/favicon.ico" type="image/x-icon">
 
   <!-- Grid & Icons -->
-  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/src/css/bootstrap.css">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
 
   <!-- Scripts -->
@@ -212,12 +212,17 @@
           <a class="nav-link " href="/">Home</a>
           <a class="nav-link dropdown-toggle active" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Projects</a>
           <div class="dropdown-menu" aria-labelledby="projects">
-            <a class="dropdown-item" href="/dmgc/">DMGC</a>
-            <a class="dropdown-item active" href="/fatchos/">FatchOS</a>
             <a class="dropdown-item" href="/instander/">Instander</a>
-            <a class="dropdown-item" href="/merch/">Merch</a>
+            <a class="dropdown-item" href="/dmgc/">DMGC</a>
+            <div class="dropdown-divider"></div>
+
+            <!-- <a class="dropdown-item" href="/merch/">Merch</a> -->
+            <a class="dropdown-header fatchos">Mi Band</a>
+            <a class="dropdown-item active" href="#/">Fatch</a>
+            <a class="dropdown-item" href="/band/aion/">Aion</a>              
           </div>
-          <a class="nav-link" href="/blog/">Blog</a>
+
+          <a class="nav-link" href="tg://resolve?domain=thedise">Blog</a>
           <a class="nav-link" href="/donuts/">Donuts</a>
         </nav>
       </div>
@@ -403,7 +408,7 @@
               </div>
               <div class="modal-body">
                 <div style="text-align: center;">
-                  <img src="/files/images/fmin.png">
+                  <img src="/src/images/fmin.png">
                 </div>
                 <br>
                 <h4>Dots:</h4>
@@ -414,7 +419,7 @@
                   90-100% <span class="mdi mdi-battery" style="color: #4CAF50"></span></div>
                   <div><b>Right:</b> Bluetooth <span class="mdi mdi-bluetooth-connect" style="color: #2196F3"></span></div>
                   <br>
-                  <p><a class="table-link" href="/files/images/fatch-minimal.png">Download image for preview in Mi Fit</a></p>
+                  <p><a class="table-link" href="/src/images/fatch-minimal.png">Download image for preview in Mi Fit</a></p>
                 </div>
               </div>
             </div>
@@ -429,7 +434,7 @@
                 </div>
                 <div class="modal-body">
                   <div style="text-align: center;">
-                    <img src="/files/images/fspo.png">
+                    <img src="/src/images/fspo.png">
                   </div>
                   <br>
                   <h4>Dots:</h4>
@@ -440,7 +445,7 @@
                     90-100% <span class="mdi mdi-battery" style="color: #4CAF50"></span></div>
                     <div><b>Right:</b> Bluetooth <span class="mdi mdi-bluetooth-connect" style="color: #2196F3"></span></div>
                     <br>
-                    <p><a class="table-link" href="/files/images/fatch-sport.png">Download image for preview in Mi Fit</a></p>
+                    <p><a class="table-link" href="/src/images/fatch-sport.png">Download image for preview in Mi Fit</a></p>
                   </div>
                 </div>
               </div>
@@ -540,7 +545,7 @@
       $.ajax({
         'async': false,
         'global': false,
-        'url': "/files/images/data.json",
+        'url': "/src/images/data.json",
         'dataType': "json",
         'success': function(data) {
           json = data;

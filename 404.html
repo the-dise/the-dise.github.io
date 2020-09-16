@@ -6,11 +6,11 @@
   <title>Not found 😢</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="/files/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/files/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/src/favicon.ico" type="image/x-icon">
 
   <!-- Grid & Icons -->
-  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/src/css/bootstrap.css">
 
   <!-- Scripts -->
   <script src="//code.jquery.com/jquery-3.4.1.js"></script>
@@ -113,16 +113,20 @@
           </svg>
         </span>
         <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link" href="/">Home</a>
-          <a class="nav-link dropdown-toggle active" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Projects</a>
-
+          <a class="nav-link active" href="/">Home</a>
+          <a class="nav-link dropdown-toggle" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Projects</a>
           <div class="dropdown-menu" aria-labelledby="projects">
-            <a class="dropdown-item" href="/dmgc/">DMGC</a>
-            <a class="dropdown-item" href="/fatchos/">FatchOS</a>
             <a class="dropdown-item" href="/instander/">Instander</a>
-            <a class="dropdown-item" href="/merch/">Merch</a>
+            <a class="dropdown-item" href="/dmgc/">DMGC</a>
+            <!-- <a class="dropdown-item" href="/merch/">Merch</a> -->
+            <a class="dropdown-item dropdown-toggle" href="#" id="band" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Mi Band</a>
+            <div class="dropdown-menu" aria-labelledby="band">
+              <a class="dropdown-item" href="/band/fatch/">Fatch</a>
+              <a class="dropdown-item" href="/band/aion/">Aion</a>              
+            </div>
           </div>
-          <a class="nav-link" href="/blog/">Blog</a>
+
+          <a class="nav-link" href="tg://resolve?domain=thedise">Blog</a>
           <a class="nav-link" href="/donuts/">Donuts</a>
         </nav>
       </div>
