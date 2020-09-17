@@ -1,5 +1,5 @@
 {
-	"version": "157.0.0.37.120 v6.0",
-	"changelog": "— Rebase to Instagram 157.0.0.37.120;\n— Added download avatars on long tap;\n— Remake swipe navigation;\n— Fixed download this pic;\n— New meme font (Chalkboard SE Bold);\n— Added Mark as read to notify;\n— Added welcome message;\n— Added download IGTV;\n— Verify info now on Web-page;\n— Fixed default states;\n— Fixed PayPal item;\n— Added and updated: Arabic, Belarusian, Chinese Simplified, Chinese Traditional, Croatian, French, German, Greek, Hebrew, Hindi, Indonesian, Italian, Kazakh, Persian, Polish, Portuguese, Brazilian, Romanian, Russian, Spanish, Turkish, Ukrainian, Uzbek",
-	"link": "https://build.vanutp.dev/instander/clone/instander-v6.0-clone.apk"
+	"version": "158.0.0.30.123 v7.0",
+	"changelog": "Rebase to Instagram 158.0.0.30.123;\nAdded stories improving quality (12 Mbps);\nAdded available Instagram music;\nAdded Splunk Mint (Crashlytics);\nAdded photo improving quality (95% JPEG);\nAdded Ghost Mode;\nAdded auto check OTA update;\nFix RTL download button;\nFixed Don't Read Direct ;\nFixed Verify info;\nFixed Threads in profile;\nDisable Covid Hub;\nRemake Download dialog;\nRemoved: FollowsYou, Clickable Links, Selectable bio, Copy Comments, Mark as read, Hide liked posts, Auto play, Recommended friends.",
+	"link": "https://build.vanutp.dev/instander/clone/instander-v7.0-clone.apk"
 }
