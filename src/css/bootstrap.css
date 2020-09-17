@@ -143,7 +143,6 @@
       }
     }
 
-    svg:nth-child(1){stroke:#9e9e9e;}
     @media (min-width: 1281px) { .pattern {background-size: 50%;}}
 
     @media (min-width: 1025px) and (max-width: 1280px) {.pattern {background-size: 50%;}}
