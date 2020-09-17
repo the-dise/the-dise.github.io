@@ -1,5 +1,5 @@
 {
 	"version": "158.0.0.30.123 v7.0",
-	"changelog": "Rebase to Instagram 158.0.0.30.123;\n— Added stories improving quality (12 Mbps);\n— Added available Instagram music;\n— Added Splunk Mint (Crashlytics);\n— Added photo improving quality (95% JPEG);\n— Added Ghost Mode;\n— Added auto check OTA update;\n— Fix RTL download button;\n— Fixed Don't Read Direct ;\n— Fixed Verify info;\n— Fixed Threads in profile;\n— Disable Covid Hub;\n— Remake Download dialog;\n— Removed: FollowsYou, Clickable Links, Selectable bio, Copy Comments, Mark as read, Hide liked posts, Auto play, Recommended friends.",
+	"changelog": "— Rebase to Instagram 158.0.0.30.123;\n— Added stories improving quality (12 Mbps);\n— Added available Instagram music;\n— Added Splunk Mint (Crashlytics);\n— Added photo improving quality (95% JPEG);\n— Added Ghost Mode;\n— Added auto check OTA update;\n— Fix RTL download button;\n— Fixed Don't Read Direct ;\n— Fixed Verify info;\n— Fixed Threads in profile;\n— Disable Covid Hub;\n— Remake Download dialog;\n— Removed: FollowsYou, Clickable Links, Selectable bio, Copy Comments, Mark as read, Hide liked posts, Auto play, Recommended friends.",
 	"link": "https://build.vanutp.dev/instander/clone/instander-v7.0-clone.apk"
 }
