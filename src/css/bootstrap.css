@@ -10,7 +10,7 @@
         background: #F5F5F5;
         display: flex;
         justify-content: center;
-         align-items: center;
+        align-items: center;
       }
 
       #page-preloader .spin {
@@ -2871,4 +2871,34 @@ img.btc-style {
   border-radius: 50%;
   width: 64px;
   margin-bottom: 1rem;
+}
+
+a.spotify:hover {
+  color: #1DB954 !important ; 
+}
+
+a.youtube:hover {
+  color: #FF0000 !important ; 
+}
+
+a.vk:hover {
+  color: #4680C2 !important ; 
+}
+
+a.github:hover {
+  color: #24292e !important ; 
+}
+
+@media (prefers-color-scheme: dark) {
+  a.github:hover {
+    color: #fafbfc !important ; 
+  }
+}
+
+a.instagram:hover {
+  color: #e1306c !important ; 
+}
+
+a.telegram:hover {
+  color: #0088cc !important ; 
 }
