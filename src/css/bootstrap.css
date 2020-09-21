@@ -1,175 +1,182 @@
-    /* Light mode */
-    @media (prefers-color-scheme: light) {
-      #page-preloader {
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 100500;
-        background: #F5F5F5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
 
-      #page-preloader .spin {
-        position: absolute;
-        color: #212121;
-        font-size: 36px;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
-      }
-
-      .pattern {
-        width: 100%;
-        height: 100%;
-        background-image: url(/src/images/bkg-light.svg);
-        background-size: 50%;
-      }
-    }
-
-    /* Dark Theme */
-    @media (prefers-color-scheme: dark) {
-      #page-preloader {
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 100500;
-        background: #111;
-      }
-
-      #page-preloader .spin {
-        position: absolute;
-        color: #f5f5f5;
-        font-size: 36px;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
-      }
-
-      .pattern {
-        background-image: url(/src/images/bkg-dark.svg);
-        background-size: 50%;
-
-      }
-    }
-
-
-
-    .spinner
-    {
-      -webkit-animation: rotation 1.35s linear infinite;
-      animation: rotation 1.35s linear infinite;
-    }
-
-    @-webkit-keyframes rotation
-    {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-
-      100% {
-        -webkit-transform: rotate(270deg);
-        transform: rotate(270deg);
-      }
-    }
-
-    @keyframes rotation
-    {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-
-      100% {
-        -webkit-transform: rotate(270deg);
-        transform: rotate(270deg);
-      }
-    }
-
-    .circle
-    {
-      stroke-dasharray: 180;
-      stroke-dashoffset: 0;
-      -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-      transform-origin: center;
-      -webkit-animation: turn 1.35s ease-in-out infinite;
-      animation: turn 1.35s ease-in-out infinite;
-    }
-
-    @-webkit-keyframes turn
-    {
-      0% {
-        stroke-dashoffset: 180;
-      }
-
-      50% {
-        stroke-dashoffset: 45;
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-      }
-
-      100% {
-        stroke-dashoffset: 180;
-        -webkit-transform: rotate(450deg);
-        transform: rotate(450deg);
-      }
-    }
-
-    @keyframes turn
-    {
-      0% {
-        stroke-dashoffset: 180;
-      }
-
-      50% {
-        stroke-dashoffset: 45;
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-      }
-
-      100% {
-        stroke-dashoffset: 180;
-        -webkit-transform: rotate(450deg);
-        transform: rotate(450deg);
-      }
-    }
-
-    @media (min-width: 1281px) { .pattern {background-size: 50%;}}
-
-    @media (min-width: 1025px) and (max-width: 1280px) {.pattern {background-size: 50%;}}
-
-    @media (min-width: 768px) and (max-width: 1024px) {.pattern {background-size: 100%;}  }
-
-    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {.pattern {background-size: 100%;}}
-
-    @media (min-width: 481px) and (max-width: 767px) { .pattern {background-size: 100%;}}
-
-    @media (min-width: 320px) and (max-width: 480px) {.pattern {background-size: 100%;}}
-
-    @font-face {
-     font-family: "Google Sans Regular";
-     src: url("/src/fonts/GoogleSans-Regular.ttf") format("opentype")
-   }
-
-   .gsregular {
-    font-family: "Google Sans Regular", serif;
+@media (prefers-color-scheme: light) {
+  #page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100500;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  @font-face {
-   font-family: "Google Sans Medium";
-   src: url("/src/fonts/GoogleSans-Medium.ttf") format("opentype")
- }
+  #page-preloader .spin {
+    position: absolute;
+    color: #212121;
+    font-size: 36px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
 
- .gsmedium {
+  .pattern {
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/images/bkg-light.svg);
+    background-size: 50%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100500;
+    background: #111;
+  }
+
+  #page-preloader .spin {
+    position: absolute;
+    color: #f5f5f5;
+    font-size: 36px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+
+  .pattern {
+    background-image: url(/src/images/bkg-dark.svg);
+    background-size: 50%;
+
+  }
+}
+.spinner
+{
+  -webkit-animation: rotation 1.35s linear infinite;
+  animation: rotation 1.35s linear infinite;
+}
+
+@-webkit-keyframes rotation
+{
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes rotation
+{
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+.circle
+{
+  stroke-dasharray: 180;
+  stroke-dashoffset: 0;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: turn 1.35s ease-in-out infinite;
+  animation: turn 1.35s ease-in-out infinite;
+}
+
+@-webkit-keyframes turn
+{
+  0% {
+    stroke-dashoffset: 180;
+  }
+
+  50% {
+    stroke-dashoffset: 45;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: 180;
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes turn
+{
+  0% {
+    stroke-dashoffset: 180;
+  }
+
+  50% {
+    stroke-dashoffset: 45;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: 180;
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+
+@media (min-width: 1281px) { .pattern {background-size: 50%;}
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .pattern {background-size: 50%;}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .pattern {background-size: 100%;}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .pattern {background-size: 100%;}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+ .pattern {background-size: 100%;}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .pattern {background-size: 100%;}
+}
+
+@font-face {
+ font-family: "Google Sans Regular";
+ src: url("/src/fonts/GoogleSans-Regular.ttf") format("opentype")
+}
+
+.gsregular {
+  font-family: "Google Sans Regular", serif;
+}
+
+@font-face {
+ font-family: "Google Sans Medium";
+ src: url("/src/fonts/GoogleSans-Medium.ttf") format("opentype")
+}
+
+.gsmedium {
   font-family: "Google Sans Medium", serif; 
 }
 
@@ -182,6 +189,32 @@
   font-family: "Google Sans Bold", serif; 
 }
 
+@font-face {
+ font-family: "Roboto Mono";
+ src: url("/src/fonts/Roboto-Mono.ttf") format("opentype")
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", serif; 
+}
+
+@font-face {
+ font-family: "Roboto Regular";
+ src: url("/src/fonts/Roboto-Regular.ttf") format("opentype")
+}
+
+.roboto {
+  font-family: "Roboto Regular", serif; 
+}
+
+@font-face {
+ font-family: "Roboto Light";
+ src: url("/src/fonts/Roboto-Light.ttf") format("opentype")
+}
+
+.roboto-light {
+  font-family: "Roboto Light", serif; 
+}
 
 ::-webkit-scrollbar {
   width: 0;
