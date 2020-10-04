@@ -1,5 +1,5 @@
 {
-	"version": "158.0.0.30.123 v7.1",
-	"changelog": "— Added hiding liked post;\n— Added video auto-play toggle;\n— Added hiding recommended friends;\n— Added swipe to navigation;\n— Hidden toasts Latest version and Error when entering the application with OTA enabled;\n— Fixed AdsFree errors;\n— Fixed max width in feed;",
-	"link": "https://build.vanutp.dev/instander/instander-v7.1.apk"
+	"version": "158.0.0.30.123 v7.2",
+	"changelog": "— Fixed crash when you listen a voice message before it was sent;\n— Fixed crashes if you upload video in the feed.",
+	"link": "https://build.vanutp.dev/instander/instander-v7.2.apk"
 }
