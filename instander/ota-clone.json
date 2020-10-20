@@ -1,5 +1,5 @@
 {
-	"version": "158.0.0.30.123 v7.1-clone",
-	"changelog": "— Rollback to version 7.1 (return changes)",
-	"link": "https://build.vanutp.dev/instander/clone/instander-v7.1-clone-fix.apk"
+	"version": "8.0",
+	"changelog": "— Rebase to Instagram 162.0.0.42.125;\n— Added copy biography on long tap;\n— Added copy comments;\n— Added copy post description;\n— Fixed all masks;\n— New OTA version check;\n— Fixed high CPU & fast battery usage;\n— Fixed crash when you listen a voice message before it was sent;\n— Fixed crashes if you upload video in the feed;\n— Searching for updates... instead of Loading... when starting the application.\n",
+	"link": "https://build.vanutp.dev/instander/clone/instander-v8.0-clone.apk"
 }
