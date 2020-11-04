@@ -1,5 +1,5 @@
 {
-	"version": "8.1",
-	"changelog": "— Added zoom photos on long tap;\n— Fixed high CPU & fast battery usage;\n— Fixed crash MIUI;\n— Fixed translations;\n— Clone version fixed notifications.\n",
-	"link": "https://build.vanutp.dev/instander/instander-v8.1.apk"
+	"version": "8.2",
+	"changelog": "— Added Instander menu (download; preview; share a direct link to the file; copy direct link to the file);\n— Black splash screen on night theme;\n— Fixed setCanceledOnTouchOutside.\n",
+	"link": "https://build.vanutp.dev/instander/instander-v8.2.apk"
 }
