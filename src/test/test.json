@@ -1,5 +1,5 @@
 {
 	"version": "8.3",
-	"changelog": "<\bold>This is a first heading.And it will be bold.Contents come here<\bold>.This will be plain text. Non bold.<\bold>This is a second heading.<\bold> And it will be bold.Contents come here.This will be plain text. Non bold.",
+	"changelog": "Bold \n Italic \n Regular",
 	"link": "https://thedise.me/src/test/example.apk"
 }
