@@ -1,5 +1,5 @@
 {
-	"version": "8.2",
-	"changelog": "— Added Instander menu (download; preview; share a direct link to the file; copy direct link to the file);\n— Black splash screen on night theme;\n— Fixed setCanceledOnTouchOutside.\n",
-	"link": "https://build.vanutp.dev/instander/instander-v8.2.apk"
+	"version": "9.0",
+	"changelog": "— Rebase to Instagram 166.0.0.41.245;\n— New design;\n— New design Instander Settings;\n— Added Don't crop Stories;\n— Added Full-screen Stories;\n— Added save self-destruct photo;\n— Added save photo in Direct;\n— Added download Reels;\n— Added selectable bio;\n— Remove copy bio on tap;\n— Fixed listening to voice;\n— Fixed selfie-stickers;\n— Fixed posting video ;\n— Fixed high CPU & fast battery usage;\n— Fixed share QR-Code;\n— White navigation bar on splash",
+	"link": "https://build.vanutp.dev/instander/instander-v9.0.apk"
 }
