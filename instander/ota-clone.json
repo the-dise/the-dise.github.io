@@ -1,5 +1,5 @@
 {
-	"version": "9.0",
-	"changelog": "— Rebase to Instagram 166.0.0.41.245;\n— New design;\n— New design Instander Settings;\n— Added Don't crop Stories;\n— Added Full-screen Stories;\n— Added save self-destruct photo;\n— Added save photo in Direct;\n— Added download Reels;\n— Added selectable bio;\n— Remove copy bio on tap;\n— Fixed listening to voice;\n— Fixed selfie-stickers;\n— Fixed posting video ;\n— Fixed high CPU & fast battery usage;\n— Fixed share QR-Code;\n— White navigation bar on splash",
-	"link": "https://build.vanutp.dev/instander/clone/instander-v9.0-clone.apk"
+	"version": "9.1",
+	"changelog": "— Added improve IGTV quality (experimental);\n— Added improve Reels quality (experimental);\n— Fixed Stories quality;\n— Fixed display of ads;\n— Fixed Hightlight menu;\n— Fixed seen message status;\n— Added translates: Turkish; Spanish; Portuguese, Brazilian; Ukrainian; Kazakh; Italian; Indonesian; Hindi; Hebrew; Greek; Chinese Traditional",
+	"link": "https://build.vanutp.dev/instander/clone/instander-v9.1-c.apk"
 }
