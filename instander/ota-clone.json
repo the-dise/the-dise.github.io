@@ -1,5 +1,5 @@
 {
-	"version": "9.1",
-	"changelog": "— Added improve IGTV quality (experimental);\n— Added improve Reels quality (experimental);\n— Fixed Stories quality;\n— Fixed display of ads;\n— Fixed Hightlight menu;\n— Fixed seen message status;\n— Added translates: Turkish; Spanish; Portuguese, Brazilian; Ukrainian; Kazakh; Italian; Indonesian; Hindi; Hebrew; Greek; Chinese Traditional",
-	"link": "https://build.vanutp.dev/instander/clone/instander-v9.1-c.apk"
+	"version": "9.2",
+	"changelog": "— Indicator FollowsYou;\n— Set path to downoad folder;\n— Rework improving photo quality;\n— Refinement of the quality of stories;\n— Redesign of the verification menu;\n— Redesign of the acknowledgement menu;\n— Forced portrait orientation of Instander settings;\n— Fixed photo quality;\n— Optimization and code cleaning.",
+	"link": "https://build.vanutp.dev/instander/clone/instander-v9.2-clone.apk"
 }
