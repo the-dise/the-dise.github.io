@@ -1,5 +1,5 @@
 {
-    "version": "4.5",
-    "changelog": "— Fixed front camera for many phones;\n— Added new selection of frames EHDR+;\n— Added new autofocus. Credit B-S-G;\n— Hexagon DSP is forced on;\n— Bug fixed;",
-    "link": "https://build.ivan1874.cf/dmgc/dmgc-4.5.apk"
+    "version": "5.0",
+    "changelog": "— First public release",
+    "link": "#"
 }
