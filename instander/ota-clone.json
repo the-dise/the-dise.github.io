@@ -1,5 +1,5 @@
 {
 	"version": "10.0",
-	"changelog": "— Rebase to Instagram 175.1.0.25.119;\n— Added Unmutual Followers. Launch by long pressing on the activity tab. After the first launch, read the information from the tooltip in the upper right corner;\n— Added Hide view Live Stream;\n— Added Stories autoplay with sound;\n— Added Monobank to donation menu;\n— Removed Privat24 in donation menu;\n— Removed PayPal in donation menu;\n— Redesign Instander Menu; \n— Many fixes and optimizations.",
+	"changelog": "— Rebase to Instagram 175.1.0.25.119;\n— Added Unmutual Followers. Launch by long pressing on the activity tab. After the first launch, read the information from the tooltip in the upper right corner;\n— Added Hide view Live Stream;\n— Added Stories autoplay with sound;\n— Added Monobank to donation menu;\n— Removed Privat24 in donation menu;\n— Removed PayPal in donation menu;\n— Redesign Instander Menu;\n— Fixed Instagram bug with black (transparent) display of some icons;\n— Fixed Instagram bug with incorrect markup of some elements;\n— Many fixes and optimizations.",
 	"link": "https://build.vanutp.dev/instander/clone/instander-v10.0-clone.apk"
 }
