@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<title>the_dise</title>
+
+
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="yandex-verification" content="35d8e75ff211ef1f" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,7 +20,11 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	
+	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="i18next-latest.js"></script>
+
 	<script data-ad-client="ca-pub-5516601600866049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 	
 	<!-- Styles -->
 	<style type="text/css">
@@ -206,8 +212,8 @@
 					</svg>
 				</span>
 				<nav class="nav nav-masthead justify-content-center">
-					<a class="nav-link active" href="#">Home</a>
-					<a class="nav-link dropdown-toggle" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Projects</a>
+					<a class="nav-link active" href="#"><span id="appnav_home"></span></a>
+					<a class="nav-link dropdown-toggle" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="appnav_project"></span></a>
 					<div class="dropdown-menu" aria-labelledby="projects">
 						<a class="dropdown-item" href="/instander/">Instander</a>
 						<a class="dropdown-item" href="/dmgc/">DMGC</a>
@@ -218,15 +224,20 @@
 							<a class="dropdown-item" href="/band/aion/">Aion</a>							
 						</div>
 					</div>
-
-					<a class="nav-link" href="tg://resolve?domain=thedise">Blog</a>
-					<a class="nav-link" href="/donuts/">Donuts</a>
+					<a class="nav-link" href="tg://resolve?domain=thedise"><span id="appnav_blog"></span></a>
+					<a class="nav-link" href="/donuts/"><span id="appnav_donuts"></span></a>
+					
+					<a class="nav-link" id="en" href="?setLng=en-US">Eng</a>
+					<a class="nav-link" id="ru" href="?setLng=ru-RU">Rus</a>
 				</nav>
 			</div>
 		</header>
 		<main role="main">
-			<h1 class="display-4 gsbold">Dmitry Gavrilov</h1>
-			<p class="lead gsregular">Not a... Modder/Designer/Programmer</p>
+			
+
+			
+			<h1 class="display-4 gsbold"><span id="appname"></span></h1>
+			<p class="lead gsregular"><span id="appabout"></span></p>
 			<br>
 			<p class="social d-flex justify-content-center">
 				<a href="tg://resolve?domain=the_dise" class="mx-2 telegram" data-tooltip="Telegram">
@@ -263,15 +274,35 @@
 		</footer>
 	</div>
 
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
 
-		gtag('config', 'UA-151959411-1');
-	</script>
+		$.i18n.init({
+        //lng: 'en-US',
+        ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
+        useLocalStorage: false,
+        debug: true
+    }, function() {
+    	$('#appname').text($.t('app.name'));
+    	$('#appabout').text($.t('app.about'));
+    	$('#appnav_home').text($.t('app.nav_home'));
+    	$('#appnav_project').text($.t('app.nav_project'));
+    	$('#appnav_blog').text($.t('app.nav_blog'));
+    	$('#appnav_donuts').text($.t('app.nav_donuts'));
+    });
+
+
+
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-151959411-1');
+</script>
 </body>
 </html>
