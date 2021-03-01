@@ -21,7 +21,7 @@
 	<script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	
 	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
-	<script src="i18next-latest.js"></script>
+	<script src="/src/i18n.js"></script>
 
 	<script data-ad-client="ca-pub-5516601600866049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
@@ -107,6 +107,10 @@
 			background-color: #212121;
 		}
 
+		.lang-btn {
+			color: #212121;
+		}
+
 		/* Dark Theme */
 		@media (prefers-color-scheme: dark) {
 			body{background: #111; color: #F5F5F5}
@@ -172,6 +176,10 @@
 				color: #212121;
 				background-color: #F5F5F5;
 			}
+
+			.lang-btn {
+				color: #ffffff;
+			}
 		}
 	</style>
 
@@ -212,32 +220,36 @@
 					</svg>
 				</span>
 				<nav class="nav nav-masthead justify-content-center">
-					<a class="nav-link active" href="#"><span id="appnav_home"></span></a>
-					<a class="nav-link dropdown-toggle" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="appnav_project"></span></a>
-					<div class="dropdown-menu" aria-labelledby="projects">
+					<a class="nav-link active" href="#"><span id="nav_home"></span></a>
+					<a class="nav-link dropdown-toggle" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="nav_project"></span></a>
+					<div class="dropdown-menu " aria-labelledby="projects">
 						<a class="dropdown-item" href="/instander/">Instander</a>
 						<a class="dropdown-item" href="/dmgc/">DMGC</a>
 						<!-- <a class="dropdown-item" href="/merch/">Merch</a> -->
 						<a class="dropdown-item dropdown-toggle" href="#" id="band" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Mi Band</a>
 						<div class="dropdown-menu" aria-labelledby="band">
 							<a class="dropdown-item" href="/band/fatch/">Fatch</a>
-							<a class="dropdown-item" href="/band/aion/">Aion</a>							
+							<a class="dropdown-item" href="/band/aion/">Aion</a>
 						</div>
 					</div>
-					<a class="nav-link" href="tg://resolve?domain=thedise"><span id="appnav_blog"></span></a>
-					<a class="nav-link" href="/donuts/"><span id="appnav_donuts"></span></a>
-
-					<a class="nav-link" id="en" href="?setLng=en-US">Eng</a>
-					<a class="nav-link" id="ru" href="?setLng=ru-RU">Rus</a>
+					<a class="nav-link" href="tg://resolve?domain=thedise"><span id="nav_blog"></span></a>
+					<a class="nav-link" href="/donuts/"><span id="nav_donuts"></span></a>
+					<div class="nav-link dropleft">
+						<span id="lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="mdi mdi-web"></span>
+						<div class="dropdown-menu " aria-labelledby="lang">
+							<a class="dropdown-item" href="?setLng=en-US">English</a>
+							<a class="dropdown-item" href="?setLng=ru-RU">Русский</a>
+						</div>
+					</div>
 				</nav>
 			</div>
 		</header>
 		<main role="main">
-			
 
-			
-			<h1 class="display-4 gsbold"><span id="appname"></span></h1>
-			<p class="lead gsregular"><span id="appabout"></span></p>
+
+
+			<h1 class="display-4 gsbold"><span id="name"></span></h1>
+			<p class="lead gsregular"><span id="about"></span></p>
 			<br>
 			<p class="social d-flex justify-content-center">
 				<a href="tg://resolve?domain=the_dise" class="mx-2 telegram" data-tooltip="Telegram">
@@ -252,8 +264,8 @@
 					<span class="mdi mdi-vk"></span>
 				</a>
 
-				<a href="//github.com/the-dise/" class="mx-2 github" data-tooltip="GitHub">
-					<span class="mdi mdi-github-circle"></span>
+				<a href="//twitter.com/the_dise/" class="mx-2 twitter" data-tooltip="Twitter">
+					<span class="mdi mdi-twitter"></span>
 				</a>
 
 				<a href="//youtube.com/c/thedise/" class="mx-2 youtube" data-tooltip="YouTube">
@@ -275,35 +287,35 @@
 	</div>
 
 	<script>
-
 		$.i18n.init({
-        // lng: 'en-US',
-        defaultLanguage: 'en-US',
-        ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
-        useLocalStorage: false,
-        debug: true
-    }, function() {
-    	$('#appname').text($.t('app.name'));
-    	$('#appabout').text($.t('app.about'));
-    	$('#appnav_home').text($.t('app.nav_home'));
-    	$('#appnav_project').text($.t('app.nav_project'));
-    	$('#appnav_blog').text($.t('app.nav_blog'));
-    	$('#appnav_donuts').text($.t('app.nav_donuts'));
-    });
+			defaultLanguage: 'en-US',
+			ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
+			useLocalStorage: false,
+			debug: true
+		}, function() {
+			$('#name').text($.t('name'));
+			$('#about').text($.t('about'));
+			$('#nav_home').text($.t('nav_home'));
+			$('#nav_project').text($.t('nav_project'));
+			$('#nav_blog').text($.t('nav_blog'));
+			$('#nav_donuts').text($.t('nav_donuts'));
+		});
+	</script>
+
+	<script type="text/javascript">
+		$('#lang').on('show.bs.dropdown', function () {
+		})
+	</script>
 
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-</script>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-151959411-1');
-</script>
+		gtag('config', 'UA-151959411-1');
+	</script>
 </body>
 </html>

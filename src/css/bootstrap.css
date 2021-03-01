@@ -2826,7 +2826,7 @@ img.btc-style {
   top: auto;
   right: 100%;
   left: auto;
-  margin-top: 0;
+  margin-top: 1.7rem;
   margin-right: 0.125rem;
 }
 
@@ -2915,17 +2915,11 @@ a.youtube:hover {
 }
 
 a.vk:hover {
-  color: #4680C2 !important ; 
+  color: #2787F5 !important ; 
 }
 
-a.github:hover {
-  color: #24292e !important ; 
-}
-
-@media (prefers-color-scheme: dark) {
-  a.github:hover {
-    color: #fafbfc !important ; 
-  }
+a.twitter:hover {
+  color: #1DA1F2 !important ; 
 }
 
 a.instagram:hover {
@@ -2934,4 +2928,8 @@ a.instagram:hover {
 
 a.telegram:hover {
   color: #0088cc !important ; 
+}
+
+.lang {
+  color: #ffffff;
 }
