@@ -1,8 +1,8 @@
 {
-      "nav_home": "Home",
-      "nav_project": "My Projects",
-      "nav_blog": "Blog",
-      "nav_donuts": "Donuts",
-      "name": "Dmitry Gavrilov",
-      "about": "[this user is an baka]"
+	"nav_home": "Home",
+	"nav_project": "My Projects",
+	"nav_blog": "Blog",
+	"nav_donuts": "Donuts",
+	"name": "Dmitry Gavrilov",
+	"about": "[this user is an baka]"
 }
