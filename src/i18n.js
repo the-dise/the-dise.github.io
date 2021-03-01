@@ -100,7 +100,7 @@
         returnObjectTrees: false,
         fallbackLng: 'dev',
         fallbackNS: [],
-        detectLngQS: 'setLng',
+        detectLngQS: 'lng',
         ns: 'translation',
         fallbackOnNull: true,
         fallbackOnEmpty: false,
@@ -777,7 +777,7 @@
         }
     }
     
-    function setLng(lng, options, cb) {
+    function lng(lng, options, cb) {
         if (typeof options === 'function') {
             cb = options;
             options = {};
@@ -2684,7 +2684,7 @@
     });
     // public api interface
     i18n.init = init;
-    i18n.setLng = setLng;
+    i18n.setLng = lng;
     i18n.preload = preload;
     i18n.addResourceBundle = addResourceBundle;
     i18n.removeResourceBundle = removeResourceBundle;
