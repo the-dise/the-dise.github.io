@@ -18,6 +18,7 @@
   <script src="//code.jquery.com/jquery-3.4.1.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="/src/i18n.js"></script>
 
 
   <!-- Styles -->
@@ -247,8 +248,8 @@
           </svg>
         </span>
         <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link" href="/">Home</a>
-          <a class="nav-link dropdown-toggle active" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Projects</a>
+          <a class="nav-link" href="/"><span id="nav_home"></span></a>
+          <a class="nav-link dropdown-toggle active" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="nav_project"></span></a>
           <div class="dropdown-menu" aria-labelledby="projects">
             <a class="dropdown-item active" href="/instander/">Instander</a>
             <a class="dropdown-item" href="/dmgc/">DMGC</a>
@@ -258,8 +259,16 @@
               <a class="dropdown-item" href="/band/aion/">Aion</a>              
             </div>
           </div>
-          <a class="nav-link" href="tg://resolve?domain=thedise">Blog</a>
-          <a class="nav-link" href="/donuts/">Donuts</a>
+          <a class="nav-link" href="tg://resolve?domain=thedise"><span id="nav_blog"></span></a>
+          <a class="nav-link" href="/donuts/"><span id="nav_donuts"></span></a>
+
+          <div class="nav-link dropleft">
+            <span id="lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="mdi mdi-web"></span>
+            <div class="dropdown-menu " aria-labelledby="lang">
+              <a class="dropdown-item" href="?setLng=en">English</a>
+              <a class="dropdown-item" href="?setLng=ru">Русский</a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -319,33 +328,33 @@
         </div>
         <div class="noselect">
           <div class="gsregular">
-            <p class="lead">Beautiful & Powerful Instagram Mod</p>
-            <a href="#download" class="btn btn-instander download" style="transition-property: all;">Download</a><br>
-            <small style="opacity: .4">only for Android 5+</small>
+            <p class="lead"><span id="string_about"></span></p>
+            <a href="#download" class="btn btn-instander download" style="transition-property: all;"><span id="string_download_btn"></span></a><br>
+            <small style="opacity: .4"><span id="string_android"></span></small>
           </div>
           <div class="gsregular" style="opacity: 0.5; margin-top: 13rem; margin-bottom: 2rem;">
-            <a href="#about">Learn more<br><span class="mdi mdi-arrow-down-drop-circle-outline"></span></a>
+            <a href="#about"><span id="string_learn_more"></span><br><span class="mdi mdi-arrow-down-drop-circle-outline"></span></a>
           </div>
         </div>
       </section>
       <section class="block" id="about">
         <div class="gsregular">
-          <h1 class="display-6 gsbold mb-4">About</h1>
-          <p>Instander is a <b>free</b> modification of the Instagram app for android. It contains many improvements over the original application. </p>
+          <h1 class="display-6 gsbold mb-4"><span id="string_about_title"></span></h1>
+          <p><span id="string_about_summary"></span></p>
         </div>
       </section>
 
       <section class="block" id="features">
         <div class="gsregular mb-3">
-          <h1 class="display-6 gsbold mb-4">Features</h1>
-          <p class="mb-4">Instander has a lot of different improvements that give the user an edge over other Instagram users. The full list can be found <u><a href="#" data-toggle="modal" data-target="#features-list">here</a></u><br>These are the main features of Instander:</p>
+          <h1 class="display-6 gsbold mb-4"><span id="string_feature"></span></h1>
+          <p class="mb-4"><span id="string_feature_summary"></span></p>
           <div class="row">
             <div class="col-sm-6 text-center">
               <div class="card mb-3">
                 <div class="card-body">
-                  <img src="/src/images/pink/ad.png" alt="Downloader" height="120px" class="mb-2">
-                  <h5 class="card-title gsmedium">Ads free</h5>
-                  <p class="card-text">Completely free app with no Instagram ads</p>
+                  <img src="/src/images/pink/ad.png" alt="Ads Free" height="120px" class="mb-2">
+                  <h5 class="card-title gsmedium"><span id="string_ads"></span></h5>
+                  <p class="card-text"><span id="string_ads_summary"></span></p>
                 </div>
               </div>
             </div>
@@ -354,8 +363,8 @@
               <div class="card mb-3">
                 <div class="card-body">
                   <img src="/src/images/pink/dwn.png" alt="Downloader" height="120px" class="mb-2">
-                  <h5 class="card-title gsmedium">Downloader</h5>
-                  <p class="card-text">Download photos, videos, stories and IGTV with ease</p>
+                  <h5 class="card-title gsmedium"><span id="string_downloader"></span></h5>
+                  <p class="card-text"><span id="string_downloader_summary"></span></p>
                 </div>
               </div>
             </div>
@@ -364,8 +373,8 @@
               <div class="card mb-3">
                 <div class="card-body">
                   <img src="/src/images/pink/hq.png" alt="High Quality" height="120px" class="mb-2">
-                  <h5 class="card-title gsmedium">HQ Media</h5>
-                  <p class="card-text">Upload your <a href="#" data-tooltip="Up to 2160 pixels and 95% compression">photos</a> and <a href="#" data-tooltip="Up to 12 Mbps">stories</a> with better quality</a></p>
+                  <h5 class="card-title gsmedium"><span id="string_hq"></span></h5>
+                  <p class="card-text"><span id="string_hq_summary"></span></a></p>
                 </div>
               </div>
             </div>
@@ -374,8 +383,8 @@
               <div class="card mb-3">
                 <div class="card-body">
                   <img src="/src/images/pink/priv.png" alt="Updates" height="120px" class="mb-2">
-                  <h5 class="card-title gsmedium">Privacy</h5>
-                  <p class="card-text">View stories, read and write messages without anyone's knowledge</p>
+                  <h5 class="card-title gsmedium"><span id="string_privacy"></span></h5>
+                  <p class="card-text"><span id="string_privacy_summary"></span></p>
                 </div>
               </div>
             </div>
@@ -385,16 +394,16 @@
 
       <section class="block" id="versions">
         <div class="gsregular mb-3">
-          <h1 class="display-6 gsbold mb-4">Versions</h1>
-          <p class="mb-4">There are 2 versions of the application, the original and the clone.</p>
+          <h1 class="display-6 gsbold mb-4"><span id="string_versions"></span></h1>
+          <p class="mb-4"><span id="string_versions_summary"></span></p>
           <div class="row">
             <div class="col-sm-6 text-center">
               <div class="card mb-3">
-                <div class="card-header bg-transparent">Original</div>
+                <div class="card-header bg-transparent"><span id="string_orig"></span></div>
                 <div class="card-body">
                   <img src="/src/images/pink/icon_original.png" alt="Original" height="80px" class="mb-2">
                   <p class="roboto-light">Instagram</p>
-                  <p class="card-text">Requires the removal of the official Instagram application. It supports integration with other apps.</p>
+                  <p class="card-text"><span id="string_orig_summary"></span></p>
                 </div>
 
                 <div class="card-footer">
@@ -405,11 +414,11 @@
 
             <div class="col-sm-6 text-center">
               <div class="card mb-3">
-                <div class="card-header bg-transparent">Clone</div>
+                <div class="card-header bg-transparent"><span id="string_clone"></span></div>
                 <div class="card-body">
                   <img src="/src/images/pink/icon_clone.png" alt="Clone" height="80px" class="mb-2">
                   <p class="roboto-light">Instander</p>
-                  <p class="card-text">Allows you to install next to the official app. It has a different icon and application name.</p>
+                  <p class="card-text"><span id="string_clone_summary"></span></p>
                 </div>
 
                 <div class="card-footer">
@@ -423,13 +432,13 @@
 
       <section class="block" id="support">
         <div class="gsregular mb-3">
-          <h1 class="display-6 gsbold mb-4">Support</h1>
+          <h1 class="display-6 gsbold mb-4"><span id="string_support"></span></h1>
           <div class="row" style="display: flex; justify-content: center; align-items: center;">
             <div class="card mr-2" style="width: 30%">
               <div class="card-body">
                 <img src="/src/images/pink/chat.png" alt="Updates" height="100px" class="mb-2">
-                <h5 class="card-title gsmedium">Chats</h5>
-                <a href="tg://resolve?domain=instander_links" class="btn btn-instander">Join</a>
+                <h5 class="card-title gsmedium"><span id="string_chats"></span></h5>
+                <a href="tg://resolve?domain=instander_links" class="btn btn-instander"><span id="string_join"></span></a>
               </div>
             </div>
 
@@ -437,7 +446,7 @@
               <div class="card-body">
                 <img src="/src/images/pink/faq.png" alt="Updates" height="100px" class="mb-2">
                 <h5 class="card-title gsmedium">F.A.Q</h5>
-                <a href="tg://resolve?domain=instanderfaq" class="btn btn-instander">Open</a><br>
+                <a href="tg://resolve?domain=instanderfaq" class="btn btn-instander"><span id="string_open"></span></a><br>
               </div>
             </div>
 
@@ -445,14 +454,14 @@
               <div class="card-body">
                 <img src="/src/images/pink/email.png" alt="Updates" height="100px" class="mb-2">
                 <h5 class="card-title gsmedium">E-Mail</h5>
-                <a href="mailto: info@thedise.me" class="btn btn-instander">Write</a><br>
+                <a href="mailto: info@thedise.me" class="btn btn-instander"><span id="string_write"></span></a><br>
               </div>
             </div>
           </div>        
         </div>
       </section>
 
-      <section class="block" id="comments">
+      <!-- <section class="block" id="comments">
         <div class="gsregular mb-3">
           <h1 class="display-6 gsbold mb-4">Comments</h1>
           <p class="mb-4">Here's what users say about Instander:</p>
@@ -518,12 +527,12 @@
             </div>
           </div>        
         </div>
-      </section>
+      </section> -->
 
       <section class="mb-6" id="download">
         <div class="gsregular">
-          <h1 class="display-6 gsbold mb-4">Download now</h1>
-          <a href="/instander/repo" class="btn btn-instander dn mr-2"> <span class="mdi mdi-cloud-download-outline mr-2"></span> Repository</a>
+          <h1 class="display-6 gsbold mb-4"><span id="string_download_now"></span></h1>
+          <a href="/instander/repo" class="btn btn-instander dn mr-2"> <span class="mdi mdi-cloud-download-outline mr-2"></span> <span id="string_repo"></span></a>
           <a href="tg://resolve?domain=instander" class="btn btn-instander dn mr-2"> <span class="mdi mdi-telegram mr-2"></span> Telegram</a>
         </div>
       </section>
@@ -608,6 +617,50 @@
     </div>
   </footer>
 
+  <script>
+    $.i18n.init({
+      defaultLanguage: 'en',
+      ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
+      useLocalStorage: false,
+      debug: true
+    }, function() {
+      $('#nav_home').text($.t('nav_home'));
+      $('#nav_project').text($.t('nav_project'));
+      $('#nav_blog').text($.t('nav_blog'));
+      $('#nav_donuts').text($.t('nav_donuts'));
+      $('#string_download_btn').text($.t('string_download_btn'));
+      $('#string_android').text($.t('string_android'));
+      $('#string_about').text($.t('string_about'));
+      $('#string_learn_more').text($.t('string_learn_more'));
+      $('#string_about_title').text($.t('string_about_title'));
+      $('#string_about_summary').text($.t('string_about_summary'));
+      $('#string_feature').text($.t('string_feature'));
+      $('#string_feature_summary').text($.t('string_feature_summary'));
+      $('#string_ads').text($.t('string_ads'));
+      $('#string_ads_summary').text($.t('string_ads_summary'));
+      $('#string_downloader').text($.t('string_downloader'));
+      $('#string_downloader_summary').text($.t('string_downloader_summary'));
+      $('#string_hq').text($.t('string_hq'));
+      $('#string_hq_summary').text($.t('string_hq_summary'));
+      $('#string_privacy').text($.t('string_privacy'));
+      $('#string_privacy_summary').text($.t('string_privacy_summary'));
+      $('#string_versions').text($.t('string_versions'));
+      $('#string_versions_summary').text($.t('string_versions_summary'));
+      $('#string_orig').text($.t('string_orig'));
+      $('#string_orig_summary').text($.t('string_orig_summary'));
+      $('#string_clone').text($.t('string_clone'));
+      $('#string_clone_summary').text($.t('string_clone_summary'));
+      $('#string_support').text($.t('string_support'));
+      $('#string_chats').text($.t('string_chats'));
+      $('#string_join').text($.t('string_join'));
+      $('#string_open').text($.t('string_open'));
+      $('#string_write').text($.t('string_write'));
+      $('#string_download_now').text($.t('string_download_now'));
+      $('#string_repo').text($.t('string_repo'));
+
+
+    });
+  </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
