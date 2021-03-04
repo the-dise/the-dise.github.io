@@ -100,7 +100,7 @@
         returnObjectTrees: false,
         fallbackLng: 'dev',
         fallbackNS: [],
-        detectLngQS: 'l',
+        detectLngQS: 'setLng',
         ns: 'translation',
         fallbackOnNull: true,
         fallbackOnEmpty: false,
