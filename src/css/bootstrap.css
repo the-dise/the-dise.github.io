@@ -1699,6 +1699,26 @@ a.btn-merch:not(:disabled):not(.disabled):active:focus, .btn-merch:not(:disabled
   border-radius: 0.25rem;
 }
 
+.th-w1 {
+  width: 1rem;
+}
+
+.th-w2 {
+  width: 2rem;
+}
+
+.th-w3 {
+  width: 3rem;
+}
+
+.th-w4 {
+  width: 4rem;
+}
+
+.th-w5 {
+  width: 5rem;
+}
+
 .th-w6 {
   width: 6rem;
 }

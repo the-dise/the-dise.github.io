@@ -225,7 +225,7 @@
 					<div class="dropdown-menu " aria-labelledby="projects">
 						<a class="dropdown-item" href="/instander/">Instander</a>
 						<a class="dropdown-item" href="/dmgc/">DMGC</a>
-						<!-- <a class="dropdown-item" href="/merch/">Merch</a> -->
+						<!-- <a class="dropdown-item" href="/merch/">Merch&Dise</a> -->
 						<a class="dropdown-item dropdown-toggle" href="#" id="band" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Mi Band</a>
 						<div class="dropdown-menu" aria-labelledby="band">
 							<a class="dropdown-item" href="/band/fatch/">Fatch</a>
@@ -237,17 +237,14 @@
 					<div class="nav-link dropleft">
 						<span id="lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="mdi mdi-web"></span>
 						<div class="dropdown-menu " aria-labelledby="lang">
-							<a class="dropdown-item" href="?setLng=en">English</a>
-							<a class="dropdown-item" href="?setLng=ru">Русский</a>
+							<a class="dropdown-item" href="?l=en">English</a>
+							<a class="dropdown-item" href="?l=ru">Русский</a>
 						</div>
 					</div>
 				</nav>
 			</div>
 		</header>
 		<main role="main">
-
-
-
 			<h1 class="display-4 gsbold"><span id="name"></span></h1>
 			<p class="lead gsregular"><span id="about"></span></p>
 			<br>
@@ -255,23 +252,18 @@
 				<a href="tg://resolve?domain=the_dise" class="mx-2 telegram" data-tooltip="Telegram">
 					<span class="mdi mdi-telegram"></span>
 				</a>
-
 				<a href="//instagram.com/the_dise_" class="mx-2 instagram" data-tooltip="Instagram">
 					<span class="mdi mdi-instagram"></span>
 				</a>
-
 				<a href="//vk.com/the_dise" class="mx-2 vk" data-tooltip="VK">
 					<span class="mdi mdi-vk"></span>
 				</a>
-
 				<a href="//twitter.com/the_dise/" class="mx-2 twitter" data-tooltip="Twitter">
 					<span class="mdi mdi-twitter"></span>
 				</a>
-
 				<a href="//youtube.com/c/thedise/" class="mx-2 youtube" data-tooltip="YouTube">
 					<span class="mdi mdi-youtube"></span>
 				</a>
-
 				<a href="//open.spotify.com/user/the_dise" class="mx-2 spotify" data-tooltip="Spotify">
 					<span class="mdi mdi-spotify"></span>
 				</a>
@@ -291,7 +283,7 @@
 			defaultLanguage: 'en',
 			ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
 			useLocalStorage: false,
-			debug: true
+			debug: false
 		}, function() {
 			$('#name').text($.t('name'));
 			$('#about').text($.t('about'));

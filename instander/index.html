@@ -265,8 +265,8 @@
           <div class="nav-link dropleft">
             <span id="lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="mdi mdi-web"></span>
             <div class="dropdown-menu " aria-labelledby="lang">
-              <a class="dropdown-item" href="?setLng=en">English</a>
-              <a class="dropdown-item" href="?setLng=ru">Русский</a>
+              <a class="dropdown-item" href="?l=en">English</a>
+              <a class="dropdown-item" href="?l=ru">Русский</a>
             </div>
           </div>
         </nav>
@@ -617,50 +617,51 @@
     </div>
   </footer>
 
-  <script>
-    $.i18n.init({
-      defaultLanguage: 'en',
-      ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
-      useLocalStorage: false,
-      debug: true
-    }, function() {
-      $('#nav_home').text($.t('nav_home'));
-      $('#nav_project').text($.t('nav_project'));
-      $('#nav_blog').text($.t('nav_blog'));
-      $('#nav_donuts').text($.t('nav_donuts'));
-      $('#string_download_btn').text($.t('string_download_btn'));
-      $('#string_android').text($.t('string_android'));
-      $('#string_about').text($.t('string_about'));
-      $('#string_learn_more').text($.t('string_learn_more'));
-      $('#string_about_title').text($.t('string_about_title'));
-      $('#string_about_summary').text($.t('string_about_summary'));
-      $('#string_feature').text($.t('string_feature'));
-      $('#string_feature_summary').text($.t('string_feature_summary'));
-      $('#string_ads').text($.t('string_ads'));
-      $('#string_ads_summary').text($.t('string_ads_summary'));
-      $('#string_downloader').text($.t('string_downloader'));
-      $('#string_downloader_summary').text($.t('string_downloader_summary'));
-      $('#string_hq').text($.t('string_hq'));
-      $('#string_hq_summary').text($.t('string_hq_summary'));
-      $('#string_privacy').text($.t('string_privacy'));
-      $('#string_privacy_summary').text($.t('string_privacy_summary'));
-      $('#string_versions').text($.t('string_versions'));
-      $('#string_versions_summary').text($.t('string_versions_summary'));
-      $('#string_orig').text($.t('string_orig'));
-      $('#string_orig_summary').text($.t('string_orig_summary'));
-      $('#string_clone').text($.t('string_clone'));
-      $('#string_clone_summary').text($.t('string_clone_summary'));
-      $('#string_support').text($.t('string_support'));
-      $('#string_chats').text($.t('string_chats'));
-      $('#string_join').text($.t('string_join'));
-      $('#string_open').text($.t('string_open'));
-      $('#string_write').text($.t('string_write'));
-      $('#string_download_now').text($.t('string_download_now'));
-      $('#string_repo').text($.t('string_repo'));
+    <script>
+      $.i18n.init({
+        defaultLanguage: 'en',
+        ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
+        useLocalStorage: false,
+        debug: true
+      }, function() {
+        $('#nav_home').text($.t('nav_home'));
+        $('#nav_project').text($.t('nav_project'));
+        $('#nav_blog').text($.t('nav_blog'));
+        $('#nav_donuts').text($.t('nav_donuts'));
+        $('#string_download_btn').text($.t('string_download_btn'));
+        $('#string_android').text($.t('string_android'));
+        $('#string_about').text($.t('string_about'));
+        $('#string_learn_more').text($.t('string_learn_more'));
+        $('#string_about_title').text($.t('string_about_title'));
+        $('#string_about_summary').text($.t('string_about_summary'));
+        $('#string_feature').text($.t('string_feature'));
+        $('#string_feature_summary').text($.t('string_feature_summary'));
+        $('#string_ads').text($.t('string_ads'));
+        $('#string_ads_summary').text($.t('string_ads_summary'));
+        $('#string_downloader').text($.t('string_downloader'));
+        $('#string_downloader_summary').text($.t('string_downloader_summary'));
+        $('#string_hq').text($.t('string_hq'));
+        $('#string_hq_summary').text($.t('string_hq_summary'));
+        $('#string_privacy').text($.t('string_privacy'));
+        $('#string_privacy_summary').text($.t('string_privacy_summary'));
+        $('#string_versions').text($.t('string_versions'));
+        $('#string_versions_summary').text($.t('string_versions_summary'));
+        $('#string_orig').text($.t('string_orig'));
+        $('#string_orig_summary').text($.t('string_orig_summary'));
+        $('#string_clone').text($.t('string_clone'));
+        $('#string_clone_summary').text($.t('string_clone_summary'));
+        $('#string_support').text($.t('string_support'));
+        $('#string_chats').text($.t('string_chats'));
+        $('#string_join').text($.t('string_join'));
+        $('#string_open').text($.t('string_open'));
+        $('#string_write').text($.t('string_write'));
+        $('#string_download_now').text($.t('string_download_now'));
+        $('#string_repo').text($.t('string_repo'));
 
 
-    });
-  </script>
+      });
+    </script>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
