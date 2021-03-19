@@ -1,5 +1,5 @@
 {
-	"version": "10.0",
-	"changelog": "— Rebase to Instagram 175.1.0.25.119;\n— Added Unmutual Followers. Launch by long pressing on the activity tab. After the first launch, read the information from the tooltip in the upper right corner;\n— Added Hide view Live Stream;\n— Added Mark as read in Direct;\n— Added Stories autoplay with sound;\n— Added Monobank to donation menu;\n— Removed Privat24 in donation menu;\n— Removed PayPal in donation menu;\n— Redesign Instander Menu;\n— Fixed Instagram bug with black (transparent) display of some icons;\n— Fixed Instagram bug with incorrect markup of some elements;\n— Many fixes and optimizations.",
-	"link": "https://build.vanutp.dev/instander/instander-v10.0.apk"
+	"version": "11.0",
+	"changelog": "— Rebase to Instagram 178.1.0.37.123;\n— Added activation Instander Reels;\n— Added new font (last on the list);\n— Added Translation of comments;\n— Removed Unmutual Followers. (Due to the large limitation of accounts. I don’t want to take responsibility for this);\n— Removed Fullscreen Stories;\n— Removed Don't crop Stories;\n— Fixed install on Android 5.1;\n— Many fixes and optimizations.",
+	"link": "https://build.vanutp.dev/instander/instander-v11.0.apk"
 }
