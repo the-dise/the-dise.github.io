@@ -1,5 +1,5 @@
 {
-	"version": "11.0",
+	"version": "10.0",
 	"changelog": "— Rebase to Instagram 178.1.0.37.123;\n— Added activation Instander Reels;\n— Added new font (last on the list);\n— Added Translation of comments;\n— Removed Unmutual Followers. (Due to the large limitation of accounts. I don’t want to take responsibility for this);\n— Removed Fullscreen Stories;\n— Removed Don't crop Stories;\n— Fixed install on Android 5.1;\n— Many fixes and optimizations.",
 	"link": "https://build.vanutp.dev/instander/clone/instander-v11.0-clone.apk"
 }
