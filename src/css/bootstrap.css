@@ -1206,6 +1206,45 @@ a.btn-info-inst:not(:disabled):not(.disabled):active:focus, .btn-info-inst:not(:
   box-shadow: 0 0 0 0.2rem rgba(236,64,122 ,0.5);
 }
 
+a.btn-info-aion {
+  color: #fff;
+  background-color: #00dcaf;
+  border-color: #00dcaf;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 5rem;
+}
+
+a.btn-info-aion:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #00b28e;
+  border-color: #00b28e;
+}
+
+a.btn-info-aion:focus, .btn-info-aion.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,220,175 ,0.4);;
+}
+
+a.btn-info-aion.disabled, .btn-info-aion:disabled {
+  color: #fff;
+  background-color: #00dcaf;
+  border-color: #00dcaf;
+}
+
+a.btn-info-aion:not(:disabled):not(.disabled):active, .btn-info-aion:not(:disabled):not(.disabled).active,
+.show > .btn-info-aion.dropdown-toggle {
+  color: #fff;
+  background-color: #00dcaf;
+  border-color: #00dcaf;
+}
+
+a.btn-info-aion:not(:disabled):not(.disabled):active:focus, .btn-info-aion:not(:disabled):not(.disabled).active:focus,
+.show > .btn-info-aion.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,220,175 ,0.4);;
+}
+
 a.btn-merch {
   color: #fff;
   background-color: #ba68c8;
@@ -1278,6 +1317,11 @@ a.btn-merch:not(:disabled):not(.disabled):active:focus, .btn-merch:not(:disabled
 
 .badge-table {
   width: 4rem;
+  text-align: center;
+}
+
+.badge-table-aion {
+  width: 5.1rem;
   text-align: center;
 }
 
@@ -2861,8 +2905,43 @@ img.btc-style {
 }
 
 
-.btn-instander {
+.btn-aion {
   border-color: #212121;
+  border-radius: 10rem;
+}
+
+.btn-aion:hover {
+  color: #fff;
+  background-color: #00dcaf;
+  border-color: #00dcaf;
+  text-decoration: none;
+}
+
+.btn-aion:focus, .btn-aion.focus {
+  color: #00dcaf;
+  border-color: #00dcaf;
+  box-shadow: 0 0 0 0.2rem rgba(0,220,175 ,0.5);
+}
+
+.btn-aion.disabled, .btn-aion:disabled {
+  color: #2196F3;
+  background-color: transparent;
+}
+
+.btn-aion:not(:disabled):not(.disabled):active, .btn-aion:not(:disabled):not(.disabled).active,
+.show > .btn-outline-info.dropdown-toggle {
+  color: #fff;
+  background-color: #00dcaf;
+  border-color: #00dcaf;
+}
+
+.btn-aion:not(:disabled):not(.disabled):active:focus, .btn-aion:not(:disabled):not(.disabled).active:focus,
+.show > .btn-aion.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,220,175 ,0.5);
+}
+
+.btn-aion {
+  border-color: #00dcaf;
   border-radius: 10rem;
 }
 
@@ -2920,6 +2999,11 @@ img.btc-style {
   margin-bottom: 4rem;
 }
 
+.block-aion {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
 .avatar {
   border-radius: 50%;
   width: 64px;
@@ -2953,3 +3037,19 @@ a.telegram:hover {
 .lang {
   color: #ffffff;
 }
+
+@media (min-width: 365px) {
+  .miband {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .miband {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+
