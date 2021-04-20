@@ -1,5 +1,5 @@
 {
-	"version": "11.0",
+	"version": "11.1",
 	"changelog": "— Re-added Unmutual Followers;\n— Fixed Modern font (Cyrillic: Д, Л, Ё);\n— Remade StoryQuality;\n— Remade IGTVQuality;\n— Disabled information about Covid-19;\n— Removed the info button in Unmutual Followers;\n— Added small easter egg;\n— Many fixes and optimizations.",
-	"link": "https://build.vanutp.dev/instander/instander-v11.1.apk"
+	"link": "https://build.vanutp.dev/instander/instander-v11.1-fix.apk"
 }
