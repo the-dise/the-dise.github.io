@@ -248,6 +248,29 @@
 
     <!-- Chengelogs -->
     <div class="gsregular">
+      <div class="modal fade" id="log112" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title gsmedium" id="ModalLabel">Info</h4>
+              <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+            </div>
+            <div class="modal-body">
+              <p class="gsmedium">Changelog:</p>
+              <ul>
+                <li>— Fixed crash Instander Settings on many device;</li>
+                <li>— Added Fullscreen stories.</li>
+              </ul>
+              <br>
+              <span class="badge badge-gcam">Instagram 178.1.0.37.123</span>
+              <span class="badge badge-dmgc">ARMv7 / ARMv8</span>
+              <span class="badge badge-android">Android 5+</span>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="modal fade" id="log111" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -535,8 +558,14 @@
               </thead>
               <tbody>
                 <tr>
-                  <th><a class="table-link" href="https://build.vanutp.dev/instander/instander-v11.1-fix.apk">Instander 11.1</a></th>
+                  <th><a class="table-link" href="https://build.vanutp.dev/instander/instander-v11.2.apk">Instander 11.2</a></th>
                   <th><span class="badge badge-table badge-stable">Сurrent</span></th>
+                  <th class="text-grey">21/04/21</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log112"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+                <tr>
+                  <th><a class="table-link" href="https://build.vanutp.dev/instander/instander-v11.1-fix.apk">Instander 11.1</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
                   <th class="text-grey">20/04/21</th>
                   <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log111"><span class="mdi mdi-information-outline"></span> Info</a></th>
                 </tr>
@@ -552,7 +581,7 @@
                   <th class="text-grey">01/03/21</th>
                   <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log100"><span class="mdi mdi-information-outline"></span> Info</a></th>
                 </tr>
-                <tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
                   <th><a class="table-link" href="https://build.vanutp.dev/instander/instander-v9.2.apk">Instander 9.2</a></th>
                   <th><span class="badge badge-table badge-dmgc">Old</span></th>
                   <th class="text-grey">02/12/20</th>
@@ -672,133 +701,138 @@
                 <tbody>
                   <tr>
                     <tr>
-                      <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v11.1-c.apk">Instander 11.1 Clone</a></th>
+                      <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v11.2-c.apk">Instander 11.2 Clone</a></th>
                       <th><span class="badge badge-table badge-stable">Сurrent</span></th>
-                      <th class="text-grey">20/04/21</th>
+                      <th class="text-grey">21/04/21</th>
                       <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log111"><span class="mdi mdi-information-outline"></span> Info</a></th>
                     </tr>
-                    <tr>
-                      <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v11.0-clone-fix.apk">Instander 11.0 Clone</a></th>
-                      <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                      <th class="text-grey">19/03/21</th>
-                      <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log110"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                    </tr>
-                    <tr>
-                      <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v10.0-clone.apk">Instander 10.0 Clone</a></th>
-                      <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                      <th class="text-grey">01/03/21</th>
-                      <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log100"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                    </tr>
-                    <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v9.2-clone.apk">Instander 9.2 Clone</a></th>
+                    <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v11.1-c.apk">Instander 11.1 Clone</a></th>
                     <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">02/12/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log92"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                    <th class="text-grey">20/04/21</th>
+                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log111"><span class="mdi mdi-information-outline"></span> Info</a></th>
                   </tr>
+                  <tr>
+                    <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v11.0-clone-fix.apk">Instander 11.0 Clone</a></th>
+                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                    <th class="text-grey">19/03/21</th>
+                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log110"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                  </tr>
+                  <tr>
+                    <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v10.0-clone.apk">Instander 10.0 Clone</a></th>
+                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                    <th class="text-grey">01/03/21</th>
+                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log100"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                  </tr>
+                  <th style="pointer-events: none; opacity: 0.4;" ><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v9.2-clone.apk">Instander 9.2 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">02/12/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log92"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
 
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v9.1-c.apk">Instander 9.1 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">21/11/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log91"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v9.1-c.apk">Instander 9.1 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">21/11/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log91"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
 
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v9.0-clone.apk">Instander 9.0 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">19/11/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log90"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v9.0-clone.apk">Instander 9.0 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">19/11/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log90"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
 
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v8.2-clone.apk">Instander 8.2 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">04/11/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log82"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v8.2-clone.apk">Instander 8.2 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">04/11/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log82"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
 
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v8.1-clone.apk">Instander 8.1 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">22/10/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log81"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v8.0-clone.apk">Instander 8.0 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">20/10/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log80"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v7.1-clone-fix.apk">Instander 7.1 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">18/09/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log71"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v7.0-clone.apk">Instander 7.0 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">17/09/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log670"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v6.0-clone.apk">Instander 6.0 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">10/09/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log60"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v5.2-clone.apk">Instander 5.2 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">27/08/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log52"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v5.1-clone-fix.apk">Instander 5.1 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">25/08/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log51"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v5.0-clone.apk">Instander 5.0 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">09/08/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log50"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v4.0-clone.apk">Instander 4.0 Clone</a></th>
-                    <th><span class="badge badge-table badge-alpha">None</span></th>
-                    <th class="text-grey">01/08/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log30"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
-                  <tr style="pointer-events: none; opacity: 0.4;">
-                    <th><a class="table-link disabled" href="https://build.ivan1874.cf/instander/clone/instander-v3.0-clone.apk">Instander 3.0 Clone</a></th>
-                    <th><span class="badge badge-table badge-dmgc">Old</span></th>
-                    <th class="text-grey">02/07/20</th>
-                    <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log30"><span class="mdi mdi-information-outline"></span> Info</a></th>
-                  </tr>
-                </tbody></table>
-              </div>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v8.1-clone.apk">Instander 8.1 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">22/10/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log81"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v8.0-clone.apk">Instander 8.0 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">20/10/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log80"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v7.1-clone-fix.apk">Instander 7.1 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">18/09/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log71"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v7.0-clone.apk">Instander 7.0 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">17/09/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log670"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v6.0-clone.apk">Instander 6.0 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">10/09/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log60"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v5.2-clone.apk">Instander 5.2 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">27/08/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log52"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v5.1-clone-fix.apk">Instander 5.1 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">25/08/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log51"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v5.0-clone.apk">Instander 5.0 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">09/08/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log50"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link disabled" href="https://build.vanutp.dev/instander/clone/instander-v4.0-clone.apk">Instander 4.0 Clone</a></th>
+                  <th><span class="badge badge-table badge-alpha">None</span></th>
+                  <th class="text-grey">01/08/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log30"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+                <tr style="pointer-events: none; opacity: 0.4;">
+                  <th><a class="table-link disabled" href="https://build.ivan1874.cf/instander/clone/instander-v3.0-clone.apk">Instander 3.0 Clone</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
+                  <th class="text-grey">02/07/20</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log30"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+              </tbody></table>
             </div>
           </div>
-        </main>
-        <footer class="mastfoot mt-auto small">
-          <div class="inner gsregular">
-            Copyright <span class="mdi mdi-copyright"></span> 2014-2021 - <a href="/">the_dise</a> - All Right Reserved<p></p>
-          </div>
-        </footer>
-      </div>
-
-      <script async="" src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1" type="text/javascript"></script>
-      <script type="text/javascript">
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-151959411-1');
-      </script>
-
+        </div>
+      </main>
+      <footer class="mastfoot mt-auto small">
+        <div class="inner gsregular">
+          Copyright <span class="mdi mdi-copyright"></span> 2014-2021 - <a href="/">the_dise</a> - All Right Reserved<p></p>
+        </div>
+      </footer>
     </div>
+
+    <script async="" src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-151959411-1');
+    </script>
+
   </div>
+</div>
 </div>
 </body>
 </html>
