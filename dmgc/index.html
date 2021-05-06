@@ -209,6 +209,34 @@
     </header>
     <!-- M O D A L S  S T A R T -->
     <div>
+      <div class="modal fade" id="log50" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title gsmedium" id="ModalLabel">Info</h4>
+              <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+            </div>
+            <div class="modal-body">
+              Changelog:
+              <ul>
+                <li>First release;</li>
+                <li>Removed OTA Updates.</li>
+              </ul>
+              Bugs:
+              <ul>
+                <li>Time-lapse with large zoom;</li>
+                <li>Crash Slow Mo 1/8x.</li>
+              </ul>
+              <br>
+              <span class="badge badge-dmgc">DMGC 5.0</span>
+              <span class="badge badge-gcam">Google Camera 8.2.204</span>
+              <span class="badge badge-android">Android 9+</span>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="modal fade" id="log45" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -1170,16 +1198,19 @@
           <a class="nav-link btn btn-dmgc mx-1 mb-2 active" id="pills-recom-tab" data-toggle="pill" href="#pills-recom" role="tab" aria-controls="pills-recom" aria-selected="true">Recommended</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-dmgc mx-1 mb-2" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">ver. 4.x</a>
+          <a class="nav-link btn btn-dmgc mx-1 mb-2" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false" data-tooltip="Base on 8.2.204">ver. 5.x</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-dmgc mx-1 mb-2" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">ver. 3.x</a>
+          <a class="nav-link btn btn-dmgc mx-1 mb-2" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false" data-tooltip="Base on 7.3.020">ver. 4.x</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-dmgc mx-1 mb-2" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">ver. 2.x</a>
+          <a class="nav-link btn btn-dmgc mx-1 mb-2" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false" data-tooltip="Base on 7.2.018">ver. 3.x</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-dmgc mx-1 mb-2" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="false">ver. 1.x</a>
+          <a class="nav-link btn btn-dmgc mx-1 mb-2" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false" data-tooltip="Base on 7.0.009">ver. 2.x</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-dmgc mx-1 mb-2" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="false" data-tooltip="Base on 6.2.030">ver. 1.x</a>
         </li>
       </ul>
 
@@ -1197,6 +1228,12 @@
                 </tr>
               </thead>
               <tr>
+                <th><a class="table-link" href="//1-dontsharethislink.celsoazevedo.com/file/filesc/DMGC_8.2.204_ver.5.0.apk">DMGC 5.0</a></th>
+                <th><span class="badge badge-table badge-stable">Stable</span></th>
+                <th class="text-grey">24/04/21</th>
+                <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log50"><span class="mdi mdi-information-outline"></span> Info</a></th>
+              </tr>
+              <tr>
                 <th><a class="table-link" href="//build.vanutp.dev/dmgc/dmgc-4.5.apk">DMGC 4.5</a></th>
                 <th><span class="badge badge-table badge-dmgc">Final</span></th>
                 <th class="text-grey">24/06/20</th>
@@ -1213,6 +1250,28 @@
                 <th><span class="badge badge-table badge-dmgc">Final</span></th>
                 <th class="text-grey">01/07/19</th>
                 <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log16"><span class="mdi mdi-information-outline"></span> Info</a></th>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- Version 5.x -->
+        <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+          <div class="ht-tm-codeblock">
+            <table class="table table-algin-left text">
+              <thead class="noselect gsmedium">
+                <tr>
+                  <th>Version</th>
+                  <th class="th-w6">Status</th>
+                  <th class="th-w6">Date</th>
+                  <th class="th-w6">Info</th>
+                </tr>
+              </thead>
+              <tr>
+                <th><a class="table-link" href="//1-dontsharethislink.celsoazevedo.com/file/filesc/DMGC_8.2.204_ver.5.0.apk">DMGC 5.0</a></th>
+                <th><span class="badge badge-table badge-stable">Stable</span></th>
+                <th class="text-grey">24/04/21</th>
+                <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log50"><span class="mdi mdi-information-outline"></span> Info</a></th>
               </tr>
             </table>
           </div>
