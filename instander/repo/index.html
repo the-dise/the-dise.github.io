@@ -15,33 +15,124 @@
   <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" type="text/javascript"></script>
 
   <style type="text/css">
-    body{background: #F5F5F5;color: #212121}
+  body{background: #F5F5F5;color: #212121}
+  a{color: #444444}
+  a:hover{color: #f06292;text-decoration: none;}
+
+  a.table-link {
+    color: #212121;
+  }
+
+  a.table-link:hover {
+    color: #f06292;
+  }
+
+  .brand-text {
+    fill: #333;
+  }
+  .brand-main {
+    fill: #f06292;
+  }
+  .nav-masthead .nav-link {
+    font-weight: 500;
+    color: #9E9E9E;
+    border-color: transparent;
+  }
+
+  .nav-masthead .active {
+    color: #212121;
+    border-bottom-color: #212121;
+  }
+
+  .nav-masthead .nav-link:hover,
+  .nav-masthead .nav-link:focus {
+    color: #f06292;
+    border-bottom-color: #f06292;
+  }
+
+  .dropdown-menu {
+    color: #212121;
+    background-color: #EEEEEE;
+  }
+
+  .dropdown-item {
+    color: #212121;
+  }
+
+  .dropdown-item:hover, .dropdown-item:focus {
+    color: #212121;
+    background-color: rgba(236,64,122,.5);
+  }
+
+  .dropdown-item.active, .dropdown-item:active {
+    color: #212121;
+    background-color: #f06292;
+  }
+
+  .dropdown-item.disabled, .dropdown-item:disabled {
+    color: #9E9E9E;
+  }
+
+  .tooltip-inner {
+    color: #f5f5f5;
+    background-color: #212121;
+  }
+
+  a.btn-donut {
+    color: #212121;
+    background-color: rgba(0,0,0,0.1);
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-size: 18px;
+    border-radius: 50px;
+    font-family: Google Sans Regular;
+    text-decoration: none;
+  }
+
+  a.btn-donut:hover {
+    color: #f06292;
+    text-decoration: none;
+  }
+
+  .table p{
+    color: #424242;
+  }
+
+  /* Dark Theme */
+  @media (prefers-color-scheme: dark) {
+    body{background: #111; color: #F5F5F5}
     a{color: #444444}
-    a:hover{color: #f06292;text-decoration: none;}
 
     a.table-link {
-      color: #212121;
+      color: #f5f5f5;
     }
 
-    a.table-link:hover {
-      color: #f06292;
+    .table {
+      width: 100%;
+      margin-bottom: 2rem;
+      color: #EEEEEE;
+    }
+
+    .table thead th {
+      border-bottom: 2px solid #424242;
+      color: #F5F5F5
     }
 
     .brand-text {
-      fill: #333;
+      fill: #f5f5f5;
     }
     .brand-main {
       fill: #f06292;
     }
     .nav-masthead .nav-link {
       font-weight: 500;
-      color: #9E9E9E;
-      border-color: transparent;
+      color: #9E9E9E;     
     }
 
     .nav-masthead .active {
-      color: #212121;
-      border-bottom-color: #212121;
+      color: #f5f5f5;
+      border-bottom-color: #F5F5F5;
     }
 
     .nav-masthead .nav-link:hover,
@@ -50,22 +141,26 @@
       border-bottom-color: #f06292;
     }
 
+    .mastfoot {
+      color: #444444;
+    }
+
     .dropdown-menu {
-      color: #212121;
-      background-color: #EEEEEE;
+      color: #F5F5F5;
+      background-color: #212121;
     }
 
     .dropdown-item {
-      color: #212121;
+      color: #f5f5f5;
     }
 
     .dropdown-item:hover, .dropdown-item:focus {
-      color: #212121;
+      color: #f5f5f5;
       background-color: rgba(236,64,122,.5);
     }
 
     .dropdown-item.active, .dropdown-item:active {
-      color: #212121;
+      color: #fff;
       background-color: #f06292;
     }
 
@@ -74,13 +169,13 @@
     }
 
     .tooltip-inner {
-      color: #f5f5f5;
-      background-color: #212121;
+      color: #212121;
+      background-color: #F5F5F5;
     }
 
     a.btn-donut {
-      color: #212121;
-      background-color: rgba(0,0,0,0.1);
+      color: #fff;
+      background-color: rgba(255,255,255,0.1);
       padding: 0.25rem 0.5rem;
       font-size: 0.875rem;
       line-height: 1.5;
@@ -95,115 +190,20 @@
       text-decoration: none;
     }
 
+    .modal-content {
+      background-color: #333;
+    }
+
+    .btn-instander {
+      color: #F5F5F5;
+      border-color: #f5f5f5;
+    }
+
     .table p{
-      color: #424242;
+      color: #ffffff;
     }
-
-    /* Dark Theme */
-    @media (prefers-color-scheme: dark) {
-      body{background: #111; color: #F5F5F5}
-      a{color: #444444}
-
-      a.table-link {
-        color: #f5f5f5;
-      }
-
-      .table {
-        width: 100%;
-        margin-bottom: 2rem;
-        color: #EEEEEE;
-      }
-
-      .table thead th {
-        border-bottom: 2px solid #424242;
-        color: #F5F5F5
-      }
-
-      .brand-text {
-        fill: #f5f5f5;
-      }
-      .brand-main {
-        fill: #f06292;
-      }
-      .nav-masthead .nav-link {
-        font-weight: 500;
-        color: #9E9E9E;     
-      }
-
-      .nav-masthead .active {
-        color: #f5f5f5;
-        border-bottom-color: #F5F5F5;
-      }
-
-      .nav-masthead .nav-link:hover,
-      .nav-masthead .nav-link:focus {
-        color: #f06292;
-        border-bottom-color: #f06292;
-      }
-
-      .mastfoot {
-        color: #444444;
-      }
-
-      .dropdown-menu {
-        color: #F5F5F5;
-        background-color: #212121;
-      }
-
-      .dropdown-item {
-        color: #f5f5f5;
-      }
-
-      .dropdown-item:hover, .dropdown-item:focus {
-        color: #f5f5f5;
-        background-color: rgba(236,64,122,.5);
-      }
-
-      .dropdown-item.active, .dropdown-item:active {
-        color: #fff;
-        background-color: #f06292;
-      }
-
-      .dropdown-item.disabled, .dropdown-item:disabled {
-        color: #9E9E9E;
-      }
-
-      .tooltip-inner {
-        color: #212121;
-        background-color: #F5F5F5;
-      }
-
-      a.btn-donut {
-        color: #fff;
-        background-color: rgba(255,255,255,0.1);
-        padding: 0.25rem 0.5rem;
-        font-size: 0.875rem;
-        line-height: 1.5;
-        font-size: 18px;
-        border-radius: 50px;
-        font-family: Google Sans Regular;
-        text-decoration: none;
-      }
-
-      a.btn-donut:hover {
-        color: #f06292;
-        text-decoration: none;
-      }
-
-      .modal-content {
-        background-color: #333;
-      }
-
-      .btn-instander {
-        color: #F5F5F5;
-        border-color: #f5f5f5;
-      }
-
-      .table p{
-        color: #ffffff;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body class="text-center pattern">
   <div id="page-preloader" style="display: none;">
@@ -248,6 +248,37 @@
 
     <!-- Chengelogs -->
     <div class="gsregular">
+      <div class="modal fade" id="log120" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title gsmedium" id="ModalLabel">Info</h4>
+              <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+            </div>
+            <div class="modal-body">
+              <p class="gsmedium">Changelog:</p>
+              <ul>
+                <li>Rebase to Instagram 187.0.0.32.120;</li>
+                <li>Remade Improve Photo quality — <a href="https://t.me/thedise/1484/">Link</a>;</li>
+                <li>Added Download IGTV;</li>
+                <li>Added Social Networks Menu (Official page Instander on Telegram, Instagram and Subreddit);</li>
+                <li>Removed Splunk MINT Crashlytics;</li>
+                <li>Fixed last font: ad, ag, ah & etc symbols;</li>
+                <li>Fixed non-coloring when changing theme or on global black theme (MIUI, FlymeOS and similar)</li>
+                <li>Fixed Threads on profile;</li>
+                <li>Fixed Pronounce on profile;</li>
+                <li>Fixed application crash when trying to complain.</li>
+              </ul>
+              <br>
+              <span class="badge badge-gcam">Instagram 187.0.0.32.120</span>
+              <span class="badge badge-dmgc">ARMv7 / ARMv8</span>
+              <span class="badge badge-android">Android 5+</span>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="modal fade" id="log112" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -558,8 +589,14 @@
               </thead>
               <tbody>
                 <tr>
-                  <th><a class="table-link" href="https://build.vanutp.dev/instander/instander-v11.2.apk">Instander 11.2</a></th>
+                  <th><a class="table-link" href="https://build.vanutp.dev/instander/instander-12.0.apk">Instander 12.0</a></th>
                   <th><span class="badge badge-table badge-stable">Сurrent</span></th>
+                  <th class="text-grey">07/06/21</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log120"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+                <tr>
+                  <th><a class="table-link" href="https://build.vanutp.dev/instander/instander-v11.2.apk">Instander 11.2</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
                   <th class="text-grey">21/04/21</th>
                   <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log112"><span class="mdi mdi-information-outline"></span> Info</a></th>
                 </tr>
@@ -701,8 +738,14 @@
                 <tbody>
                   <tr>
                     <tr>
-                      <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v11.2-c.apk">Instander 11.2 Clone</a></th>
+                      <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-12.0-clone.apk">Instander 12.0 Clone</a></th>
                       <th><span class="badge badge-table badge-stable">Сurrent</span></th>
+                      <th class="text-grey">07/06/21</th>
+                      <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log120"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                    </tr>
+                    <tr>
+                      <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-v11.2-c.apk">Instander 11.2 Clone</a></th>
+                      <th><span class="badge badge-table badge-dmgc">Old</span></th>
                       <th class="text-grey">21/04/21</th>
                       <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log111"><span class="mdi mdi-information-outline"></span> Info</a></th>
                     </tr>
