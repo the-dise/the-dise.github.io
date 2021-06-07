@@ -1869,7 +1869,7 @@ a.btn-merch:not(:disabled):not(.disabled):active:focus, .btn-merch:not(:disabled
 }
 
 img.btc-style {
-  border: 12px solid #fff;
+  border: 30px solid transparent;
   margin-bottom: 1rem;
 }
 

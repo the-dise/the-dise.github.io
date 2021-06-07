@@ -175,6 +175,8 @@
 			.modal-content {
 				background-color: #333;
 			}
+
+			.blur { filter: invert(100%); }
 		}
 	</style>
 
@@ -244,29 +246,13 @@
 			<span class="mx-2">YooMoney</span>
 		</a>
 		<br>
-		<a class="btn btn-donut pl-3 mb-3 mx-1" href="#" data-toggle="modal" data-target="#bitcoin">
-			<span class="mdi mdi-bitcoin"></span>
-			<span class="mx-2">Bitcoin</span>
-		</a>
+
 		<a class="btn btn-donut pl-3 mb-3 mx-1" href="#" data-toggle="modal" data-target="#ether">
 			<span class="mdi mdi-ethereum"></span>
 			<span class="mx-2">Ethereum</span>
 		</a>
 
-		<div class="modal fade" id="bitcoin" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title gsmedium" id="ModalLabel">Bitcoin</h4>
-						<a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
-					</div>
-					<div class="modal-body btc-style">
-						<img src="/src/images/crypt/btc.png" class="btc-style">
-						<p>12ecXwrZHhR8nLWv2M3B5nzHBWKD1u2vqr</p>
-					</div>
-				</div>
-			</div>
-		</div>
+
 
 		<div class="modal fade" id="ether" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
 			<div class="modal-dialog" role="document">
@@ -276,8 +262,8 @@
 						<a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
 					</div>
 					<div class="modal-body btc-style">
-						<img src="/src/images/crypt/eth.png" class="btc-style">
-						<p>0x4d4551bd8d6d962e9a22fc61f16f408a0af0947f</p>
+						<img src="/src/images/crypt/eth.png" class="blur btc-style">
+						<p>0x9E023e37BaaFc7BfD2De0cA7BD88AcEF4Be44826</p>
 					</div>
 				</div>
 			</div>
@@ -326,5 +312,9 @@
 
 	gtag('config', 'UA-151959411-1');
 </script>
+
+<!-- BitCion -->
+<!-- <a class="btn btn-donut pl-3 mb-3 mx-1" href="#" data-toggle="modal" data-target="#bitcoin"><span class="mdi mdi-bitcoin"></span><span class="mx-2">Bitcoin</span></a> -->
+<!-- <div class="modal fade" id="bitcoin" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h4 class="modal-title gsmedium" id="ModalLabel">Bitcoin</h4><a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a></div><div class="modal-body btc-style"><img src="/src/images/crypt/btc.png" class="btc-style"><p>12ecXwrZHhR8nLWv2M3B5nzHBWKD1u2vqr</p></div></div></div></div> -->
 </body>
 </html>
