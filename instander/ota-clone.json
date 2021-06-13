@@ -1,5 +1,6 @@
 {
 	"version": "12.0",
 	"changelog": "— Rebase to Instagram 187.0.0.32.120;\n— Remade Improve Photo quality (t.me/thedise/1484);\n— Added Download IGTV;\n— Added Social Networks Menu (Official page Instander on Telegram, Instagram and Subreddit);\n— Removed Splunk MINT Crashlytics;\n— Fixed last font: ad, ag, ah & etc symbols;\n— Fixed non-coloring when changing theme or on global black theme (MIUI, FlymeOS and similar)\n— Fixed Threads on profile;\n— Fixed application crash when trying to complain.",
+	"changelog-ru": "— Тест русского списка изменений",
 	"link": "https://build.vanutp.dev/instander/clone/instander-12.0-clone.apk"
 }
