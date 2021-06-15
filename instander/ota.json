@@ -1,6 +1,6 @@
 {
-	"version": "12.0",
-	"changelog": "— Rebase to Instagram 187.0.0.32.120;\n— Remade Improve Photo quality (t.me/thedise/1484);\n— Added Download IGTV;\n— Added Social Networks Menu (Official page Instander on Telegram, Instagram and Subreddit);\n— Removed Splunk MINT Crashlytics;\n— Fixed last font: ad, ag, ah & etc symbols;\n— Fixed non-coloring when changing theme or on global black theme (MIUI, FlymeOS and similar)\n— Fixed Threads on profile;\n— Fixed application crash when trying to complain.",
-	"changelog-ru": "— Тест русского списка изменений",
-	"link": "https://build.vanutp.dev/instander/instander-12.0.apk"
+	"version": "12.1",
+	"changelog": "— Fixed downloading;\n— Changed default path to download to /Pictures/Instander;\n— Added Ethereum to donate;\n— Added OTA chagelog on russian.",
+	"changelog-ru": "— Исправлена загрузка фото/видео/сторис;\n— Изменен путь по умолчанию для загрузки на /Pictures/Instander;\n— Добавлен Ethereum для пожертвования;\n— Добавлен журнал изменений в OTA на русском языке.",
+	"link": "https://build.vanutp.dev/instander/instander-v12.1.apk"
 }
